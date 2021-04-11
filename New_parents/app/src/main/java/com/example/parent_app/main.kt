@@ -4,12 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        signout.setOnClickListener {
+            startActivity(Intent(this,login_page::class.java))
+        }
+
+
     }
+
 
     fun user(view: View) {
         startActivity(Intent(this,user::class.java))
