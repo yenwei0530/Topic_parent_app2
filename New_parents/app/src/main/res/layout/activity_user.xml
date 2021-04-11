@@ -75,7 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="1.您與孩子的關係:"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner1"
                         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="2.是否與孩子同住:"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner2"
                         android:layout_width="match_parent"
@@ -97,7 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="3.平常孩子在家由誰照顧和管教?"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner3"
                         android:layout_width="match_parent"
@@ -108,7 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="4.該位孩子在家中排行:"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner4"
                         android:layout_width="match_parent"
@@ -119,7 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="兄弟姊妹人數:"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner4_1"
                         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="5.該為孩子目前是否服過動或情緒藥物:"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner5"
                         android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="6.家中經濟來源:"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner6"
                         android:layout_width="match_parent"
@@ -152,7 +152,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="7.父親教育程度 :"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner7"
                         android:layout_width="match_parent"
@@ -163,7 +163,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="8.母親教育程度 :"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
                     <Spinner
                         android:id="@+id/spinner8"
                         android:layout_width="match_parent"
