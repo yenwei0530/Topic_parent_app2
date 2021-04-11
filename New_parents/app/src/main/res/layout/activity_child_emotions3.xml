@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".child_emotions">
+    tools:context=".activity_child_emotions3">
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
@@ -44,12 +44,9 @@
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
 
-            <androidx.cardview.widget.CardView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:cardBackgroundColor="@color/whiteTextColor"
-                app:cardCornerRadius="10dp">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -63,14 +60,14 @@
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
+                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/textView9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1.在群體工作中表現不佳"
-                                android:textColor="#377E3A"
+                                android:text="14.缺乏自信"
+                                android:textColor="#761F85"
                                 android:textSize="24sp" />
 
                         </TableRow>
@@ -116,19 +113,21 @@
                             </RadioGroup>
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
+                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2.被同儕團體排斥或拒絕"
-                                android:textColor="#377E3A"
+                                android:text="15.感到自己無價值感"
+                                android:textColor="#761F85"
                                 android:textSize="24sp" />
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="48dp">
@@ -170,6 +169,7 @@
                             </RadioGroup>
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
@@ -178,11 +178,12 @@
                                 android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="3.覺得別人找他碴或迫害他 "
-                                android:textColor="#377E3A"
+                                android:text="16.很少感到快樂或歡樂"
+                                android:textColor="#761F85"
                                 android:textSize="24sp" />
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="48dp">
@@ -224,18 +225,20 @@
                             </RadioGroup>
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
+                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="4.缺乏社交能力"
-                                android:textColor="#377E3A"
+                                android:text="17.大部分時間沮喪難過"
+                                android:textColor="#761F85"
                                 android:textSize="24sp" />
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="48dp">
@@ -277,17 +280,20 @@
                             </RadioGroup>
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
+                            android:layout_height="match_parent">
+
                             <TextView
                                 android:id="@+id/textView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="5.避免與他人互動"
-                                android:textColor="#377E3A"
+                                android:text="18.與老師互動很少"
+                                android:textColor="#761F85"
                                 android:textSize="24sp" />
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="48dp">
@@ -298,7 +304,7 @@
                                 android:orientation="horizontal">
 
                                 <RadioButton
-                                    android:id="@+id/radioButton26"
+                                    android:id="@+id/radioButton21"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="1" />
@@ -329,6 +335,118 @@
                             </RadioGroup>
 
                         </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="19.對曾經喜愛的事物喪失興趣"
+                                android:textColor="#761F85"
+                                android:textSize="24sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="20.對未來感覺悲觀無希望"
+                                android:textColor="#761F85"
+                                android:textSize="24sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5" />
+                            </RadioGroup>
+
+                        </TableRow>
+
                     </TableLayout>
 
 
@@ -345,7 +463,7 @@
                         app:spinning_bar_width="4dp" />
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </ScrollView>
 
         </LinearLayout>
     </ScrollView>
