@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C7FD87"
     tools:context=".main">
 
     <LinearLayout
@@ -97,13 +98,6 @@
                             android:textColor="#000000"
                             android:textSize="24sp" />
 
-                        <ImageView
-                            android:id="@+id/imageView1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/cursor_color" />
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -146,13 +140,6 @@
                             android:singleLine="false"
                             android:textColor="#000000"
                             android:textSize="24sp" />
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="1dp"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/cursor_color" />
 
                     </LinearLayout>
 
@@ -199,13 +186,6 @@
                             android:textColor="#000000"
                             android:textSize="24sp" />
 
-                        <ImageView
-                            android:id="@+id/imageView5"
-                            android:layout_width="1dp"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/cursor_color" />
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -249,13 +229,6 @@
                             android:textColor="#000000"
                             android:textSize="24sp" />
 
-                        <ImageView
-                            android:id="@+id/imageView7"
-                            android:layout_width="1dp"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/cursor_color" />
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -298,13 +271,6 @@
                             android:singleLine="false"
                             android:textColor="#000000"
                             android:textSize="24sp" />
-
-                        <ImageView
-                            android:id="@+id/imageView9"
-                            android:layout_width="1dp"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/cursor_color" />
 
                     </LinearLayout>
 
