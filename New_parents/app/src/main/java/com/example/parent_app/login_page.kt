@@ -19,6 +19,7 @@ class login_page : AppCompatActivity() {
 
     }
     fun login(view: View) {
+        /*
         if (username_input.text != null && username_input.length()>0)
         {
             if (pass.length() > 0) {
@@ -35,8 +36,10 @@ class login_page : AppCompatActivity() {
         else
         {
             Toast.makeText(this, "請輸入帳號密碼", Toast.LENGTH_LONG).show()
-
         }
-        //startActivity(Intent(this,main::class.java))
+
+        */
+
+        startActivity(Intent(this,main::class.java))
     }
 }
