@@ -32,14 +32,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="孩子的情緒行為"
+                    android:text="孩子的行為"
                     android:textSize="36sp" />
 
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView0"
-                android:layout_width="372dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
@@ -117,14 +117,17 @@
                             </RadioGroup>
 
                         </TableRow>
+
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp">
 
                             <TextView
                                 android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="2.被同儕團體排斥或拒絕"
                                 android:textColor="#377E3A"
                                 android:textSize="24sp" />
@@ -180,6 +183,7 @@
                                 android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="3.覺得別人找他碴或迫害他 "
                                 android:textColor="#377E3A"
                                 android:textSize="24sp" />
@@ -235,6 +239,7 @@
                                 android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="4.缺乏社交能力"
                                 android:textColor="#377E3A"
                                 android:textSize="24sp" />
@@ -284,10 +289,12 @@
                         <TableRow
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" >
+
                             <TextView
                                 android:id="@+id/textView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="5.避免與他人互動"
                                 android:textColor="#377E3A"
                                 android:textSize="24sp" />
@@ -342,7 +349,6 @@
                         style="@style/loginButton"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/loginViewsMargin"
-                        android:onClick="next"
                         android:text="Next→"
                         app:initialCornerAngle="27dp"
                         app:spinning_bar_color="#FFF"

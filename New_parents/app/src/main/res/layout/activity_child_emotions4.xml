@@ -32,14 +32,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="孩子的情緒行為"
+                    android:text="孩子的行為"
                     android:textSize="36sp" />
 
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView0"
-                android:layout_width="372dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
@@ -122,6 +122,7 @@
                                 android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="22.焦慮、擔心、緊張"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />
@@ -178,6 +179,7 @@
                                 android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="23.擔心不可能發生的危險或災難"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />
@@ -234,6 +236,7 @@
                                 android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="24.會談到自己的死亡"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />
@@ -289,6 +292,7 @@
                                 android:id="@+id/textView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="25.可看出情緒與感受過度敏感"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />
@@ -345,6 +349,7 @@
                                 android:id="@+id/textView15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="26.感受極大罪惡感"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />
@@ -400,6 +405,7 @@
                                 android:id="@+id/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="27.出現抽搐、咬指甲、輕微抖動"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />
@@ -455,6 +461,7 @@
                                 android:id="@+id/textView17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="28.自傷行為(捏、割或抓傷自己)"
                                 android:textColor="#FF5722"
                                 android:textSize="24sp" />

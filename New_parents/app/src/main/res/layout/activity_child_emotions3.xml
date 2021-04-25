@@ -32,14 +32,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="孩子的情緒行為"
+                    android:text="孩子的行為"
                     android:textSize="36sp" />
 
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView0"
-                android:layout_width="372dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
@@ -122,6 +122,7 @@
                                 android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="15.感到自己無價值感"
                                 android:textColor="#761F85"
                                 android:textSize="24sp" />
@@ -178,6 +179,7 @@
                                 android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="16.很少感到快樂或歡樂"
                                 android:textColor="#761F85"
                                 android:textSize="24sp" />
@@ -234,6 +236,7 @@
                                 android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="17.大部分時間沮喪難過"
                                 android:textColor="#761F85"
                                 android:textSize="24sp" />
@@ -289,6 +292,7 @@
                                 android:id="@+id/textView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="18.與老師互動很少"
                                 android:textColor="#761F85"
                                 android:textSize="24sp" />
@@ -345,6 +349,7 @@
                                 android:id="@+id/textView15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="19.對曾經喜愛的事物喪失興趣"
                                 android:textColor="#761F85"
                                 android:textSize="24sp" />
@@ -400,6 +405,7 @@
                                 android:id="@+id/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="20.對未來感覺悲觀無希望"
                                 android:textColor="#761F85"
                                 android:textSize="24sp" />

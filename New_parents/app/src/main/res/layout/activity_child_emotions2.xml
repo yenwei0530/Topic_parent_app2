@@ -32,14 +32,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="孩子的情緒行為"
+                    android:text="孩子的行為"
                     android:textSize="36sp" />
 
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView0"
-                android:layout_width="372dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
@@ -122,6 +122,7 @@
                                 android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="7.對同儕有攻擊或暴力行為"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />
@@ -178,6 +179,7 @@
                                 android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="8.口與毀謗、取笑或奚落他人"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />
@@ -234,6 +236,7 @@
                                 android:id="@+id/textView12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
                                 android:text="9.對自己行為的後果欠缺考慮"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />
@@ -289,6 +292,7 @@
                                 android:id="@+id/textView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="10.威脅他人"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />
@@ -345,6 +349,7 @@
                                 android:id="@+id/textView15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="11.無理取鬧、喧囂、粗暴"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />
@@ -400,6 +405,7 @@
                                 android:id="@+id/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="12.破壞東西"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />
@@ -455,6 +461,7 @@
                                 android:id="@+id/textView17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
                                 android:text="13.在學校打架或攻擊他人"
                                 android:textColor="#3F51B5"
                                 android:textSize="24sp" />

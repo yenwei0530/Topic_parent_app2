@@ -152,6 +152,8 @@ class child_emotions : AppCompatActivity() {
 
         }
 
+
+
 /*
         fun next(view: View) {
             startActivity(Intent(this, activity_child_emotions2::class.java))

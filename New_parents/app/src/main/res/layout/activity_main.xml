@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C7FD87"
+    android:background="@drawable/main_bg"
     tools:context=".main">
 
     <LinearLayout
@@ -34,7 +34,7 @@
                 android:layout_below="@id/txtdashboard"
                 android:layout_marginTop="6dp"
                 android:text="Sign out"
-                android:textColor="#52BAFF"
+                android:textColor="#3C3C3C"
                 android:textSize="14sp" />
 
             <ImageView
@@ -49,7 +49,7 @@
 
         <ScrollView
             android:layout_width="410dp"
-            android:layout_height="500dp">
+            android:layout_height="496dp">
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                             android:layout_weight="1"
                             android:background="#FFFFFF"
                             android:gravity="center_vertical|left"
-                            android:hint="孩子的情緒行為"
+                            android:hint="孩子的行為"
                             android:maxLines="1"
                             android:singleLine="false"
                             android:textColor="#000000"
