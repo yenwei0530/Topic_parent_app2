@@ -41,17 +41,20 @@
                 android:id="@+id/textView0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/whiteTextColor"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
+                    android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -120,8 +123,7 @@
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="20dp">
+                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/textView10"
