@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DFFDBC"
     tools:context=".activity_child_emotions3">
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_alignParentTop="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:orientation="vertical"
             android:padding="20dp">
 
@@ -39,451 +41,454 @@
 
             <TextView
                 android:id="@+id/textView0"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
                 android:textSize="18sp" />
 
-            <ScrollView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="480dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
 
-                <LinearLayout
-                    android:layout_gravity="center"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
-                    <TableLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
 
-                        <TableRow
+                        <TableLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <TextView
-                                android:id="@+id/textView9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="14.缺乏自信"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="match_parent">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton1"
+                                <TextView
+                                    android:id="@+id/textView9"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:text="14.缺乏自信"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2" />
+                            </TableRow>
 
-                                <RadioButton
-                                    android:id="@+id/radioButton3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton4"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton5"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView10"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="20dp"
-                                android:text="15.感到自己無價值感"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="48dp">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton6"
-                                    android:layout_width="wrap_content"
+                                <RadioGroup
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:orientation="horizontal">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton7"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton8"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton9"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton10"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
+                                    <RadioButton
+                                        android:id="@+id/radioButton4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
 
-                        </TableRow>
+                                    <RadioButton
+                                        android:id="@+id/radioButton5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            </TableRow>
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="20dp"
-                                android:text="16.很少感到快樂或歡樂"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="match_parent">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton11"
+                                <TextView
+                                    android:id="@+id/textView10"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:layout_marginTop="20dp"
+                                    android:text="15.感到自己無價值感"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton12"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2" />
+                            </TableRow>
 
-                                <RadioButton
-                                    android:id="@+id/radioButton13"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton14"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton15"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="20dp"
-                                android:text="17.大部分時間沮喪難過"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="48dp">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton16"
-                                    android:layout_width="wrap_content"
+                                <RadioGroup
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:orientation="horizontal">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton17"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton18"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton19"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton20"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
+                                    <RadioButton
+                                        android:id="@+id/radioButton9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
 
-                        </TableRow>
+                                    <RadioButton
+                                        android:id="@+id/radioButton10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            </TableRow>
 
-                            <TextView
-                                android:id="@+id/textView13"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="20dp"
-                                android:text="18.與老師互動很少"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="match_parent">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton21"
+                                <TextView
+                                    android:id="@+id/textView11"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:layout_marginTop="20dp"
+                                    android:text="16.很少感到快樂或歡樂"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton22"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2" />
+                            </TableRow>
 
-                                <RadioButton
-                                    android:id="@+id/radioButton23"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton24"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton25"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
-
-                        </TableRow>
-
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView15"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="20dp"
-                                android:text="19.對曾經喜愛的事物喪失興趣"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="48dp">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton26"
-                                    android:layout_width="wrap_content"
+                                <RadioGroup
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:orientation="horizontal">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton27"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton28"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton29"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton30"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
+                                    <RadioButton
+                                        android:id="@+id/radioButton14"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
 
-                        </TableRow>
+                                    <RadioButton
+                                        android:id="@+id/radioButton15"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            </TableRow>
 
-                            <TextView
-                                android:id="@+id/textView16"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="20dp"
-                                android:text="20.對未來感覺悲觀無希望"
-                                android:textColor="#761F85"
-                                android:textSize="24sp" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp">
-
-                            <RadioGroup
+                            <TableRow
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="match_parent">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton31"
+                                <TextView
+                                    android:id="@+id/textView12"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1" />
+                                    android:layout_marginTop="20dp"
+                                    android:text="17.大部分時間沮喪難過"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
+                            </TableRow>
 
-                                <RadioButton
-                                    android:id="@+id/radioButton32"
-                                    android:layout_width="wrap_content"
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="2" />
+                                    android:orientation="horizontal">
 
-                                <RadioButton
-                                    android:id="@+id/radioButton33"
+                                    <RadioButton
+                                        android:id="@+id/radioButton16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton17"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView13"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="3" />
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="18.與老師互動很少"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
+                            </TableRow>
 
-                                <RadioButton
-                                    android:id="@+id/radioButton34"
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton24"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView15"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="4" />
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="19.對曾經喜愛的事物喪失興趣"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
+                            </TableRow>
 
-                                <RadioButton
-                                    android:id="@+id/radioButton35"
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton26"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton27"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton28"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton29"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton30"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView16"
                                     android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="20.對未來感覺悲觀無希望"
+                                    android:textColor="#761F85"
+                                    android:textSize="24sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="5" />
-                            </RadioGroup>
+                                    android:layout_marginBottom="20dp"
+                                    android:orientation="horizontal">
 
-                        </TableRow>
+                                    <RadioButton
+                                        android:id="@+id/radioButton31"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1" />
 
-                    </TableLayout>
+                                    <RadioButton
+                                        android:id="@+id/radioButton32"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2" />
 
+                                    <RadioButton
+                                        android:id="@+id/radioButton33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3" />
 
-                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
-                        android:id="@+id/cirRegisterButton"
-                        style="@style/loginButton"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/loginViewsMargin"
-                        android:onClick="next"
-                        android:text="Next→"
-                        app:initialCornerAngle="27dp"
-                        app:spinning_bar_color="#FFF"
-                        app:spinning_bar_padding="6dp"
-                        app:spinning_bar_width="4dp" />
+                                    <RadioButton
+                                        android:id="@+id/radioButton34"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4" />
 
-                </LinearLayout>
-            </ScrollView>
+                                    <RadioButton
+                                        android:id="@+id/radioButton35"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+
     </ScrollView>
 
     <View
         android:id="@+id/view"
-        android:layout_width="11dp"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_marginEnd="150dp"
         android:background="@drawable/ic_side_bg"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2" />
+        app:layout_constraintEnd_toStartOf="@+id/cirRegisterButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -494,6 +499,22 @@
         android:adjustViewBounds="false"
         android:onClick="onLoginClick"
         android:src="@drawable/ic_back_img"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/cirRegisterButton"
+        style="@style/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Next→"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

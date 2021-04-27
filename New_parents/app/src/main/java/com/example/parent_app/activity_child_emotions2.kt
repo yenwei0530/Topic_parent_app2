@@ -12,10 +12,10 @@ class activity_child_emotions2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_child_emotions2)
 
-        var get_emotions_ans1 = intent.getBundleExtra("bundle")?.getInt("emotions_ans1").toString()
+       /* var get_emotions_ans1 = intent.getBundleExtra("bundle")?.getInt("emotions_ans1").toString()
         Toast.makeText(this@activity_child_emotions2, "接收到的資料： \n "+" $get_emotions_ans1 ",
                 Toast.LENGTH_SHORT).show()
-
+*/
 
     }
 
