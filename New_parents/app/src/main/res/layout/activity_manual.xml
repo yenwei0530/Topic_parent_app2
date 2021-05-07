@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".manual">
 
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="使用手冊頁面"
+            android:textColor="#4E3737"
+            android:textSize="36sp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

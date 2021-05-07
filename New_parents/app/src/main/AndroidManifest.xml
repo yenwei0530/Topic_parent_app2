@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parent_app">
-        <activity android:name=".for_test"></activity>
+        <activity android:name=".record_interaction"></activity>
+        <activity android:name=".record_performance" />
+        <activity android:name=".record_emotions" />
         <activity android:name=".activity_child_emotions2" />
         <activity android:name=".activity_child_emotions3" />
         <activity android:name=".activity_child_emotions4" />
