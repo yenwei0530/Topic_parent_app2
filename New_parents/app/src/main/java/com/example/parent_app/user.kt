@@ -172,8 +172,25 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 5 ↓
-
-
+        val ques5 = arrayListOf("是,藥名______","否")
+        val adapter5 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques5)
+        spinner5.adapter = adapter5
+        spinner5.onItemSelectedListener = object :
+            AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                Toast.makeText(this@user, "該孩子目前是否服過動或情緒藥物: " + ques5[position], Toast.LENGTH_SHORT).show()
+                if (spinner5.getSelectedItem().toString() == "是,藥名______"){
+                    ques5ans = 1
+                }else if (spinner5.getSelectedItem().toString() == "否")
+                {
+                    ques5ans = 2
+                }
+                Toast.makeText(this@user, ques5ans.toString(), Toast.LENGTH_SHORT).show()
+            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
+            }
+        }
         //---------------------------Spinner 6 ↓
         val ques6 = arrayListOf("父母雙薪","父親","母親","其他(請說明)")
         val adapter6 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques6)

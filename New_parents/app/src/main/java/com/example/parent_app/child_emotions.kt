@@ -1,11 +1,10 @@
 package com.example.parent_app
 
-import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.RadioButton
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_child_emotions.*
 
@@ -19,11 +18,11 @@ class child_emotions : AppCompatActivity() {
         var emotions_ans4 = 0
         var emotions_ans5 = 0
         // radiogroup 1 第一題 ↓↓
-        radioButton1.setOnClickListener {
+        radioButton1_emotions2.setOnClickListener {
             emotions_ans1 = 1
             Toast.makeText(this@child_emotions, "總是這樣", Toast.LENGTH_SHORT).show()
         }
-        radioButton2.setOnClickListener {
+        radioButton2_emotions2.setOnClickListener {
             emotions_ans1 = 2
             Toast.makeText(this@child_emotions, "經常這樣", Toast.LENGTH_SHORT).show()
         }
@@ -125,40 +124,33 @@ class child_emotions : AppCompatActivity() {
         }
 
         cirRegisterButton.setOnClickListener {
-            var bundle = Bundle()
-            bundle.putInt("emotions_ans1",emotions_ans1)
-            bundle.putInt("emotions_ans2",emotions_ans2)
-            bundle.putInt("emotions_ans3",emotions_ans3)
-            bundle.putInt("emotions_ans4",emotions_ans4)
-            bundle.putInt("emotions_ans5",emotions_ans5)
-            var intent = Intent(this@child_emotions,activity_child_emotions2::class.java)
-            intent.putExtra("bundle",bundle)
-            startActivity(intent)
+            if (emotions_ans1 == 0 || emotions_ans2 == 0 || emotions_ans3 == 0 || emotions_ans4 == 0 || emotions_ans5 == 0)
+            {
+                AlertDialog.Builder(this)
+                    .setMessage("請將題目填完再點選NEXT")
+                    .setTitle("有題目尚未填寫")
+                    .setPositiveButton("OK", null)
+                    .show()
+            }else
+            {
 
-            /*
-             intent.putExtra("emotions_ans1", emotions_ans1.toString())
-             intent.putExtra("emotions_ans2", emotions_ans2.toString())
-             intent.putExtra("emotions_ans3", emotions_ans3.toString())
-             intent.putExtra("emotions_ans4", emotions_ans4.toString())
-             intent.putExtra("emotions_ans5", emotions_ans5.toString())
-             */
+                var bundle = Bundle()
+                bundle.putInt("emotions_ans1",emotions_ans1)
+                bundle.putInt("emotions_ans2",emotions_ans2)
+                bundle.putInt("emotions_ans3",emotions_ans3)
+                bundle.putInt("emotions_ans4",emotions_ans4)
+                bundle.putInt("emotions_ans5",emotions_ans5)
+                var intent = Intent(this@child_emotions,activity_child_emotions2::class.java)
+                intent.putExtra("bundle",bundle)
+                startActivity(intent)
 
+            }
         }
     }
-
-
         fun onLoginClick(view: View) {
             startActivity(Intent(this, main::class.java))
 
         }
 
-
-
-/*
-        fun next(view: View) {
-            startActivity(Intent(this, activity_child_emotions2::class.java))
-        }
-
- */
 }
 
