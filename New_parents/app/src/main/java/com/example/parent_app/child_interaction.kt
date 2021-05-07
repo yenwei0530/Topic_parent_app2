@@ -164,6 +164,8 @@ class child_interaction : AppCompatActivity() {
                 // TEST OK [04/30 14:36]
                 // TEST OK [05/07 14:10]
                 // TEST OK [05/07 14:25]
+                // TEST OK [05/07 15:55]
+
                 /*
                 var bundle = Bundle()
                 bundle.putInt("interaction_ans1",interaction_ans1)
@@ -175,7 +177,9 @@ class child_interaction : AppCompatActivity() {
                 var intent = Intent(this@child_interaction,for_test::class.java)
                 intent.putExtra("bundle",bundle)
                 startActivity(intent)
+
                  */
+
 
 
 
@@ -183,7 +187,7 @@ class child_interaction : AppCompatActivity() {
                 Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
                 var intent = Intent(this@child_interaction,main::class.java)
                 startActivity(intent)
-             
+
             }
 
         }

@@ -13,23 +13,22 @@ class activity_child_emotions2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_child_emotions2)
         // Page 1
-        /*
-        var get_emotions_ans1 = intent.getBundleExtra("bundle")?.getInt("emotions_ans1").toString()
-        var get_emotions_ans2 = intent.getBundleExtra("bundle")?.getInt("emotions_ans2").toString()
-        var get_emotions_ans3 = intent.getBundleExtra("bundle")?.getInt("emotions_ans3").toString()
-        var get_emotions_ans4 = intent.getBundleExtra("bundle")?.getInt("emotions_ans4").toString()
-        var get_emotions_ans5 = intent.getBundleExtra("bundle")?.getInt("emotions_ans5").toString()
+
+        var get_emotions_ans1 = intent.getBundleExtra("bundle")?.getInt("emotions_ans1")
+        var get_emotions_ans2 = intent.getBundleExtra("bundle")?.getInt("emotions_ans2")
+        var get_emotions_ans3 = intent.getBundleExtra("bundle")?.getInt("emotions_ans3")
+        var get_emotions_ans4 = intent.getBundleExtra("bundle")?.getInt("emotions_ans4")
+        var get_emotions_ans5 = intent.getBundleExtra("bundle")?.getInt("emotions_ans5")
+
+        var emotions_ans1 = get_emotions_ans1.toString()
+        var emotions_ans2 = get_emotions_ans2.toString()
+        var emotions_ans3 = get_emotions_ans3.toString()
+        var emotions_ans4 = get_emotions_ans4.toString()
+        var emotions_ans5 = get_emotions_ans5.toString()
 
 
-         */
-        /*
-        var emotions_ans1 = get_emotions_ans1.toInt()
-        var emotions_ans2 = get_emotions_ans2.toInt()
-        var emotions_ans3 = get_emotions_ans3.toInt()
-        var emotions_ans4 = get_emotions_ans4.toInt()
-        var emotions_ans5 = get_emotions_ans5.toInt()
-         */
-        //Toast.makeText(this, emotions_ans1 + emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, emotions_ans1 + emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
+
 
 
 
@@ -233,13 +232,16 @@ class activity_child_emotions2 : AppCompatActivity() {
                     .show()
             }else
             {
-                /*
+                // 測試
+                // TEST OK [05/07 16:34]
+
                 var bundle = Bundle()
-                bundle.putInt("emotions_ans1",get_emotions_ans1.toInt())
-                bundle.putInt("emotions_ans2",get_emotions_ans2.toInt())
-                bundle.putInt("emotions_ans3",get_emotions_ans3.toInt())
-                bundle.putInt("emotions_ans4",get_emotions_ans4.toInt())
-                bundle.putInt("emotions_ans5",get_emotions_ans5.toInt())
+                bundle.putInt("emotions_ans1",emotions_ans1.toInt())
+                bundle.putInt("emotions_ans2",emotions_ans2.toInt())
+                bundle.putInt("emotions_ans3",emotions_ans3.toInt())
+                bundle.putInt("emotions_ans4",emotions_ans4.toInt())
+                bundle.putInt("emotions_ans5",emotions_ans5.toInt())
+
 
                 bundle.putInt("emotions_ans6",emotions_ans6)
                 bundle.putInt("emotions_ans7",emotions_ans7)
@@ -253,9 +255,11 @@ class activity_child_emotions2 : AppCompatActivity() {
                 intent.putExtra("bundle",bundle)
                 startActivity(intent)
 
-                 */
+                 /*
                 var intent = Intent(this@activity_child_emotions2,activity_child_emotions3::class.java)
                 startActivity(intent)
+
+                  */
             }
 
 

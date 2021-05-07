@@ -48,6 +48,33 @@ class for_test : AppCompatActivity() {
 
         ////////FOR emotion TEST
 
+        var get_emotions_ans1 = intent.getBundleExtra("bundle")?.getInt("emotions_ans1")
+        var get_emotions_ans2 = intent.getBundleExtra("bundle")?.getInt("emotions_ans2")
+        var get_emotions_ans3 = intent.getBundleExtra("bundle")?.getInt("emotions_ans3")
+        var get_emotions_ans4 = intent.getBundleExtra("bundle")?.getInt("emotions_ans4")
+        var get_emotions_ans5 = intent.getBundleExtra("bundle")?.getInt("emotions_ans5")
+        var get_emotions_ans6 = intent.getBundleExtra("bundle")?.getInt("emotions_ans6")
+        var get_emotions_ans7 = intent.getBundleExtra("bundle")?.getInt("emotions_ans7")
+        var get_emotions_ans8 = intent.getBundleExtra("bundle")?.getInt("emotions_ans8")
+        var get_emotions_ans9 = intent.getBundleExtra("bundle")?.getInt("emotions_ans9")
+        var get_emotions_ans10 = intent.getBundleExtra("bundle")?.getInt("emotions_ans10")
+        var get_emotions_ans11 = intent.getBundleExtra("bundle")?.getInt("emotions_ans11")
+        var get_emotions_ans12 = intent.getBundleExtra("bundle")?.getInt("emotions_ans12")
+        var get_emotions_ans13 = intent.getBundleExtra("bundle")?.getInt("emotions_ans13")
+
+        textView_emotions1.text = get_emotions_ans1.toString()
+        textView_emotions2.text = get_emotions_ans2.toString()
+        textView_emotions3.text = get_emotions_ans3.toString()
+        textView_emotions4.text = get_emotions_ans4.toString()
+        textView_emotions5.text = get_emotions_ans5.toString()
+        textView_emotions6.text = get_emotions_ans6.toString()
+        textView_emotions7.text = get_emotions_ans7.toString()
+        textView_emotions8.text = get_emotions_ans8.toString()
+        textView_emotions9.text = get_emotions_ans9.toString()
+        textView_emotions10.text = get_emotions_ans10.toString()
+        textView_emotions11.text = get_emotions_ans11.toString()
+        textView_emotions12.text = get_emotions_ans12.toString()
+        textView_emotions13.text = get_emotions_ans13.toString()
 
 
     }

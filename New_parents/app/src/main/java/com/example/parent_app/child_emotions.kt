@@ -133,6 +133,8 @@ class child_emotions : AppCompatActivity() {
                     .show()
             }else
             {
+                // 測試
+                // TEST OK [05/07 16:34]
 
                 var bundle = Bundle()
                 bundle.putInt("emotions_ans1",emotions_ans1)

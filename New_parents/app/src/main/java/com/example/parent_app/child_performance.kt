@@ -251,7 +251,7 @@ class child_performance : AppCompatActivity() {
                 // TEST OK [04/30 14:45]
                 // TEST OK [05/07 14:10]
                 // TEST OK [05/07 14:25]
-
+                // TEST OK [05/07 15:55]
                 /*
                 var bundle = Bundle()
                 bundle.putInt("performance_ans1",performance_ans1)
@@ -267,7 +267,9 @@ class child_performance : AppCompatActivity() {
                 var intent = Intent(this@child_performance,for_test::class.java)
                 intent.putExtra("bundle",bundle)
                 startActivity(intent)
+
                  */
+
 
 
 

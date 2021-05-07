@@ -337,13 +337,13 @@
                                         android:id="@+id/radioButton23_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="3" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton24_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="4" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton25_emotions2"
