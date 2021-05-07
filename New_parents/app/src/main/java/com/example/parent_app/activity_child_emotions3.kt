@@ -1,5 +1,6 @@
 package com.example.parent_app
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -244,40 +245,47 @@ class activity_child_emotions3 : AppCompatActivity() {
 
 
         cirRegisterButton3.setOnClickListener {
-            //startActivity(Intent(this,activity_child_emotions4::class.java))
-            // 測試
-            // TEST OK [05/07 16:34]
+            if (emotions_ans14 == 0 || emotions_ans15 == 0 || emotions_ans16 == 0 || emotions_ans17 == 0 || emotions_ans18 == 0 ||
+                    emotions_ans19 == 0 || emotions_ans20 ==0  )
+            {
+                AlertDialog.Builder(this)
+                        .setMessage("請將題目填完再點選NEXT")
+                        .setTitle("有題目尚未填寫")
+                        .setPositiveButton("OK", null)
+                        .show()
+            }else {            // 測試
+                // TEST OK [05/07 16:34]
 
-            var bundle = Bundle()
-            bundle.putInt("emotions_ans1",emotions_ans1.toInt())
-            bundle.putInt("emotions_ans2",emotions_ans2.toInt())
-            bundle.putInt("emotions_ans3",emotions_ans3.toInt())
-            bundle.putInt("emotions_ans4",emotions_ans4.toInt())
-            bundle.putInt("emotions_ans5",emotions_ans5.toInt())
-
-
-            bundle.putInt("emotions_ans6",emotions_ans6.toInt())
-            bundle.putInt("emotions_ans7",emotions_ans7.toInt())
-            bundle.putInt("emotions_ans8",emotions_ans8.toInt())
-            bundle.putInt("emotions_ans9",emotions_ans9.toInt())
-            bundle.putInt("emotions_ans10",emotions_ans10.toInt())
-            bundle.putInt("emotions_ans11",emotions_ans11.toInt())
-            bundle.putInt("emotions_ans12",emotions_ans12.toInt())
-            bundle.putInt("emotions_ans13",emotions_ans13.toInt())
-
-            bundle.putInt("emotions_ans14",emotions_ans14.toInt())
-            bundle.putInt("emotions_ans15",emotions_ans15.toInt())
-            bundle.putInt("emotions_ans16",emotions_ans16.toInt())
-            bundle.putInt("emotions_ans17",emotions_ans17.toInt())
-            bundle.putInt("emotions_ans18",emotions_ans18.toInt())
-            bundle.putInt("emotions_ans19",emotions_ans19.toInt())
-            bundle.putInt("emotions_ans20",emotions_ans20.toInt())
-            var intent = Intent(this@activity_child_emotions3,activity_child_emotions4::class.java)
-            intent.putExtra("bundle",bundle)
-            startActivity(intent)
+                var bundle = Bundle()
+                bundle.putInt("emotions_ans1", emotions_ans1.toInt())
+                bundle.putInt("emotions_ans2", emotions_ans2.toInt())
+                bundle.putInt("emotions_ans3", emotions_ans3.toInt())
+                bundle.putInt("emotions_ans4", emotions_ans4.toInt())
+                bundle.putInt("emotions_ans5", emotions_ans5.toInt())
 
 
+                bundle.putInt("emotions_ans6", emotions_ans6.toInt())
+                bundle.putInt("emotions_ans7", emotions_ans7.toInt())
+                bundle.putInt("emotions_ans8", emotions_ans8.toInt())
+                bundle.putInt("emotions_ans9", emotions_ans9.toInt())
+                bundle.putInt("emotions_ans10", emotions_ans10.toInt())
+                bundle.putInt("emotions_ans11", emotions_ans11.toInt())
+                bundle.putInt("emotions_ans12", emotions_ans12.toInt())
+                bundle.putInt("emotions_ans13", emotions_ans13.toInt())
 
+                bundle.putInt("emotions_ans14", emotions_ans14.toInt())
+                bundle.putInt("emotions_ans15", emotions_ans15.toInt())
+                bundle.putInt("emotions_ans16", emotions_ans16.toInt())
+                bundle.putInt("emotions_ans17", emotions_ans17.toInt())
+                bundle.putInt("emotions_ans18", emotions_ans18.toInt())
+                bundle.putInt("emotions_ans19", emotions_ans19.toInt())
+                bundle.putInt("emotions_ans20", emotions_ans20.toInt())
+                var intent = Intent(this@activity_child_emotions3, activity_child_emotions4::class.java)
+                intent.putExtra("bundle", bundle)
+                startActivity(intent)
+
+
+            }
         }
     }
     fun onLoginClick(view: View) {
