@@ -27,7 +27,7 @@ class activity_child_emotions2 : AppCompatActivity() {
         var emotions_ans5 = get_emotions_ans5.toString()
 
 
-        Toast.makeText(this, emotions_ans1 + emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, emotions_ans1 + emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
 
 
 

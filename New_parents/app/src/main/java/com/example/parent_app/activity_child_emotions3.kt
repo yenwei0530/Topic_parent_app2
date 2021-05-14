@@ -51,7 +51,7 @@ class activity_child_emotions3 : AppCompatActivity() {
         var emotions_ans20 = 0
 
         //Toast.makeText(this, emotions_ans1+ emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
-        Toast.makeText(this, emotions_ans6 + emotions_ans7 + emotions_ans8 + emotions_ans9 + emotions_ans10 + emotions_ans11 + emotions_ans12 + emotions_ans13 , Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, emotions_ans6 + emotions_ans7 + emotions_ans8 + emotions_ans9 + emotions_ans10 + emotions_ans11 + emotions_ans12 + emotions_ans13 , Toast.LENGTH_SHORT).show()
 
         // radiogroup 1 第十四題 ↓↓
         radioButton1_emotions3.setOnClickListener {

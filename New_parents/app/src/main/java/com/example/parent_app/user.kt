@@ -33,7 +33,7 @@ class user : AppCompatActivity() {
             spinner1.onItemSelectedListener = object :
                     AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                    Toast.makeText(this@user, "您與孩子的關係: " + ques1[position] , Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this@user, "您與孩子的關係: " + ques1[position] , Toast.LENGTH_SHORT).show()
                     if (spinner1.getSelectedItem().toString() == "生父"){
                         ques1ans = 1
                     }else if (spinner1.getSelectedItem().toString() == "生母")
@@ -55,7 +55,7 @@ class user : AppCompatActivity() {
                     {
                         ques1ans = 7
                     }
-                    Toast.makeText(this@user, ques1ans.toString(), Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this@user, ques1ans.toString(), Toast.LENGTH_SHORT).show()
                 }
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -68,14 +68,14 @@ class user : AppCompatActivity() {
         spinner2.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "是否與孩子同住: " + ques2[position], Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "是否與孩子同住: " + ques2[position], Toast.LENGTH_SHORT).show()
                 if (spinner2.getSelectedItem().toString() == "一直如此") {
                     ques2ans = 1
                 } else
                 {
                     ques2ans = 2
                 }
-                Toast.makeText(this@user, ques2ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques2ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -88,7 +88,7 @@ class user : AppCompatActivity() {
         spinner3.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "平常孩子在家由誰照顧和管教? " + ques3[position] , Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "平常孩子在家由誰照顧和管教? " + ques3[position] , Toast.LENGTH_SHORT).show()
                 if (spinner3.getSelectedItem().toString() == "父母雙親"){
                     ques3ans = 1
                 }else if (spinner3.getSelectedItem().toString() == "父親")
@@ -107,7 +107,7 @@ class user : AppCompatActivity() {
                 {
                     ques3ans = 6
                 }
-                Toast.makeText(this@user, ques3ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques3ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -120,7 +120,7 @@ class user : AppCompatActivity() {
         spinner4.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "該位孩子在家中排行: " + ques4[position] , Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "該位孩子在家中排行: " + ques4[position] , Toast.LENGTH_SHORT).show()
                 if (spinner4.getSelectedItem().toString() == "第一"){
                     ques4ans = 1
                 }else if (spinner4.getSelectedItem().toString() == "第二")
@@ -136,7 +136,7 @@ class user : AppCompatActivity() {
                 {
                     ques4ans = 5
                 }
-                Toast.makeText(this@user, ques4ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques4ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -149,7 +149,7 @@ class user : AppCompatActivity() {
         spinner4_1.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "兄弟姊妹人數: " + ques4_1[position] + "人", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "兄弟姊妹人數: " + ques4_1[position] + "人", Toast.LENGTH_SHORT).show()
                 if (spinner4_1.getSelectedItem().toString() == "1"){
                     ques4_1ans = 1
                 }else if (spinner4_1.getSelectedItem().toString() == "2")
@@ -165,7 +165,7 @@ class user : AppCompatActivity() {
                 {
                     ques4_1ans = 5
                 }
-                Toast.makeText(this@user, ques4_1ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques4_1ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -178,14 +178,14 @@ class user : AppCompatActivity() {
         spinner5.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "該孩子目前是否服過動或情緒藥物: " + ques5[position], Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "該孩子目前是否服過動或情緒藥物: " + ques5[position], Toast.LENGTH_SHORT).show()
                 if (spinner5.getSelectedItem().toString() == "是,藥名______"){
                     ques5ans = 1
                 }else if (spinner5.getSelectedItem().toString() == "否")
                 {
                     ques5ans = 2
                 }
-                Toast.makeText(this@user, ques5ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques5ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -198,7 +198,7 @@ class user : AppCompatActivity() {
         spinner6.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "家中經濟來源: " + ques6[position], Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "家中經濟來源: " + ques6[position], Toast.LENGTH_SHORT).show()
                 if (spinner6.getSelectedItem().toString() == "父母雙薪"){
                     ques6ans = 1
                 }else if (spinner6.getSelectedItem().toString() == "父親")
@@ -211,7 +211,7 @@ class user : AppCompatActivity() {
                 {
                     ques6ans = 4
                 }
-                Toast.makeText(this@user, ques6ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques6ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -224,7 +224,7 @@ class user : AppCompatActivity() {
         spinner7.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "父親教育程度: " + ques7[position], Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "父親教育程度: " + ques7[position], Toast.LENGTH_SHORT).show()
                 if (spinner7.getSelectedItem().toString() == "不識字"){
                     ques7ans = 1
                 }else if (spinner7.getSelectedItem().toString() == "小學")
@@ -247,7 +247,7 @@ class user : AppCompatActivity() {
                     ques7ans = 7
                 }
 
-                Toast.makeText(this@user, ques7ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques7ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
@@ -260,7 +260,7 @@ class user : AppCompatActivity() {
         spinner8.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(this@user, "母親教育程度: " + ques8[position], Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, "母親教育程度: " + ques8[position], Toast.LENGTH_SHORT).show()
                 if (spinner8.getSelectedItem().toString() == "不識字"){
                     ques8ans = 1
                 }else if (spinner8.getSelectedItem().toString() == "小學")
@@ -283,22 +283,42 @@ class user : AppCompatActivity() {
                     ques8ans = 7
                 }
 
-                Toast.makeText(this@user, ques8ans.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@user, ques8ans.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
             }
         }
         //-----------------------------------↑-SPINNER-↑-------------------------------------//
-        //-----------------------------------↓-送資料庫-↓------------------------------------//
 
-        //------------------------------------------------------------------------------------//
         imageView10.setOnClickListener {
             startActivity(Intent(this,main::class.java))
         }
 
         cirRegisterButton.setOnClickListener {
-            finish()
+            //TEST OK [5/14 14:03]
+            /*
+            var bundle = Bundle()
+            bundle.putInt("ques1ans",ques1ans.toInt())
+            bundle.putInt("ques2ans",ques2ans.toInt())
+            bundle.putInt("ques3ans",ques3ans.toInt())
+            bundle.putInt("ques4ans",ques4ans.toInt())
+            bundle.putInt("ques4_1ans",ques4_1ans.toInt())
+            bundle.putInt("ques5ans",ques5ans.toInt())
+            bundle.putInt("ques6ans",ques6ans.toInt())
+            bundle.putInt("ques7ans",ques7ans.toInt())
+            bundle.putInt("ques8ans",ques8ans.toInt())
+
+            var intent = Intent(this@user,for_test::class.java)
+            intent.putExtra("bundle",bundle)
+            startActivity(intent)
+             */
+
+            
+            Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this@user, main::class.java)
+            startActivity(intent)
+
         }
 
         }

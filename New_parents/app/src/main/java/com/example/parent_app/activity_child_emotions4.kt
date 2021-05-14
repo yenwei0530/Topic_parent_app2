@@ -70,7 +70,7 @@ class activity_child_emotions4 : AppCompatActivity() {
 
         //Toast.makeText(this, emotions_ans1+ emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
         //Toast.makeText(this, emotions_ans6 + emotions_ans7 + emotions_ans8 + emotions_ans9 + emotions_ans10 + emotions_ans11 + emotions_ans12 + emotions_ans13 , Toast.LENGTH_SHORT).show()
-        Toast.makeText(this, emotions_ans14 + emotions_ans15 + emotions_ans16 + emotions_ans17 + emotions_ans18 + emotions_ans19 + emotions_ans20 , Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, emotions_ans14 + emotions_ans15 + emotions_ans16 + emotions_ans17 + emotions_ans18 + emotions_ans19 + emotions_ans20 , Toast.LENGTH_SHORT).show()
 
         // radiogroup 1 第二一題 ↓↓
         radioButton1_emotions4.setOnClickListener {
@@ -252,6 +252,8 @@ class activity_child_emotions4 : AppCompatActivity() {
                         .setPositiveButton("OK", null)
                         .show()
             }else {
+                //TEST OK [5/14 14:10]
+                /*
                 var bundle = Bundle()
                 bundle.putInt("emotions_ans1", emotions_ans1.toInt())
                 bundle.putInt("emotions_ans2", emotions_ans2.toInt())
@@ -289,7 +291,11 @@ class activity_child_emotions4 : AppCompatActivity() {
                 intent.putExtra("bundle", bundle)
                 startActivity(intent)
 
-                //startActivity(Intent(this,main::class.java))
+                 */
+
+                Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
+                var intent = Intent(this@activity_child_emotions4, main::class.java)
+                startActivity(intent)
             }
 
         }

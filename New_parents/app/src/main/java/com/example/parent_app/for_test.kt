@@ -8,6 +8,28 @@ class for_test : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_for_test)
+
+        ////////FOR user TEST
+        var get_ques1ans = intent.getBundleExtra("bundle")?.getInt("ques1ans").toString()
+        var get_ques2ans = intent.getBundleExtra("bundle")?.getInt("ques2ans").toString()
+        var get_ques3ans = intent.getBundleExtra("bundle")?.getInt("ques3ans").toString()
+        var get_ques4ans = intent.getBundleExtra("bundle")?.getInt("ques4ans").toString()
+        var get_ques4_1ans = intent.getBundleExtra("bundle")?.getInt("ques4_1ans").toString()
+        var get_ques5ans = intent.getBundleExtra("bundle")?.getInt("ques5ans").toString()
+        var get_ques6ans = intent.getBundleExtra("bundle")?.getInt("ques6ans").toString()
+        var get_ques7ans = intent.getBundleExtra("bundle")?.getInt("ques7ans").toString()
+        var get_ques8ans = intent.getBundleExtra("bundle")?.getInt("ques8ans").toString()
+
+        textView_user1.text = get_ques1ans
+        textView_user2.text = get_ques2ans
+        textView_user3.text = get_ques3ans
+        textView_user4.text = get_ques4ans
+        textView_user4_1.text = get_ques4_1ans
+        textView_user5.text = get_ques5ans
+        textView_user6.text = get_ques6ans
+        textView_user7.text = get_ques7ans
+        textView_user8.text = get_ques8ans
+
         ////////FOR interaction TEST
         var get_interaction_ans1 = intent.getBundleExtra("bundle")?.getInt("interaction_ans1").toString()
         var get_interaction_ans2 = intent.getBundleExtra("bundle")?.getInt("interaction_ans2").toString()
