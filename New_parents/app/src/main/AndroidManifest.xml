@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parent_app">
-        <activity android:name=".record_interaction"></activity>
+        <activity android:name=".give_back"></activity>
+        <activity android:name=".record_interaction" />
         <activity android:name=".record_performance" />
         <activity android:name=".record_emotions" />
         <activity android:name=".for_test" />
