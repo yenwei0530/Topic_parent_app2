@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.parent_app" >
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    package="com.example.parent_app">
 
     <application
         android:allowBackup="true"
@@ -11,8 +8,8 @@
         android:label="-家長版-Accompany Interaction"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Parent_app" >
-        <activity android:name=".Contest" />
+        android:theme="@style/Theme.Parent_app">
+        <activity android:name=".give_back"></activity>
         <activity android:name=".record_interaction" />
         <activity android:name=".record_performance" />
         <activity android:name=".record_emotions" />
@@ -23,7 +20,7 @@
         <activity android:name=".child_emotions" />
         <activity android:name=".child_interaction" />
         <activity android:name=".child_performance" />
-        <activity android:name=".login_page" >
+        <activity android:name=".login_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
