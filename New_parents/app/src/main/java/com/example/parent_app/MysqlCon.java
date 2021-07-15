@@ -49,22 +49,26 @@ public class MysqlCon {
             while (rs.next())
             {
                 String id = rs.getString("parent_id");
-                data += id + ",  ";
+                data += id + ",";
                 String id2 = rs.getString("password");
-                data += id2 + ", ";
+                data += id2 + ",";
                 String id3 = rs.getString("child");
-                data += id3 + ", ";
+                data += id3 + ",";
                 String id4 = rs.getString("parent_name");
-                data += id4 + ", " + "\n";
+                data += id4 + "," + "\n";
             }
             st.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return data;
+    }
 
      */
-    }
+
+
+}
+
 
 
 

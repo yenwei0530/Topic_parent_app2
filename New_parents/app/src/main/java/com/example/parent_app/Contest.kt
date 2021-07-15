@@ -1,4 +1,4 @@
-package com.example.parent_app
+    package com.example.parent_app
 
 import android.os.Bundle
 import android.util.Log
@@ -9,21 +9,26 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Contest : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.contest)
 
         /*
-        val text_viewCON = findViewById<View>(R.id.text_viewCON) as TextView
+        val text_viewCONTEST = findViewById<View>(R.id.text_viewCONTEST) as TextView
 
         Thread {
             val con = MysqlCon()
             con.run()
             val data = con.data
             Log.v("OK", data)
-            text_viewCON.post { text_viewCON.text = data }
+            text_viewCONTEST.post { text_viewCONTEST.text = data}
         }.start()
-        */
+
+         */
+
+
+
 
     }
 
