@@ -293,8 +293,8 @@ class activity_child_emotions4 : AppCompatActivity() {
 
                  */
 
-                Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
-                var intent = Intent(this@activity_child_emotions4, main::class.java)
+                Toast.makeText(this, "點擊任意處即可返回主頁面", Toast.LENGTH_SHORT).show()
+                var intent = Intent(this@activity_child_emotions4, give_back::class.java)
                 startActivity(intent)
             }
 

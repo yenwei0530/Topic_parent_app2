@@ -184,8 +184,8 @@ class child_interaction : AppCompatActivity() {
 
 
 
-                Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
-                var intent = Intent(this@child_interaction,main::class.java)
+                Toast.makeText(this, "點擊任意處即可返回主頁面", Toast.LENGTH_SHORT).show()
+                var intent = Intent(this@child_interaction,give_back::class.java)
                 startActivity(intent)
 
             }
