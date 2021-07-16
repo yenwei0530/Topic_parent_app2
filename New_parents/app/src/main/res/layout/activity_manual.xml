@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/record_bg"
     tools:context=".manual">
 
 
@@ -13,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="使用手冊頁面"
+            android:text="功能簡介"
             android:textColor="#4E3737"
             android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
