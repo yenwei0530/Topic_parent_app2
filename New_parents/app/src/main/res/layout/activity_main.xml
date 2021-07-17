@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="XXX家長"
                 android:textColor="#FFFFFF"
-                android:textSize="22sp" />
+                android:textSize="@dimen/dp_22" />
 
             <TextView
                 android:id="@+id/signout"
@@ -35,11 +35,11 @@
                 android:layout_marginTop="6dp"
                 android:text="Sign out"
                 android:textColor="#3C3C3C"
-                android:textSize="14sp" />
+                android:textSize="@dimen/dp_14" />
 
             <ImageView
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
                 android:layout_alignParentRight="true"
                 android:onClick="user"
                 android:src="@drawable/user2" />
@@ -49,7 +49,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_400">
+            android:layout_height="@dimen/dp_472">
 
             <GridLayout
                 android:layout_width="match_parent"
