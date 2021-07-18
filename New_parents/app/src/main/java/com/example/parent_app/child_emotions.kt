@@ -18,11 +18,11 @@ class child_emotions : AppCompatActivity() {
         var emotions_ans4 = 0
         var emotions_ans5 = 0
         // radiogroup 1 第一題 ↓↓
-        radioButton1_emotions2.setOnClickListener {
+        radioButton1.setOnClickListener {
             emotions_ans1 = 1
             Toast.makeText(this@child_emotions, "總是這樣", Toast.LENGTH_SHORT).show()
         }
-        radioButton2_emotions2.setOnClickListener {
+        radioButton2.setOnClickListener {
             emotions_ans1 = 2
             Toast.makeText(this@child_emotions, "經常這樣", Toast.LENGTH_SHORT).show()
         }
@@ -102,28 +102,28 @@ class child_emotions : AppCompatActivity() {
             Toast.makeText(this@child_emotions, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 5 第五題 ↓↓
-        radioButton22.setOnClickListener {
+        radioButton21.setOnClickListener {
             emotions_ans5 = 1
             Toast.makeText(this@child_emotions, "總是這樣", Toast.LENGTH_SHORT).show()
         }
-        radioButton23.setOnClickListener {
+        radioButton22.setOnClickListener {
             emotions_ans5 = 2
             Toast.makeText(this@child_emotions, "經常這樣", Toast.LENGTH_SHORT).show()
         }
-        radioButton24.setOnClickListener {
+        radioButton23.setOnClickListener {
             emotions_ans5 = 3
             Toast.makeText(this@child_emotions, "有時這樣", Toast.LENGTH_SHORT).show()
         }
-        radioButton25.setOnClickListener {
+        radioButton24.setOnClickListener {
             emotions_ans5 = 4
             Toast.makeText(this@child_emotions, "很少這樣", Toast.LENGTH_SHORT).show()
         }
-        radioButton26.setOnClickListener {
+        radioButton25.setOnClickListener {
             emotions_ans5 = 5
             Toast.makeText(this@child_emotions, "從不這樣", Toast.LENGTH_SHORT).show()
         }
 
-        cirRegisterButton.setOnClickListener {
+        cirRegisterButton2.setOnClickListener {
             if (emotions_ans1 == 0 || emotions_ans2 == 0 || emotions_ans3 == 0 || emotions_ans4 == 0 || emotions_ans5 == 0)
             {
                 AlertDialog.Builder(this)

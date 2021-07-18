@@ -233,7 +233,7 @@ class child_performance : AppCompatActivity() {
             Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
 
-        cirRegisterButton.setOnClickListener {
+        button9.setOnClickListener {
             if (performance_ans1 == 0 || performance_ans2 == 0 || performance_ans3 == 0 || performance_ans4 == 0 ||
                     performance_ans5 == 0 || performance_ans6 == 0 || performance_ans7 == 0 || performance_ans8 == 0 ||
                     performance_ans9 == 0 || performance_ans10 == 0

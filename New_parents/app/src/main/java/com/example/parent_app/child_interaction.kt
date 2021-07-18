@@ -145,7 +145,7 @@ class child_interaction : AppCompatActivity() {
             Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
 
-        cirRegisterButton.setOnClickListener {
+        button9.setOnClickListener {
             if (interaction_ans1 == 0 || interaction_ans2 == 0 || interaction_ans3 == 0 ||
                 interaction_ans4 == 0 || interaction_ans5 == 0 || interaction_ans6 == 0)
             {

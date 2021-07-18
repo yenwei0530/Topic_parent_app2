@@ -295,7 +295,7 @@ class user : AppCompatActivity() {
             startActivity(Intent(this,main::class.java))
         }
 
-        cirRegisterButton.setOnClickListener {
+        button9.setOnClickListener {
             //TEST OK [5/14 14:03]
             /*
             var bundle = Bundle()
