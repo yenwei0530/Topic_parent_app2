@@ -3,6 +3,7 @@
     package="com.example.parent_app">
 
     <application
+        android:name=".GlobalVariable"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="-家長版-Accompany Interaction"
