@@ -12,6 +12,8 @@ class give_back : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.give_back)
 
+
+
         var imggiveback: ImageView
         imggiveback = findViewById(R.id.imageView_giveback)
         val num = (1..3).random()
@@ -32,7 +34,7 @@ class give_back : AppCompatActivity() {
             var intent = Intent(this@give_back,main::class.java)
             startActivity(intent)
 
-            
+
         }
     }
 }

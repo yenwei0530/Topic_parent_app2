@@ -3,6 +3,7 @@ package com.example.parent_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -15,19 +16,34 @@ class user : AppCompatActivity() {
         setContentView(R.layout.activity_user)
         //SPINNER用變數宣告-----------↓↓↓-----------//
         var ques1ans = 0
+        var ques1anselse = ""
         var ques2ans = 0
+        var ques2anselse = ""
         var ques3ans = 0
+        var ques3anselse = ""
         var ques4ans = 0
+        var ques4anselse = ""
         var ques4_1ans = 0
+        var ques4_1anselse = ""
         var ques5ans = 0
+        var ques5anselse = ""
         var ques6ans = 0
+        var ques6anselse = ""
         var ques7ans = 0
         var ques8ans = 0
+        //---------限制edittext是否可寫----------//
+        editTextTextPersonName.setEnabled(false)
+        editTextTextPersonName2.setEnabled(false)
+        editTextTextPersonName3.setEnabled(false)
+        editTextTextPersonName4.setEnabled(false)
+        editTextTextPersonName5.setEnabled(false)
+        editTextTextPersonName6.setEnabled(false)
+        editTextTextPersonName7.setEnabled(false)
         //SPINNER用變數宣告-----------↑↑↑-----------//
 
         //-----------------------------------↓-SPINNER-↓-------------------------------------//
         //---------------------------Spinner 1 ↓
-            val ques1 = arrayListOf("生父","生母","繼父","繼母","爺爺或外公","奶奶或外婆","其他(請說明___)")
+            val ques1 = arrayListOf("請選擇","生父","生母","繼父","繼母","爺爺或外公","奶奶或外婆","其他")
             val adapter1 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques1)
             spinner1.adapter = adapter1
             spinner1.onItemSelectedListener = object :
@@ -36,24 +52,38 @@ class user : AppCompatActivity() {
                     //Toast.makeText(this@user, "您與孩子的關係: " + ques1[position] , Toast.LENGTH_SHORT).show()
                     if (spinner1.getSelectedItem().toString() == "生父"){
                         ques1ans = 1
+                        editTextTextPersonName.setEnabled(false)
+                        editTextTextPersonName.text = null
                     }else if (spinner1.getSelectedItem().toString() == "生母")
                     {
                         ques1ans = 2
+                        editTextTextPersonName.setEnabled(false)
+                        editTextTextPersonName.text = null
                     }else if (spinner1.getSelectedItem().toString() == "繼父")
                     {
                         ques1ans = 3
+                        editTextTextPersonName.setEnabled(false)
+                        editTextTextPersonName.text = null
                     }else if (spinner1.getSelectedItem().toString() == "繼母")
                     {
                         ques1ans = 4
+                        editTextTextPersonName.setEnabled(false)
+                        editTextTextPersonName.text = null
                     }else if (spinner1.getSelectedItem().toString() == "爺爺或外公")
                     {
                         ques1ans = 5
+                        editTextTextPersonName.setEnabled(false)
+                        editTextTextPersonName.text = null
                     }else if (spinner1.getSelectedItem().toString() == "奶奶或外婆")
                     {
                         ques1ans = 6
-                    }else if (spinner1.getSelectedItem().toString() == "其他(請說明___)")
+                        editTextTextPersonName.setEnabled(false)
+                        editTextTextPersonName.text = null
+                    }else if (spinner1.getSelectedItem().toString() == "其他")
                     {
                         ques1ans = 7
+                        editTextTextPersonName.setEnabled(true)
+                        ques1anselse = editTextTextPersonName.text.toString()
                     }
                     //Toast.makeText(this@user, ques1ans.toString(), Toast.LENGTH_SHORT).show()
                 }
@@ -62,7 +92,7 @@ class user : AppCompatActivity() {
                 }
         }
         //---------------------------Spinner 2 ↓
-        val ques2 = arrayListOf("一直如此","曾經有但現在沒有(同住多久?___年)")
+        val ques2 = arrayListOf("請選擇","一直如此","曾經有但現在沒有(同住多久?___年)")
         val adapter2 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques2)
         spinner2.adapter = adapter2
         spinner2.onItemSelectedListener = object :
@@ -71,9 +101,13 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "是否與孩子同住: " + ques2[position], Toast.LENGTH_SHORT).show()
                 if (spinner2.getSelectedItem().toString() == "一直如此") {
                     ques2ans = 1
-                } else
+                    editTextTextPersonName2.setEnabled(false)
+                    editTextTextPersonName2.text = null
+                }else if (spinner2.getSelectedItem().toString() == "曾經有但現在沒有(同住多久?___年)")
                 {
                     ques2ans = 2
+                    editTextTextPersonName2.setEnabled(true)
+                    ques2anselse = editTextTextPersonName2.text.toString()
                 }
                 //Toast.makeText(this@user, ques2ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -82,7 +116,7 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 3 ↓
-        val ques3 = arrayListOf("父母雙親","父親","母親","爺爺或外公","奶奶或外婆","其他(請說明___)")
+        val ques3 = arrayListOf("請選擇","父母雙親","父親","母親","爺爺或外公","奶奶或外婆","其他")
         val adapter3 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques3)
         spinner3.adapter = adapter3
         spinner3.onItemSelectedListener = object :
@@ -91,21 +125,33 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "平常孩子在家由誰照顧和管教? " + ques3[position] , Toast.LENGTH_SHORT).show()
                 if (spinner3.getSelectedItem().toString() == "父母雙親"){
                     ques3ans = 1
+                    editTextTextPersonName3.setEnabled(false)
+                    editTextTextPersonName3.text = null
                 }else if (spinner3.getSelectedItem().toString() == "父親")
                 {
                     ques3ans = 2
+                    editTextTextPersonName3.setEnabled(false)
+                    editTextTextPersonName3.text = null
                 }else if (spinner3.getSelectedItem().toString() == "母親")
                 {
                     ques3ans = 3
+                    editTextTextPersonName3.setEnabled(false)
+                    editTextTextPersonName3.text = null
                 }else if (spinner3.getSelectedItem().toString() == "爺爺或外公")
                 {
                     ques3ans = 4
+                    editTextTextPersonName3.setEnabled(false)
+                    editTextTextPersonName3.text = null
                 }else if (spinner3.getSelectedItem().toString() == "奶奶或外婆")
                 {
                     ques3ans = 5
-                }else if (spinner3.getSelectedItem().toString() == "其他(請說明___)")
+                    editTextTextPersonName3.setEnabled(false)
+                    editTextTextPersonName3.text = null
+                }else if (spinner3.getSelectedItem().toString() == "其他")
                 {
                     ques3ans = 6
+                    editTextTextPersonName3.setEnabled(true)
+                    ques3anselse = editTextTextPersonName3.text.toString()
                 }
                 //Toast.makeText(this@user, ques3ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -114,7 +160,7 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 4 ↓
-        val ques4 = arrayListOf("第一","第二","第三","第四","第五")
+        val ques4 = arrayListOf("請選擇","第一","第二","第三","第四","第五","其他")
         val adapter4 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques4)
         spinner4.adapter = adapter4
         spinner4.onItemSelectedListener = object :
@@ -123,18 +169,33 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "該位孩子在家中排行: " + ques4[position] , Toast.LENGTH_SHORT).show()
                 if (spinner4.getSelectedItem().toString() == "第一"){
                     ques4ans = 1
+                    editTextTextPersonName4.setEnabled(false)
+                    editTextTextPersonName4.text = null
                 }else if (spinner4.getSelectedItem().toString() == "第二")
                 {
                     ques4ans = 2
+                    editTextTextPersonName4.setEnabled(false)
+                    editTextTextPersonName4.text = null
                 }else if (spinner4.getSelectedItem().toString() == "第三")
                 {
                     ques4ans = 3
+                    editTextTextPersonName4.setEnabled(false)
+                    editTextTextPersonName4.text = null
                 }else if (spinner4.getSelectedItem().toString() == "第四")
                 {
                     ques4ans = 4
+                    editTextTextPersonName4.setEnabled(false)
+                    editTextTextPersonName4.text = null
                 }else if (spinner4.getSelectedItem().toString() == "第五")
                 {
                     ques4ans = 5
+                    editTextTextPersonName4.setEnabled(false)
+                    editTextTextPersonName4.text = null
+                }else if (spinner4.getSelectedItem().toString() == "其他")
+                {
+                    ques4ans = 6
+                    editTextTextPersonName4.setEnabled(true)
+                    ques4anselse = editTextTextPersonName4.text.toString()
                 }
                 //Toast.makeText(this@user, ques4ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -143,7 +204,7 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 4_1 ↓
-        val ques4_1 = arrayListOf("1","2","3","4","5")
+        val ques4_1 = arrayListOf("請選擇","1","2","3","4","5","其他")
         val adapter4_1 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques4_1)
         spinner4_1.adapter = adapter4_1
         spinner4_1.onItemSelectedListener = object :
@@ -152,18 +213,33 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "兄弟姊妹人數: " + ques4_1[position] + "人", Toast.LENGTH_SHORT).show()
                 if (spinner4_1.getSelectedItem().toString() == "1"){
                     ques4_1ans = 1
+                    editTextTextPersonName5.setEnabled(false)
+                    editTextTextPersonName5.text = null
                 }else if (spinner4_1.getSelectedItem().toString() == "2")
                 {
                     ques4_1ans = 2
+                    editTextTextPersonName5.setEnabled(false)
+                    editTextTextPersonName5.text = null
                 }else if (spinner4_1.getSelectedItem().toString() == "3")
                 {
                     ques4_1ans = 3
+                    editTextTextPersonName5.setEnabled(false)
+                    editTextTextPersonName5.text = null
                 }else if (spinner4_1.getSelectedItem().toString() == "4")
                 {
                     ques4_1ans = 4
+                    editTextTextPersonName5.setEnabled(false)
+                    editTextTextPersonName5.text = null
                 }else if (spinner4_1.getSelectedItem().toString() == "5")
                 {
                     ques4_1ans = 5
+                    editTextTextPersonName5.setEnabled(false)
+                    editTextTextPersonName5.text = null
+                }else if (spinner4_1.getSelectedItem().toString() == "其他")
+                {
+                    ques4_1ans = 6
+                    editTextTextPersonName5.setEnabled(true)
+                    ques4_1anselse = editTextTextPersonName5.text.toString()
                 }
                 //Toast.makeText(this@user, ques4_1ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -172,18 +248,22 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 5 ↓
-        val ques5 = arrayListOf("是,藥名______","否")
+        val ques5 = arrayListOf("請選擇","是,藥名","否")
         val adapter5 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques5)
         spinner5.adapter = adapter5
         spinner5.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 //Toast.makeText(this@user, "該孩子目前是否服過動或情緒藥物: " + ques5[position], Toast.LENGTH_SHORT).show()
-                if (spinner5.getSelectedItem().toString() == "是,藥名______"){
+                if (spinner5.getSelectedItem().toString() == "是,藥名"){
                     ques5ans = 1
+                    editTextTextPersonName6.setEnabled(true)
+                    ques5anselse = editTextTextPersonName6.text.toString()
                 }else if (spinner5.getSelectedItem().toString() == "否")
                 {
                     ques5ans = 2
+                    editTextTextPersonName6.setEnabled(false)
+                    editTextTextPersonName6.text = null
                 }
                 //Toast.makeText(this@user, ques5ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -192,7 +272,7 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 6 ↓
-        val ques6 = arrayListOf("父母雙薪","父親","母親","其他(請說明)")
+        val ques6 = arrayListOf("請選擇","父母雙薪","父親","母親","其他")
         val adapter6 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques6)
         spinner6.adapter = adapter6
         spinner6.onItemSelectedListener = object :
@@ -201,15 +281,23 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "家中經濟來源: " + ques6[position], Toast.LENGTH_SHORT).show()
                 if (spinner6.getSelectedItem().toString() == "父母雙薪"){
                     ques6ans = 1
+                    editTextTextPersonName7.setEnabled(false)
+                    editTextTextPersonName7.text = null
                 }else if (spinner6.getSelectedItem().toString() == "父親")
                 {
                     ques6ans = 2
+                    editTextTextPersonName7.setEnabled(false)
+                    editTextTextPersonName7.text = null
                 }else if (spinner6.getSelectedItem().toString() == "母親")
                 {
                     ques6ans = 3
-                }else if (spinner6.getSelectedItem().toString() == "其他(請說明)")
+                    editTextTextPersonName7.setEnabled(false)
+                    editTextTextPersonName7.text = null
+                }else if (spinner6.getSelectedItem().toString() == "其他")
                 {
                     ques6ans = 4
+                    editTextTextPersonName7.setEnabled(true)
+                    ques6anselse = editTextTextPersonName7.text.toString()
                 }
                 //Toast.makeText(this@user, ques6ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -218,7 +306,7 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 7 ↓
-        val ques7 = arrayListOf("不識字","小學","中學","高中/高職","大學/專科","碩士","博士")
+        val ques7 = arrayListOf("請選擇","不識字","小學","中學","高中/高職","大學/專科","碩士","博士")
         val adapter7 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques7)
         spinner7.adapter = adapter7
         spinner7.onItemSelectedListener = object :
@@ -254,7 +342,7 @@ class user : AppCompatActivity() {
             }
         }
         //---------------------------Spinner 7 ↓
-        val ques8 = arrayListOf("不識字","小學","中學","高中/高職","大學/專科","碩士","博士")
+        val ques8 = arrayListOf("請選擇",  "不識字","小學","中學","高中/高職","大學/專科","碩士","博士")
         val adapter8 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques8)
         spinner8.adapter = adapter8
         spinner8.onItemSelectedListener = object :
@@ -296,28 +384,51 @@ class user : AppCompatActivity() {
         }
 
         button9.setOnClickListener {
-            //TEST OK [5/14 14:03]
+            //TEST OK [7/18 19:30/20:00]
+
             /*
+            ques1anselse = editTextTextPersonName.text.toString()
+            ques2anselse = editTextTextPersonName2.text.toString()
+            ques3anselse = editTextTextPersonName3.text.toString()
+            ques4anselse = editTextTextPersonName4.text.toString()
+            ques4_1anselse = editTextTextPersonName5.text.toString()
+            ques5anselse = editTextTextPersonName6.text.toString()
+            ques6anselse = editTextTextPersonName7.text.toString()
+
+            //TEST OK [5/14 14:03]
+
             var bundle = Bundle()
             bundle.putInt("ques1ans",ques1ans.toInt())
+            bundle.putString("ques1anselse",ques1anselse.toString())
             bundle.putInt("ques2ans",ques2ans.toInt())
+            bundle.putString("ques2anselse",ques2anselse.toString())
             bundle.putInt("ques3ans",ques3ans.toInt())
+            bundle.putString("ques3anselse",ques3anselse.toString())
             bundle.putInt("ques4ans",ques4ans.toInt())
+            bundle.putString("ques4anselse",ques4anselse.toString())
             bundle.putInt("ques4_1ans",ques4_1ans.toInt())
+            bundle.putString("ques4_1anselse",ques4_1anselse.toString())
             bundle.putInt("ques5ans",ques5ans.toInt())
+            bundle.putString("ques5anselse",ques5anselse.toString())
             bundle.putInt("ques6ans",ques6ans.toInt())
+            bundle.putString("ques6anselse",ques6anselse.toString())
             bundle.putInt("ques7ans",ques7ans.toInt())
             bundle.putInt("ques8ans",ques8ans.toInt())
 
             var intent = Intent(this@user,for_test::class.java)
             intent.putExtra("bundle",bundle)
             startActivity(intent)
+
+
              */
 
             
+
             Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
             var intent = Intent(this@user, main::class.java)
             startActivity(intent)
+
+
 
         }
 

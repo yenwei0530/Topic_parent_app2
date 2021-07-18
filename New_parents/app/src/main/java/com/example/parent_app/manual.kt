@@ -52,7 +52,6 @@ class manual : AppCompatActivity() {
                     textViewQAtitle.text = "填寫紀錄"
                     textViewQA.text = whattouse[4]
                 }
-                Toast.makeText(this@manual, QAselect.toString(), Toast.LENGTH_SHORT).show()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(this@manual, "你沒選擇" , Toast.LENGTH_SHORT).show()

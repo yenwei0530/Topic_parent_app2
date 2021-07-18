@@ -11,22 +11,36 @@ class for_test : AppCompatActivity() {
 
         ////////FOR user TEST
         var get_ques1ans = intent.getBundleExtra("bundle")?.getInt("ques1ans").toString()
+        var get_ques1anselse = intent.getBundleExtra("bundle")?.getString("ques1anselse")
         var get_ques2ans = intent.getBundleExtra("bundle")?.getInt("ques2ans").toString()
+        var get_ques2anselse = intent.getBundleExtra("bundle")?.getString("ques2anselse")
         var get_ques3ans = intent.getBundleExtra("bundle")?.getInt("ques3ans").toString()
+        var get_ques3anselse = intent.getBundleExtra("bundle")?.getString("ques3anselse")
         var get_ques4ans = intent.getBundleExtra("bundle")?.getInt("ques4ans").toString()
+        var get_ques4anselse = intent.getBundleExtra("bundle")?.getString("ques4anselse")
         var get_ques4_1ans = intent.getBundleExtra("bundle")?.getInt("ques4_1ans").toString()
+        var get_ques4_1anselse = intent.getBundleExtra("bundle")?.getString("ques4_1anselse")
         var get_ques5ans = intent.getBundleExtra("bundle")?.getInt("ques5ans").toString()
+        var get_ques5anselse = intent.getBundleExtra("bundle")?.getString("ques5anselse")
         var get_ques6ans = intent.getBundleExtra("bundle")?.getInt("ques6ans").toString()
+        var get_ques6anselse = intent.getBundleExtra("bundle")?.getString("ques6anselse")
         var get_ques7ans = intent.getBundleExtra("bundle")?.getInt("ques7ans").toString()
         var get_ques8ans = intent.getBundleExtra("bundle")?.getInt("ques8ans").toString()
 
         textView_user1.text = get_ques1ans
+        //textView_user1.text = get_ques1anselse
         textView_user2.text = get_ques2ans
-        textView_user3.text = get_ques3ans
-        textView_user4.text = get_ques4ans
-        textView_user4_1.text = get_ques4_1ans
-        textView_user5.text = get_ques5ans
-        textView_user6.text = get_ques6ans
+        //textView_user2.text = get_ques2anselse
+        //textView_user3.text = get_ques3ans
+        textView_user3.text = get_ques3anselse
+        //textView_user4.text = get_ques4ans
+        textView_user4.text = get_ques4anselse
+        //textView_user4_1.text = get_ques4_1ans
+        textView_user4_1.text = get_ques4_1anselse
+        //textView_user5.text = get_ques5ans
+        textView_user5.text = get_ques5anselse
+        //textView_user6.text = get_ques6ans
+        textView_user6.text = get_ques6anselse
         textView_user7.text = get_ques7ans
         textView_user8.text = get_ques8ans
 

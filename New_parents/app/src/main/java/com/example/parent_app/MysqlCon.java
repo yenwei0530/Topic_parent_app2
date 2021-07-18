@@ -13,7 +13,8 @@ public class MysqlCon {
     String mysql_ip = "184.168.97.99";
     int mysql_port = 3306; // Port 預設為 3306
     String db_name = "treatment";
-    String url = "jdbc:mysql://" + mysql_ip + ":" + mysql_port + "/" + db_name ;
+    //String url = "jdbc:mysql://" + mysql_ip + ":" + mysql_port + "/" + db_name ;
+    String url ="jdbc:mysql://184.168.97.99:3306/treatment";
     String db_user = "spopob8v48s2";
     String db_password = "Mm35176661";
 
@@ -30,6 +31,7 @@ public class MysqlCon {
         // 連接資料庫
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
+            //Connection con = DriverManager.getConnection(url);
             Log.v("DB", "遠端連接成功");
         } catch (SQLException e) {
             Log.e("DB", "遠端連接失敗");
@@ -37,11 +39,11 @@ public class MysqlCon {
         }
     }
 
-    /*
     public String getData() {
         String data = "";
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
+            //Connection con = DriverManager.getConnection(url);
             String sql = "SELECT * FROM parent";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
@@ -49,13 +51,9 @@ public class MysqlCon {
             while (rs.next())
             {
                 String id = rs.getString("parent_id");
-                data += id + ",";
+                data += id + ", ";
                 String id2 = rs.getString("password");
-                data += id2 + ",";
-                String id3 = rs.getString("child");
-                data += id3 + ",";
-                String id4 = rs.getString("parent_name");
-                data += id4 + "," + "\n";
+                data += id2 + ", " + "\n";
             }
             st.close();
         } catch (SQLException e) {
@@ -63,8 +61,6 @@ public class MysqlCon {
         }
         return data;
     }
-
-     */
 
 
 }
