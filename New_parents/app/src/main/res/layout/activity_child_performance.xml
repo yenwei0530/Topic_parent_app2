@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFFDBC"
+    android:background="@drawable/bg_green"
     tools:context=".child_performance">
 
     <ScrollView
@@ -36,21 +36,21 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="孩子最近的表現"
-                    android:textSize="36sp" />
+                    android:textSize="@dimen/sp_36" />
 
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView0"
-                android:layout_width="300dp"
+                android:layout_width="@dimen/dp_300"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp_18" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="@dimen/dp_400"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -82,7 +82,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="1.對喜歡的人表現友善態度"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
 
                             </TableRow>
 
@@ -99,31 +99,36 @@
                                         android:id="@+id/radioButton1_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton2_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -139,7 +144,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="2.不會無故或因為小事鬧情緒"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
 
                             </TableRow>
 
@@ -156,31 +161,36 @@
                                         android:id="@+id/radioButton6"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton7"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton8"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton9"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton10"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -196,7 +206,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="3.情緒失控時能在短時間(30分鐘)內平復"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
 
                             </TableRow>
 
@@ -213,31 +223,36 @@
                                         android:id="@+id/radioButton11"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton12"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton13"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton14"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton15"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -253,7 +268,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="4.能參與團體的活動"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -269,31 +284,36 @@
                                         android:id="@+id/radioButton16"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton17"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton18"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton19"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton20"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -309,7 +329,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="5.能和別人分工合作"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -325,31 +345,36 @@
                                         android:id="@+id/radioButton21"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton22_performance"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton23"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton23_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton25"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -366,7 +391,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="6.願意和別人分享東西"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -382,31 +407,36 @@
                                         android:id="@+id/radioButton26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton27"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton28"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton29"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton30"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -422,7 +452,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="7.能適當的接受或拒絕他人的接觸"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -439,31 +469,36 @@
                                         android:id="@+id/radioButton31"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton32"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton33"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton34"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton35"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -479,7 +514,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="8.受到欺負時能向師長申訴"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -496,31 +531,36 @@
                                         android:id="@+id/radioButton36"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton37"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton38"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton39"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton40"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
                             </TableRow>
 
@@ -535,7 +575,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="9.會和要好的朋友分享心事"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -552,31 +592,36 @@
                                         android:id="@+id/radioButton41"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton42"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton43"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton44"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton45"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
                             </TableRow>
 
@@ -591,7 +636,7 @@
                                     android:layout_marginTop="20dp"
                                     android:text="10.會主動幫助或照顧別人"
                                     android:textColor="#019858"
-                                    android:textSize="24sp" />
+                                    android:textSize="@dimen/sp_20" />
                             </TableRow>
 
                             <TableRow
@@ -608,31 +653,36 @@
                                         android:id="@+id/radioButton46"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1" />
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton47"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="2" />
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton48"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="3" />
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton49"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="4" />
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton50"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="5" />
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
                             </TableRow>
                         </TableLayout>
@@ -645,18 +695,6 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="150dp"
-        android:background="@drawable/ic_side_bg"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
 
     <ImageView
         android:id="@+id/imageView10"
