@@ -40,7 +40,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="孩子最近的表現"
-                android:textSize="@dimen/sp_36" />
+                android:textSize="@dimen/sp_25" />
 
         </RelativeLayout>
 
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
-            android:textSize="@dimen/sp_18" />
+            android:textSize="@dimen/sp_14" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/dp_330"
@@ -63,7 +63,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_400">
+                android:layout_height="@dimen/dp_432">
 
                 <LinearLayout
                     android:layout_width="match_parent"
