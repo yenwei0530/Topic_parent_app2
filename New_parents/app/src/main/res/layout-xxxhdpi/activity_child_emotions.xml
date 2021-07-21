@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_green"
-        tools:context=".child_emotions">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green"
+    tools:context=".child_emotions">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -59,7 +59,7 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_472">
+                    android:layout_height="@dimen/dp_500">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -411,19 +411,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
-                android:id="@+id/cirRegisterButton2"
-                style="@style/loginButton"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp"
-                android:text="Next→"
-                app:initialCornerAngle="27dp"
-                app:spinning_bar_color="#FFF"
-                app:spinning_bar_padding="6dp"
-                app:spinning_bar_width="4dp" />
-
         </LinearLayout>
 
     </ScrollView>
@@ -439,5 +426,21 @@
         android:src="@drawable/ic_back_img"
         app:layout_constraintStart_toStartOf="@+id/scrollView3"
         app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/cirRegisterButton2"
+        style="@style/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Next→"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
