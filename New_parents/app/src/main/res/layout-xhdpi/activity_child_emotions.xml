@@ -49,7 +49,7 @@
                 android:textSize="@dimen/sp_18" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/dp_300"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
