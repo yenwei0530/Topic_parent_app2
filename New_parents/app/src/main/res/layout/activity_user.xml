@@ -151,6 +151,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="其他(請說明_____)"
+                                android:digits="1234567890"
                                 android:inputType="textPersonName" />
                         </TableRow>
 
@@ -182,6 +183,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="其他(請說明_____)"
+                                android:digits="1234567890"
                                 android:inputType="textPersonName" />
                         </TableRow>
 

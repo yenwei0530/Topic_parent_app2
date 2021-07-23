@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -41,6 +42,9 @@ class user : AppCompatActivity() {
         editTextTextPersonName7.setEnabled(false)
         //SPINNER用變數宣告-----------↑↑↑-----------//
 
+        //建立共用變數類別
+        val gv = applicationContext as GlobalVariable
+
         //-----------------------------------↓-SPINNER-↓-------------------------------------//
         //---------------------------Spinner 1 ↓
             val ques1 = arrayListOf("請選擇","生父","生母","繼父","繼母","爺爺或外公","奶奶或外婆","其他")
@@ -54,36 +58,43 @@ class user : AppCompatActivity() {
                         ques1ans = 1
                         editTextTextPersonName.setEnabled(false)
                         editTextTextPersonName.text = null
+                        gv.setrelationship1("生父")
                     }else if (spinner1.getSelectedItem().toString() == "生母")
                     {
                         ques1ans = 2
                         editTextTextPersonName.setEnabled(false)
                         editTextTextPersonName.text = null
+                        gv.setrelationship1("生母")
                     }else if (spinner1.getSelectedItem().toString() == "繼父")
                     {
                         ques1ans = 3
                         editTextTextPersonName.setEnabled(false)
                         editTextTextPersonName.text = null
+                        gv.setrelationship1("繼父")
                     }else if (spinner1.getSelectedItem().toString() == "繼母")
                     {
                         ques1ans = 4
                         editTextTextPersonName.setEnabled(false)
                         editTextTextPersonName.text = null
+                        gv.setrelationship1("繼母")
                     }else if (spinner1.getSelectedItem().toString() == "爺爺或外公")
                     {
                         ques1ans = 5
                         editTextTextPersonName.setEnabled(false)
                         editTextTextPersonName.text = null
+                        gv.setrelationship1("爺爺或外公")
                     }else if (spinner1.getSelectedItem().toString() == "奶奶或外婆")
                     {
                         ques1ans = 6
                         editTextTextPersonName.setEnabled(false)
                         editTextTextPersonName.text = null
+                        gv.setrelationship1("奶奶或外婆")
                     }else if (spinner1.getSelectedItem().toString() == "其他")
                     {
                         ques1ans = 7
                         editTextTextPersonName.setEnabled(true)
                         ques1anselse = editTextTextPersonName.text.toString()
+                        gv.setrelationship1(editTextTextPersonName.text.toString())
                     }
                     //Toast.makeText(this@user, ques1ans.toString(), Toast.LENGTH_SHORT).show()
                 }
@@ -103,11 +114,13 @@ class user : AppCompatActivity() {
                     ques2ans = 1
                     editTextTextPersonName2.setEnabled(false)
                     editTextTextPersonName2.text = null
+                    gv.setrelationship2("一直如此")
                 }else if (spinner2.getSelectedItem().toString() == "曾經有但現在沒有(同住多久?___年)")
                 {
                     ques2ans = 2
                     editTextTextPersonName2.setEnabled(true)
                     ques2anselse = editTextTextPersonName2.text.toString()
+                    gv.setrelationship2(editTextTextPersonName2.text.toString())
                 }
                 //Toast.makeText(this@user, ques2ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -127,31 +140,37 @@ class user : AppCompatActivity() {
                     ques3ans = 1
                     editTextTextPersonName3.setEnabled(false)
                     editTextTextPersonName3.text = null
+                    gv.setrelationship3("父母雙親")
                 }else if (spinner3.getSelectedItem().toString() == "父親")
                 {
                     ques3ans = 2
                     editTextTextPersonName3.setEnabled(false)
                     editTextTextPersonName3.text = null
+                    gv.setrelationship3("父親")
                 }else if (spinner3.getSelectedItem().toString() == "母親")
                 {
                     ques3ans = 3
                     editTextTextPersonName3.setEnabled(false)
                     editTextTextPersonName3.text = null
+                    gv.setrelationship3("母親")
                 }else if (spinner3.getSelectedItem().toString() == "爺爺或外公")
                 {
                     ques3ans = 4
                     editTextTextPersonName3.setEnabled(false)
                     editTextTextPersonName3.text = null
+                    gv.setrelationship3("爺爺或外公")
                 }else if (spinner3.getSelectedItem().toString() == "奶奶或外婆")
                 {
                     ques3ans = 5
                     editTextTextPersonName3.setEnabled(false)
                     editTextTextPersonName3.text = null
+                    gv.setrelationship3("奶奶或外婆")
                 }else if (spinner3.getSelectedItem().toString() == "其他")
                 {
                     ques3ans = 6
                     editTextTextPersonName3.setEnabled(true)
                     ques3anselse = editTextTextPersonName3.text.toString()
+                    gv.setrelationship3(editTextTextPersonName3.text.toString())
                 }
                 //Toast.makeText(this@user, ques3ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -171,31 +190,38 @@ class user : AppCompatActivity() {
                     ques4ans = 1
                     editTextTextPersonName4.setEnabled(false)
                     editTextTextPersonName4.text = null
+                    gv.setrelationship4("1")
                 }else if (spinner4.getSelectedItem().toString() == "第二")
                 {
                     ques4ans = 2
                     editTextTextPersonName4.setEnabled(false)
                     editTextTextPersonName4.text = null
+                    gv.setrelationship4("2")
                 }else if (spinner4.getSelectedItem().toString() == "第三")
                 {
                     ques4ans = 3
                     editTextTextPersonName4.setEnabled(false)
                     editTextTextPersonName4.text = null
+                    gv.setrelationship4("3")
                 }else if (spinner4.getSelectedItem().toString() == "第四")
                 {
                     ques4ans = 4
                     editTextTextPersonName4.setEnabled(false)
                     editTextTextPersonName4.text = null
+                    gv.setrelationship4("4")
                 }else if (spinner4.getSelectedItem().toString() == "第五")
                 {
                     ques4ans = 5
                     editTextTextPersonName4.setEnabled(false)
                     editTextTextPersonName4.text = null
+                    gv.setrelationship4("5")
                 }else if (spinner4.getSelectedItem().toString() == "其他")
                 {
                     ques4ans = 6
                     editTextTextPersonName4.setEnabled(true)
+                    editTextTextPersonName4.setInputType(EditorInfo.TYPE_CLASS_PHONE);
                     ques4anselse = editTextTextPersonName4.text.toString()
+                    gv.setrelationship4(editTextTextPersonName4.text.toString())
                 }
                 //Toast.makeText(this@user, ques4ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -215,31 +241,38 @@ class user : AppCompatActivity() {
                     ques4_1ans = 1
                     editTextTextPersonName5.setEnabled(false)
                     editTextTextPersonName5.text = null
+                    gv.setrelationship5("1")
                 }else if (spinner4_1.getSelectedItem().toString() == "2")
                 {
                     ques4_1ans = 2
                     editTextTextPersonName5.setEnabled(false)
                     editTextTextPersonName5.text = null
+                    gv.setrelationship5("2")
                 }else if (spinner4_1.getSelectedItem().toString() == "3")
                 {
                     ques4_1ans = 3
                     editTextTextPersonName5.setEnabled(false)
                     editTextTextPersonName5.text = null
+                    gv.setrelationship5("3")
                 }else if (spinner4_1.getSelectedItem().toString() == "4")
                 {
                     ques4_1ans = 4
                     editTextTextPersonName5.setEnabled(false)
                     editTextTextPersonName5.text = null
+                    gv.setrelationship5("4")
                 }else if (spinner4_1.getSelectedItem().toString() == "5")
                 {
                     ques4_1ans = 5
                     editTextTextPersonName5.setEnabled(false)
                     editTextTextPersonName5.text = null
+                    gv.setrelationship5("5")
                 }else if (spinner4_1.getSelectedItem().toString() == "其他")
                 {
                     ques4_1ans = 6
                     editTextTextPersonName5.setEnabled(true)
+                    editTextTextPersonName5.setInputType(EditorInfo.TYPE_CLASS_PHONE);
                     ques4_1anselse = editTextTextPersonName5.text.toString()
+                    gv.setrelationship5(editTextTextPersonName5.text.toString())
                 }
                 //Toast.makeText(this@user, ques4_1ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -259,11 +292,13 @@ class user : AppCompatActivity() {
                     ques5ans = 1
                     editTextTextPersonName6.setEnabled(true)
                     ques5anselse = editTextTextPersonName6.text.toString()
+                    gv.setrelationship6(editTextTextPersonName6.text.toString())
                 }else if (spinner5.getSelectedItem().toString() == "否")
                 {
                     ques5ans = 2
                     editTextTextPersonName6.setEnabled(false)
                     editTextTextPersonName6.text = null
+                    gv.setrelationship6("否")
                 }
                 //Toast.makeText(this@user, ques5ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -283,21 +318,25 @@ class user : AppCompatActivity() {
                     ques6ans = 1
                     editTextTextPersonName7.setEnabled(false)
                     editTextTextPersonName7.text = null
+                    gv.setrelationship7("父母雙薪")
                 }else if (spinner6.getSelectedItem().toString() == "父親")
                 {
                     ques6ans = 2
                     editTextTextPersonName7.setEnabled(false)
                     editTextTextPersonName7.text = null
+                    gv.setrelationship7("父親")
                 }else if (spinner6.getSelectedItem().toString() == "母親")
                 {
                     ques6ans = 3
                     editTextTextPersonName7.setEnabled(false)
                     editTextTextPersonName7.text = null
+                    gv.setrelationship7("母親")
                 }else if (spinner6.getSelectedItem().toString() == "其他")
                 {
                     ques6ans = 4
                     editTextTextPersonName7.setEnabled(true)
                     ques6anselse = editTextTextPersonName7.text.toString()
+                    gv.setrelationship7(editTextTextPersonName7.text.toString())
                 }
                 //Toast.makeText(this@user, ques6ans.toString(), Toast.LENGTH_SHORT).show()
             }
@@ -315,24 +354,31 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "父親教育程度: " + ques7[position], Toast.LENGTH_SHORT).show()
                 if (spinner7.getSelectedItem().toString() == "不識字"){
                     ques7ans = 1
+                    gv.setrelationship8("不識字")
                 }else if (spinner7.getSelectedItem().toString() == "小學")
                 {
                     ques7ans = 2
+                    gv.setrelationship8("小學")
                 }else if (spinner7.getSelectedItem().toString() == "中學")
                 {
                     ques7ans = 3
+                    gv.setrelationship8("中學")
                 }else if (spinner7.getSelectedItem().toString() == "高中/高職")
                 {
                     ques7ans = 4
+                    gv.setrelationship8("高中/高職")
                 }else if (spinner7.getSelectedItem().toString() == "大學/專科")
                 {
                     ques7ans = 5
+                    gv.setrelationship8("大學/專科")
                 }else if (spinner7.getSelectedItem().toString() == "碩士")
                 {
                     ques7ans = 6
+                    gv.setrelationship8("碩士")
                 }else if (spinner7.getSelectedItem().toString() == "博士")
                 {
                     ques7ans = 7
+                    gv.setrelationship8("博士")
                 }
 
                 //Toast.makeText(this@user, ques7ans.toString(), Toast.LENGTH_SHORT).show()
@@ -351,24 +397,31 @@ class user : AppCompatActivity() {
                 //Toast.makeText(this@user, "母親教育程度: " + ques8[position], Toast.LENGTH_SHORT).show()
                 if (spinner8.getSelectedItem().toString() == "不識字"){
                     ques8ans = 1
+                    gv.setrelationship9("不識字")
                 }else if (spinner8.getSelectedItem().toString() == "小學")
                 {
                     ques8ans = 2
+                    gv.setrelationship9("小學")
                 }else if (spinner8.getSelectedItem().toString() == "中學")
                 {
                     ques8ans = 3
+                    gv.setrelationship9("中學")
                 }else if (spinner8.getSelectedItem().toString() == "高中/高職")
                 {
                     ques8ans = 4
+                    gv.setrelationship9("高中/高職")
                 }else if (spinner8.getSelectedItem().toString() == "大學/專科")
                 {
                     ques8ans = 5
+                    gv.setrelationship9("大學/專科")
                 }else if (spinner8.getSelectedItem().toString() == "碩士")
                 {
                     ques8ans = 6
+                    gv.setrelationship9("碩士")
                 }else if (spinner8.getSelectedItem().toString() == "博士")
                 {
                     ques8ans = 7
+                    gv.setrelationship9("博士")
                 }
 
                 //Toast.makeText(this@user, ques8ans.toString(), Toast.LENGTH_SHORT).show()
@@ -419,9 +472,50 @@ class user : AppCompatActivity() {
             intent.putExtra("bundle",bundle)
             startActivity(intent)
 
-
              */
 
+            if (spinner1.getSelectedItem().toString() == "其他")
+            {
+                gv.setrelationship1(editTextTextPersonName.text.toString())
+            }
+            if (spinner2.getSelectedItem().toString() == "曾經有但現在沒有(同住多久?___年)")
+            {
+                gv.setrelationship2(editTextTextPersonName2.text.toString())
+            }
+            if (spinner1.getSelectedItem().toString() == "其他")
+            {
+                gv.setrelationship3(editTextTextPersonName3.text.toString())
+            }
+            if (spinner1.getSelectedItem().toString() == "其他")
+            {
+                gv.setrelationship4(editTextTextPersonName4.text.toString())
+            }
+            if (spinner1.getSelectedItem().toString() == "其他")
+            {
+                gv.setrelationship5(editTextTextPersonName5.text.toString())
+            }
+            if (spinner1.getSelectedItem().toString() == "是,藥名")
+            {
+                gv.setrelationship6(editTextTextPersonName6.text.toString())
+            }
+            if (spinner1.getSelectedItem().toString() == "其他")
+            {
+                gv.setrelationship7(editTextTextPersonName7.text.toString())
+            }
+
+            Thread {
+                val con = MysqlCon()
+                con.relationship(
+                    gv.getstudent(),
+                    gv.getuser(),
+                    gv.getrelationship1(),
+                    gv.getrelationship2(),
+                    gv.getrelationship3(),
+                    gv.getrelationship4(),
+                    gv.getrelationship5(),
+                    gv.getrelationship7()
+                )
+            }.start()
             
 
             Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()

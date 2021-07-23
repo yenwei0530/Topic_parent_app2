@@ -68,6 +68,9 @@ class activity_child_emotions4 : AppCompatActivity() {
         var emotions_ans27 = 0
         var emotions_ans28 = 0
 
+        //建立共用變數類別
+        val gv = applicationContext as GlobalVariable
+
         //Toast.makeText(this, emotions_ans1+ emotions_ans2 + emotions_ans3 + emotions_ans4 + emotions_ans5, Toast.LENGTH_SHORT).show()
         //Toast.makeText(this, emotions_ans6 + emotions_ans7 + emotions_ans8 + emotions_ans9 + emotions_ans10 + emotions_ans11 + emotions_ans12 + emotions_ans13 , Toast.LENGTH_SHORT).show()
         //Toast.makeText(this, emotions_ans14 + emotions_ans15 + emotions_ans16 + emotions_ans17 + emotions_ans18 + emotions_ans19 + emotions_ans20 , Toast.LENGTH_SHORT).show()
@@ -292,6 +295,49 @@ class activity_child_emotions4 : AppCompatActivity() {
                 startActivity(intent)
 
                  */
+                gv.setemotions1(emotions_ans1.toString())
+                gv.setemotions2(emotions_ans2.toString())
+                gv.setemotions3(emotions_ans3.toString())
+                gv.setemotions4(emotions_ans4.toString())
+                gv.setemotions5(emotions_ans5.toString())
+                gv.setemotions6(emotions_ans6.toString())
+                gv.setemotions7(emotions_ans7.toString())
+                gv.setemotions8(emotions_ans8.toString())
+                gv.setemotions9(emotions_ans9.toString())
+                gv.setemotions10(emotions_ans10.toString())
+                gv.setemotions11(emotions_ans11.toString())
+                gv.setemotions12(emotions_ans12.toString())
+                gv.setemotions13(emotions_ans13.toString())
+                gv.setemotions14(emotions_ans14.toString())
+                gv.setemotions15(emotions_ans15.toString())
+                gv.setemotions16(emotions_ans16.toString())
+                gv.setemotions17(emotions_ans17.toString())
+                gv.setemotions18(emotions_ans18.toString())
+                gv.setemotions19(emotions_ans19.toString())
+                gv.setemotions20(emotions_ans20.toString())
+                gv.setemotions21(emotions_ans21.toString())
+                gv.setemotions22(emotions_ans22.toString())
+                gv.setemotions23(emotions_ans23.toString())
+                gv.setemotions24(emotions_ans24.toString())
+                gv.setemotions25(emotions_ans25.toString())
+                gv.setemotions26(emotions_ans26.toString())
+                gv.setemotions27(emotions_ans27.toString())
+                gv.setemotions28(emotions_ans28.toString())
+
+
+
+                Thread {
+                    val con = MysqlCon()
+                    con.mood_disorders_scale_w(
+                        gv.getuser(),
+                        gv.getemotion1(),gv.getemotion2(),gv.getemotion3(),gv.getemotion4(),gv.getemotion5(),
+                        gv.getemotion6(),gv.getemotion7(),gv.getemotion8(),gv.getemotion9(),gv.getemotion10(),
+                        gv.getemotion11(),gv.getemotion12(),gv.getemotion13(),gv.getemotion14(),gv.getemotion15(),
+                        gv.getemotion16(),gv.getemotion17(),gv.getemotion18(),gv.getemotion19(),gv.getemotion20(),
+                        gv.getemotion21(),gv.getemotion22(),gv.getemotion23(),gv.getemotion24(),gv.getemotion25(),
+                        gv.getemotion26(),gv.getemotion27(),gv.getemotion28()
+                    )
+                }.start()
 
                 Toast.makeText(this, "點擊任意處即可返回主頁面", Toast.LENGTH_SHORT).show()
                 var intent = Intent(this@activity_child_emotions4, give_back::class.java)
