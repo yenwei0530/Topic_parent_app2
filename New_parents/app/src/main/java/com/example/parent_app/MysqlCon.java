@@ -14,10 +14,7 @@ public class MysqlCon {
     String mysql_ip = "184.168.97.99";
     int mysql_port = 3306; // Port 預設為 3306
     String db_name = "treatment";
-    //String url = "jdbc:mysql://" + mysql_ip + ":" + mysql_port + "/" + db_name ;
-    //String url ="jdbc:mysql://184.168.97.99:3306/treatment?autoReconnect=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC";
-    //String url ="jdbc:mysql://184.168.97.99:3306/treatment?enabledTLSProtocols=TLSv1.2";
-    String url ="jdbc:mysql://184.168.97.99:3306/treatment?user=spopob8v48s2&password=Mm35176661&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true";
+    String url = "jdbc:mysql://" + mysql_ip + ":" + mysql_port + "/" + db_name + "?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
     String db_user = "spopob8v48s2";
     String db_password = "Mm35176661";
 
@@ -41,6 +38,9 @@ public class MysqlCon {
             Log.e("DB", e.toString());
         }
     }
+
+
+
 
     public String getData() {
         String data = "";

@@ -3,16 +3,12 @@ package com.example.parent_app
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.login_page.*
-import java.util.ArrayList
-import java.util.HashMap
 import java.util.*
+
 
 class login_page : AppCompatActivity() {
 
@@ -30,11 +26,13 @@ class login_page : AppCompatActivity() {
 
 
         mDBHelper = SQLiteDataBaseHelper(this, DB_NAME, null, DB_VERSION, TABLE_NAME) //初始化資料庫
+
         Thread {
             val con = MysqlCon()
             con.run()
             Log.v("OK", "LOGIN con ok")
         }.start()
+
 
         //建立共用變數類別
         val gv: GlobalVariable = applicationContext as GlobalVariable
