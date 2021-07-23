@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_green"
-    tools:context=".child_emotions">
+    tools:context=".activity_child_emotions4">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -49,7 +49,7 @@
                 android:textSize="@dimen/sp_18" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/dp_300"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
@@ -59,7 +59,7 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_330">
+                    android:layout_height="@dimen/dp_400">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -80,8 +80,8 @@
                                     android:id="@+id/textView9"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1.在群體工作中表現不佳"
-                                    android:textColor="#4CAF50"
+                                    android:text="21.抱怨身體不適"
+                                    android:textColor="#FF5722"
                                     android:textSize="@dimen/sp_20" />
 
                             </TableRow>
@@ -96,39 +96,44 @@
                                     android:orientation="horizontal">
 
                                     <RadioButton
-                                        android:id="@+id/radioButton1"
+                                        android:id="@+id/radioButton1_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton2"
+                                        android:id="@+id/radioButton2_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -142,8 +147,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="20dp"
-                                    android:text="2.被同儕團體排斥或拒絕"
-                                    android:textColor="#4CAF50"
+                                    android:text="22.焦慮、擔心、緊張"
+                                    android:textColor="#FF5722"
                                     android:textSize="@dimen/sp_20" />
 
                             </TableRow>
@@ -158,37 +163,42 @@
                                     android:orientation="horizontal">
 
                                     <RadioButton
-                                        android:id="@+id/radioButton6"
+                                        android:id="@+id/radioButton6_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton7"
+                                        android:id="@+id/radioButton7_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton8"
+                                        android:id="@+id/radioButton8_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton9"
+                                        android:id="@+id/radioButton9_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton10"
+                                        android:id="@+id/radioButton10_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -204,8 +214,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="20dp"
-                                    android:text="3.覺得別人找他碴或迫害他"
-                                    android:textColor="#4CAF50"
+                                    android:text="23.擔心不可能發生的危險或災難"
+                                    android:textColor="#FF5722"
                                     android:textSize="@dimen/sp_20" />
 
                             </TableRow>
@@ -220,37 +230,42 @@
                                     android:orientation="horizontal">
 
                                     <RadioButton
-                                        android:id="@+id/radioButton11"
+                                        android:id="@+id/radioButton11_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton12"
+                                        android:id="@+id/radioButton12_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton13"
+                                        android:id="@+id/radioButton13_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton14"
+                                        android:id="@+id/radioButton14_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton15"
+                                        android:id="@+id/radioButton15_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -266,8 +281,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="20dp"
-                                    android:text="4.缺乏社交能力"
-                                    android:textColor="#4CAF50"
+                                    android:text="24.會談到自己的死亡"
+                                    android:textColor="#FF5722"
                                     android:textSize="@dimen/sp_20" />
                             </TableRow>
 
@@ -281,37 +296,42 @@
                                     android:orientation="horizontal">
 
                                     <RadioButton
-                                        android:id="@+id/radioButton16"
+                                        android:id="@+id/radioButton16_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton17"
+                                        android:id="@+id/radioButton17_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton18"
+                                        android:id="@+id/radioButton18_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton19"
+                                        android:id="@+id/radioButton19_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton20"
+                                        android:id="@+id/radioButton20_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -327,8 +347,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_marginTop="20dp"
-                                    android:text="5.避免與他人互動"
-                                    android:textColor="#4CAF50"
+                                    android:text="25.可看出情緒與感受過度敏感"
+                                    android:textColor="#FF5722"
                                     android:textSize="@dimen/sp_20" />
                             </TableRow>
 
@@ -342,43 +362,247 @@
                                     android:orientation="horizontal">
 
                                     <RadioButton
-                                        android:id="@+id/radioButton21"
+                                        android:id="@+id/radioButton21_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton22"
+                                        android:id="@+id/radioButton22_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton23"
+                                        android:id="@+id/radioButton23_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton24"
+                                        android:id="@+id/radioButton24_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton25"
+                                        android:id="@+id/radioButton25_emotions4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
 
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="26.感受極大罪惡感"
+                                    android:textColor="#FF5722"
+                                    android:textSize="@dimen/sp_20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton26_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton27_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton28_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton29_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton30_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="27.出現抽搐、咬指甲、輕微抖動"
+                                    android:textColor="#FF5722"
+                                    android:textSize="@dimen/sp_20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton31_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton32_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton33_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton34_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton35_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="28.自傷行為(捏、割或抓傷自己)"
+                                    android:textColor="#FF5722"
+                                    android:textSize="@dimen/sp_20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton36_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton37_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton38_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton39_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton40_emotions4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
+                                </RadioGroup>
+
+                            </TableRow>
                         </TableLayout>
 
                     </LinearLayout>
@@ -403,13 +627,13 @@
         app:layout_constraintTop_toTopOf="@+id/scrollView3" />
 
     <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
-        android:id="@+id/cirRegisterButton2"
+        android:id="@+id/cirRegisterButton4"
         style="@style/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
-        android:text="Next→"
+        android:text="送出→"
         app:initialCornerAngle="27dp"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -417,5 +641,4 @@
         app:spinning_bar_color="#FFF"
         app:spinning_bar_padding="6dp"
         app:spinning_bar_width="4dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_green"
-    tools:context=".child_emotions">
+    tools:context=".activity_child_emotions3">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -59,7 +59,7 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_330">
+                    android:layout_height="@dimen/dp_400">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -80,8 +80,8 @@
                                     android:id="@+id/textView9"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="1.在群體工作中表現不佳"
-                                    android:textColor="#4CAF50"
+                                    android:text="14.缺乏自信"
+                                    android:textColor="#761F85"
                                     android:textSize="@dimen/sp_20" />
 
                             </TableRow>
@@ -96,39 +96,44 @@
                                     android:orientation="horizontal">
 
                                     <RadioButton
-                                        android:id="@+id/radioButton1"
+                                        android:id="@+id/radioButton1_emotions3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton2"
+                                        android:id="@+id/radioButton2_emotions3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
                                         android:id="@+id/radioButton5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
-                                        android:textSize="@dimen/dp_20" />
+                                        android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
 
                             </TableRow>
@@ -142,8 +147,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="20dp"
-                                    android:text="2.被同儕團體排斥或拒絕"
-                                    android:textColor="#4CAF50"
+                                    android:text="15.感到自己無價值感"
+                                    android:textColor="#761F85"
                                     android:textSize="@dimen/sp_20" />
 
                             </TableRow>
@@ -161,6 +166,7 @@
                                         android:id="@+id/radioButton6"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -168,6 +174,7 @@
                                         android:id="@+id/radioButton7"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -175,6 +182,7 @@
                                         android:id="@+id/radioButton8"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -182,6 +190,7 @@
                                         android:id="@+id/radioButton9"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -189,6 +198,7 @@
                                         android:id="@+id/radioButton10"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -204,8 +214,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="20dp"
-                                    android:text="3.覺得別人找他碴或迫害他"
-                                    android:textColor="#4CAF50"
+                                    android:text="16.很少感到快樂或歡樂"
+                                    android:textColor="#761F85"
                                     android:textSize="@dimen/sp_20" />
 
                             </TableRow>
@@ -223,6 +233,7 @@
                                         android:id="@+id/radioButton11"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -230,6 +241,7 @@
                                         android:id="@+id/radioButton12"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -237,6 +249,7 @@
                                         android:id="@+id/radioButton13"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -244,6 +257,7 @@
                                         android:id="@+id/radioButton14"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -251,6 +265,7 @@
                                         android:id="@+id/radioButton15"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -266,8 +281,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="20dp"
-                                    android:text="4.缺乏社交能力"
-                                    android:textColor="#4CAF50"
+                                    android:text="17.大部分時間沮喪難過"
+                                    android:textColor="#761F85"
                                     android:textSize="@dimen/sp_20" />
                             </TableRow>
 
@@ -284,6 +299,7 @@
                                         android:id="@+id/radioButton16"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -291,6 +307,7 @@
                                         android:id="@+id/radioButton17"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -298,6 +315,7 @@
                                         android:id="@+id/radioButton18"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -305,6 +323,7 @@
                                         android:id="@+id/radioButton19"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -312,6 +331,7 @@
                                         android:id="@+id/radioButton20"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -327,8 +347,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_marginTop="20dp"
-                                    android:text="5.避免與他人互動"
-                                    android:textColor="#4CAF50"
+                                    android:text="18.與老師互動很少"
+                                    android:textColor="#761F85"
                                     android:textSize="@dimen/sp_20" />
                             </TableRow>
 
@@ -345,6 +365,7 @@
                                         android:id="@+id/radioButton21"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -352,6 +373,7 @@
                                         android:id="@+id/radioButton22"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -359,13 +381,15 @@
                                         android:id="@+id/radioButton23"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
                                     <RadioButton
-                                        android:id="@+id/radioButton24"
+                                        android:id="@+id/radioButton24_emotions3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -373,6 +397,141 @@
                                         android:id="@+id/radioButton25"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="19.對曾經喜愛的事物喪失興趣"
+                                    android:textColor="#761F85"
+                                    android:textSize="@dimen/sp_20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton26"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton27"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton28"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton29"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton30"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="5"
+                                        android:textSize="@dimen/sp_20" />
+                                </RadioGroup>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:text="20.對未來感覺悲觀無希望"
+                                    android:textColor="#761F85"
+                                    android:textSize="@dimen/sp_20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton31"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="1"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton32"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="2"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="3"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton34"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:text="4"
+                                        android:textSize="@dimen/sp_20" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton35"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -403,7 +562,7 @@
         app:layout_constraintTop_toTopOf="@+id/scrollView3" />
 
     <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
-        android:id="@+id/cirRegisterButton2"
+        android:id="@+id/cirRegisterButton3"
         style="@style/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
@@ -417,5 +576,4 @@
         app:spinning_bar_color="#FFF"
         app:spinning_bar_padding="6dp"
         app:spinning_bar_width="4dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
