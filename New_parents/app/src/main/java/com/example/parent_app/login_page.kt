@@ -47,18 +47,17 @@ class login_page : AppCompatActivity() {
         val Password = findViewById<EditText>(R.id.pass)
 
         login.setOnClickListener {
-            /*
+    /*
                 if (mDBHelper!!.checkparent(
                         UserId.text.toString(),
                         Password.text.toString()
                     ) == "T"
                 ) {
 
-                    //gv.setuser(UserId.text.toString())
-                    //gv.setpassword(Password.text.toString())
-                    //arrayList = mDBHelper!!.parent(UserId.text.toString())
-                    //gv.setname(arrayList[0]["name"])
-                    //gv.setsex(arrayList[0]["sex"])
+                    gv.setuser(UserId.text.toString())
+                    gv.setpassword(Password.text.toString())
+                    arrayList = mDBHelper!!.parent(UserId.text.toString())
+                    gv.setname(arrayList[0]["name"])
 
                     Log.v("LOGIN", "T")
                     val intent = Intent(this@login_page, main::class.java)
@@ -66,7 +65,7 @@ class login_page : AppCompatActivity() {
                 } else
                     Log.e("LOGIN", "F" + "/" + UserId.text + "/" + Password.text)
                     Toast.makeText(this@login_page, "帳號密碼錯誤!!!", Toast.LENGTH_LONG).show()
-             */
+     */
 
                 val intent = Intent(this@login_page, main::class.java)
                 startActivity(intent)
