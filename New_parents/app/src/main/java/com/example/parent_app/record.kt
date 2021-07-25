@@ -20,48 +20,74 @@ class record : AppCompatActivity() {
 
         radioButton.setOnClickListener {
 
-            val textview23= findViewById<View>(R.id.textView23) as TextView
-            val textView22= findViewById<View>(R.id.textView22) as TextView
-            val toast= Toast.makeText(this,"無資料", Toast.LENGTH_SHORT)
-
+            val textview23 = findViewById<View>(R.id.textView23) as TextView
+            val textView22 = findViewById<View>(R.id.textView22) as TextView
+            val toast = Toast.makeText(this, "無資料", Toast.LENGTH_SHORT)
+            textView22.text == ""
+            textview23.text == ""
             Thread {
-                val recordsql="SELECT write_time FROM `adaptation_scale_w` where `parent_id`= '"+ gv.getuser()+ "'"
-                //val con = MysqlCon()
-                //con.run()
+                val recordsql =
+                    "SELECT write_time FROM `adaptation_scale_w` where `parent_id`= '" + gv.getuser() + "'"
                 val record = con.getRecord(recordsql)
-                Log.v("OK", record.toString())
-                textview23.post { textview23.text = record.toString() }
-
-            }.start()
-        }
-        radioButton51.setOnClickListener {
-            val textview23= findViewById<View>(R.id.textView23) as TextView
-            val textView22= findViewById<View>(R.id.textView22) as TextView
-            val toast= Toast.makeText(this,"無資料", Toast.LENGTH_SHORT)
-
-            Thread {
-                val recordsql="SELECT write_time FROM `interactive_scale_w` where `parent_id`= '"+ gv.getuser()+ "'"
-                //val con = MysqlCon()
-                //con.run()
-                val record = con.getRecord(recordsql)
-                if (record == null)
-                {
+                val recordtimesql =
+                    "SELECT COUNT(parent_id) FROM `adaptation_scale_w` WHERE `parent_id` = '" + gv.getuser() + "'"
+                val recordtime = con.getRecordtime(recordtimesql)
+                if (record == null) {
                     toast.show()
-                    Log.e("toast",toast.toString())
-                }else
-                {
+                    Log.e("toast", toast.toString())
+                } else if (recordtime >= "1") {
+                    Log.v(">=1", recordtime)
+                    for (i in 1..recordtime.toInt()) {
+                        //textView22.text = textView22.text + "第" + i + "次" + "\n"
+                        //textView22.post { textView22.text =""+  i + "\n"}
+                        textView22.post { textView22.text = "共" + i + "次" + "\n" }
+                    }
+                    Log.v("OK", record.toString())
+                    textview23.post { textview23.text = record.toString() }
+                } else {
                     Log.v("OK", record.toString())
                     textview23.post { textview23.text = record.toString() }
                 }
             }.start()
         }
 
-        fun child_emotions(view: View) {}
+            radioButton51.setOnClickListener {
+                val textView22 = findViewById<View>(R.id.textView22) as TextView
+                val textview23 = findViewById<View>(R.id.textView23) as TextView
+                val toast = Toast.makeText(this, "無資料", Toast.LENGTH_SHORT)
+                textView22.text == ""
+                textview23.text == ""
+                Thread {
+                    val recordsql = "SELECT write_time FROM `interactive_scale_w` where `parent_id`= '" + gv.getuser() + "'"
+                    val record = con.getRecord(recordsql)
+                    val recordtimesql = "SELECT COUNT(parent_id) FROM `interactive_scale_w` WHERE `parent_id` = '" + gv.getuser() + "'"
+                    val recordtime = con.getRecordtime(recordtimesql)
+                    if (record == null) {
+                        toast.show()
+                        Log.e("toast", toast.toString())
+                    } else if (recordtime > "1") {
+                        Log.v(">1", recordtime)
 
-        fun child_performance(view: View) {
-        }
+                        for (i in 1..recordtime.toInt()) {
+                            //textView22.text = textView22.text + "第" + i + "次" + "\n"
+                            //textView22.post { textView22.text =""+  i + "\n"}
+                            textView22.post { textView22.text = "共" + i + "次" + "\n" }
+                        }
+                        Log.v("OK", record.toString())
+                        textview23.post { textview23.text = record.toString() }
+                    } else {
+                        Log.v("OK", record.toString())
+                        textview23.post { textview23.text = record.toString() }
+                    }
+                }.start()
+            }
 
-        fun child_interaction(view: View) {
+            fun child_emotions(view: View) {}
+
+            fun child_performance(view: View) {
+            }
+
+            fun child_interaction(view: View) {
+            }
         }
     }
-}

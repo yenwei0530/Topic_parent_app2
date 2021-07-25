@@ -64,6 +64,7 @@ class login_page : AppCompatActivity() {
                     val sql="select * from `parent` where `parent_id`='"+username_input.text.toString()+"' and `password`='"+pass.text.toString()+"'"
                     Log.v("test", sql)
                     val data= con.getData(sql)
+
                     val first="SELECT parent_id FROM `relationship` where `parent_id`= '"+ username_input.text.toString()+ "'"
                     val record = con.getfirst(first)
                     if(data==0){

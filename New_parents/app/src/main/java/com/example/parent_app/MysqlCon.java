@@ -174,11 +174,28 @@ public class MysqlCon {
             //String sql = "SELECT * FROM parent";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(recordsql);
-            int n = 0;
             while (rs.next()) {
                 String time = rs.getString("write_time");
                 data += time + "\n";
-                n++;
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    public String getRecordtime(String recordtimesql) {
+        String data = "";
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            //Connection con = DriverManager.getConnection(url);
+            //String sql = "SELECT * FROM parent";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(recordtimesql);
+            while (rs.next()) {
+                String time = rs.getString("COUNT(parent_id)");
+                data += time;
             }
             st.close();
         } catch (SQLException e) {
