@@ -67,7 +67,8 @@ class login_page : AppCompatActivity() {
                     if(data==0){
                         //Log.v("OK", "帳密錯誤")
                         toast.show()
-                    }else{
+                    }else
+                    {
                         gv.setuser(username_input.text.toString())
                         val intent = Intent(this@login_page, main::class.java)
                         startActivity(intent)
@@ -77,25 +78,6 @@ class login_page : AppCompatActivity() {
 
             }
 
-    /*
-                if (mDBHelper!!.checkparent(
-                        UserId.text.toString(),
-                        Password.text.toString()
-                    ) == "T"
-                ) {
-
-                    gv.setuser(UserId.text.toString())
-                    gv.setpassword(Password.text.toString())
-                    arrayList = mDBHelper!!.parent(UserId.text.toString())
-                    gv.setname(arrayList[0]["name"])
-
-                    Log.v("LOGIN", "T")
-                    val intent = Intent(this@login_page, main::class.java)
-                    startActivity(intent)
-                } else
-                    Log.e("LOGIN", "F" + "/" + UserId.text + "/" + Password.text)
-                    Toast.makeText(this@login_page, "帳號密碼錯誤!!!", Toast.LENGTH_LONG).show()
-     */
         }
     }
 }

@@ -389,7 +389,7 @@ class user : AppCompatActivity() {
                 Toast.makeText(this@user, "你沒選擇" , Toast.LENGTH_SHORT).show()
             }
         }
-        //---------------------------Spinner 7 ↓
+        //---------------------------Spinner 8 ↓
         val ques8 = arrayListOf("請選擇",  "不識字","小學","中學","高中/高職","大學/專科","碩士","博士")
         val adapter8 = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, ques8)
         spinner8.adapter = adapter8
@@ -475,32 +475,38 @@ class user : AppCompatActivity() {
             startActivity(intent)
 
              */
-
+            //關係
             if (spinner1.getSelectedItem().toString() == "其他")
             {
                 gv.setrelationship1(editTextTextPersonName.text.toString())
             }
+            //誰同住
             if (spinner2.getSelectedItem().toString() == "曾經有但現在沒有(同住多久?___年)")
             {
                 gv.setrelationship2(editTextTextPersonName2.text.toString())
             }
-            if (spinner1.getSelectedItem().toString() == "其他")
+            //誰管教
+            if (spinner3.getSelectedItem().toString() == "其他")
             {
                 gv.setrelationship3(editTextTextPersonName3.text.toString())
             }
-            if (spinner1.getSelectedItem().toString() == "其他")
+            //家中排行
+            if (spinner4.getSelectedItem().toString() == "其他")
             {
                 gv.setrelationship4(editTextTextPersonName4.text.toString())
             }
-            if (spinner1.getSelectedItem().toString() == "其他")
+            //兄弟姊妹人數
+            if (spinner4_1.getSelectedItem().toString() == "其他")
             {
                 gv.setrelationship5(editTextTextPersonName5.text.toString())
             }
-            if (spinner1.getSelectedItem().toString() == "是,藥名")
+            //藥物
+            if (spinner5.getSelectedItem().toString() == "是,藥名")
             {
                 gv.setrelationship6(editTextTextPersonName6.text.toString())
             }
-            if (spinner1.getSelectedItem().toString() == "其他")
+            //經濟來源
+            if (spinner6.getSelectedItem().toString() == "其他")
             {
                 gv.setrelationship7(editTextTextPersonName7.text.toString())
             }
@@ -508,8 +514,8 @@ class user : AppCompatActivity() {
             Thread {
                 val con = MysqlCon()
                 con.relationship(
-                    gv.getstudent(),
                     gv.getuser(),
+                    gv.getstudent(),
                     gv.getrelationship1(),
                     gv.getrelationship2(),
                     gv.getrelationship3(),
