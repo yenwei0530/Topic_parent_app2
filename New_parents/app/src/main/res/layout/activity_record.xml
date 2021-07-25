@@ -130,7 +130,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
-                                    android:text="2021-04-30  17:30:20"
+                                    android:hint="yyyy/mm/dd"
                                     android:textSize="18sp" />
                             </TableRow>
 

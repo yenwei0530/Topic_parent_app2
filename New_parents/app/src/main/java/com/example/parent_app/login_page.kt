@@ -68,6 +68,7 @@ class login_page : AppCompatActivity() {
                         //Log.v("OK", "帳密錯誤")
                         toast.show()
                     }else{
+                        gv.setuser(username_input.text.toString())
                         val intent = Intent(this@login_page, main::class.java)
                         startActivity(intent)
                     }

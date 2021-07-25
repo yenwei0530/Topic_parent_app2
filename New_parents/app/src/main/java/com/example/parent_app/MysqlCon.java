@@ -40,20 +40,17 @@ public class MysqlCon {
     }
 
 
-
-
     public int getData(String sql) {
         String data = "";
-        int n=0;
+        int n = 0;
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
             //Connection con = DriverManager.getConnection(url);
             //String sql = "SELECT * FROM parent";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
-            n=0;
-            while (rs.next())
-            {
+            n = 0;
+            while (rs.next()) {
                 n++;
                 /*String id = rs.getString("parent_id");
                 data += id + ", ";
@@ -80,19 +77,19 @@ public class MysqlCon {
             }
 
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "INSERT INTO `interactive_scale_w`(`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`,`write_time`) VALUES('" + id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','"  + date + "')";
+            String sql = "INSERT INTO `interactive_scale_w`(`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`,`write_time`) VALUES('" + id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + date + "')";
             Statement st = con.createStatement();
             st.executeUpdate(sql);
             st.close();
             Log.v("DB", "寫入資料完成：" + sql);
         } catch (SQLException e) {
             e.printStackTrace();
-            Log.e("DB", "寫入資料失敗" );
+            Log.e("DB", "寫入資料失敗");
             Log.e("DB", e.toString());
         }
     }
 
-    public void adaptation_scale_w(String Student_id,String parent_id, String q1, String q2, String q3, String q4, String q5, String q6, String q7, String q8, String q9, String q10) {
+    public void adaptation_scale_w(String Student_id, String parent_id, String q1, String q2, String q3, String q4, String q5, String q6, String q7, String q8, String q9, String q10) {
         try {
             SimpleDateFormat sDateFormat = null;
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
@@ -104,23 +101,23 @@ public class MysqlCon {
             }
 
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "INSERT INTO `adaptation_scale_w`(`student_id`,`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`,`q8`,`q9`,`q10`,`write_time`) VALUES('" + Student_id + "','" + parent_id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + q7 + "','" + q8 + "','" + q9 + "','" + q10 + "','"  + date + "')";
+            String sql = "INSERT INTO `adaptation_scale_w`(`student_id`,`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`,`q8`,`q9`,`q10`,`write_time`) VALUES('" + Student_id + "','" + parent_id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + q7 + "','" + q8 + "','" + q9 + "','" + q10 + "','" + date + "')";
             Statement st = con.createStatement();
             st.executeUpdate(sql);
             st.close();
             Log.v("DB", "寫入資料完成：" + sql);
         } catch (SQLException e) {
             e.printStackTrace();
-            Log.e("DB", "寫入資料失敗" );
+            Log.e("DB", "寫入資料失敗");
             Log.e("DB", e.toString());
         }
     }
 
     public void mood_disorders_scale_w(String id, String q1, String q2, String q3, String q4, String q5
-            , String q6, String q7, String q8, String q9, String q10,String q11,String q12
-            ,String q13,String q14,String q15,String q16,String q17,String q18,String q19
-            ,String q20,String q21,String q22,String q23,String q24,String q25,String q26
-            ,String q27,String q28) {
+            , String q6, String q7, String q8, String q9, String q10, String q11, String q12
+            , String q13, String q14, String q15, String q16, String q17, String q18, String q19
+            , String q20, String q21, String q22, String q23, String q24, String q25, String q26
+            , String q27, String q28) {
         try {
             SimpleDateFormat sDateFormat = null;
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
@@ -132,14 +129,14 @@ public class MysqlCon {
             }
 
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "INSERT INTO `mood_disorders_scale_w`(`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`,`q8`,`q9`,`q10`,`q11`,`q12`,`q13`,`q14`,`q15`,`q16`,`q17`,`q18`,`q19`,`q20`,`q21`,`q22`,`q23`,`q24`,`q25`,`q26`,`q27`,`q28`,`write_time`) VALUES('" + id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + q7 + "','" + q8 + "','" + q9 + "','" + q10 + "','"+ q11 + "','"+ q12 + "','"+ q13 + "','"+ q14 + "','"+ q15 + "','"+ q16 + "','"+ q17 + "','"+ q18 + "','"+ q19 + "','"+ q20 + "','"+ q21 + "','"+ q22 + "','"+ q23 + "','"+ q24 + "','"+ q25 + "','"+ q26 + "','"+ q27 + "','"+ q28 + "','"  + date + "')";
+            String sql = "INSERT INTO `mood_disorders_scale_w`(`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`,`q8`,`q9`,`q10`,`q11`,`q12`,`q13`,`q14`,`q15`,`q16`,`q17`,`q18`,`q19`,`q20`,`q21`,`q22`,`q23`,`q24`,`q25`,`q26`,`q27`,`q28`,`write_time`) VALUES('" + id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + q7 + "','" + q8 + "','" + q9 + "','" + q10 + "','" + q11 + "','" + q12 + "','" + q13 + "','" + q14 + "','" + q15 + "','" + q16 + "','" + q17 + "','" + q18 + "','" + q19 + "','" + q20 + "','" + q21 + "','" + q22 + "','" + q23 + "','" + q24 + "','" + q25 + "','" + q26 + "','" + q27 + "','" + q28 + "','" + date + "')";
             Statement st = con.createStatement();
             st.executeUpdate(sql);
             st.close();
             Log.v("DB", "寫入資料完成：" + sql);
         } catch (SQLException e) {
             e.printStackTrace();
-            Log.e("DB", "寫入資料失敗" );
+            Log.e("DB", "寫入資料失敗");
             Log.e("DB", e.toString());
         }
     }
@@ -163,10 +160,54 @@ public class MysqlCon {
             Log.v("DB", "寫入資料完成：" + sql);
         } catch (SQLException e) {
             e.printStackTrace();
-            Log.e("DB", "寫入資料失敗" );
+            Log.e("DB", "寫入資料失敗");
             Log.e("DB", e.toString());
         }
     }
+
+    //-------------------------------------------------------------------------------------//
+    public String getRecord(String recordsql) {
+        String data = "";
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            //Connection con = DriverManager.getConnection(url);
+            //String sql = "SELECT * FROM parent";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(recordsql);
+            int n = 0;
+            while (rs.next()) {
+                String time = rs.getString("write_time");
+                data += time + "\n";
+                n++;
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    public String getfirst(String first) {
+        String data = "";
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            //Connection con = DriverManager.getConnection(url);
+            //String sql = "SELECT * FROM parent";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(first);
+            int n = 0;
+            while (rs.next()) {
+                String id = rs.getString("write_time");
+                data += id + "\n";
+                n++;
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
 }
 
 

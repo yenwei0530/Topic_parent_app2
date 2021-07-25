@@ -32,6 +32,8 @@ class user : AppCompatActivity() {
         var ques6anselse = ""
         var ques7ans = 0
         var ques8ans = 0
+        //SPINNER用變數宣告-----------↑↑↑-----------//
+
         //---------限制edittext是否可寫----------//
         editTextTextPersonName.setEnabled(false)
         editTextTextPersonName2.setEnabled(false)
@@ -40,7 +42,7 @@ class user : AppCompatActivity() {
         editTextTextPersonName5.setEnabled(false)
         editTextTextPersonName6.setEnabled(false)
         editTextTextPersonName7.setEnabled(false)
-        //SPINNER用變數宣告-----------↑↑↑-----------//
+
 
         //建立共用變數類別
         val gv = applicationContext as GlobalVariable
