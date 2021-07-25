@@ -42,27 +42,30 @@ public class MysqlCon {
 
 
 
-    public String getData() {
+    public int getData(String sql) {
         String data = "";
+        int n=0;
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
             //Connection con = DriverManager.getConnection(url);
-            String sql = "SELECT * FROM parent";
+            //String sql = "SELECT * FROM parent";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
-
+            n=0;
             while (rs.next())
             {
-                String id = rs.getString("parent_id");
+                n++;
+                /*String id = rs.getString("parent_id");
                 data += id + ", ";
                 String id2 = rs.getString("password");
-                data += id2 + ", " + "\n";
+                data += id2 + ", " + "\n";*/
             }
+
             st.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return data;
+        return n;
     }
 
     public void interactive_scale_w(String id, String q1, String q2, String q3, String q4, String q5, String q6) {
