@@ -64,9 +64,16 @@ class login_page : AppCompatActivity() {
                     val sql="select * from `parent` where `parent_id`='"+username_input.text.toString()+"' and `password`='"+pass.text.toString()+"'"
                     Log.v("test", sql)
                     val data= con.getData(sql)
+                    val first="SELECT parent_id FROM `relationship` where `parent_id`= '"+ username_input.text.toString()+ "'"
+                    val record = con.getfirst(first)
                     if(data==0){
                         //Log.v("OK", "帳密錯誤")
                         toast.show()
+                    }else if (record.toString() == null || record.toString() == "")
+                    {
+                        gv.setuser(username_input.text.toString())
+                        val intent = Intent(this@login_page, user::class.java)
+                        startActivity(intent)
                     }else
                     {
                         gv.setuser(username_input.text.toString())

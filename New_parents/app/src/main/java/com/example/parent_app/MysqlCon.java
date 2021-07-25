@@ -197,7 +197,7 @@ public class MysqlCon {
             ResultSet rs = st.executeQuery(first);
             int n = 0;
             while (rs.next()) {
-                String id = rs.getString("write_time");
+                String id = rs.getString("parent_id");
                 data += id + "\n";
                 n++;
             }
