@@ -4,12 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
+import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_user.*
+import kotlinx.android.synthetic.main.login_page.*
 
 class user : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -523,12 +525,24 @@ class user : AppCompatActivity() {
                     gv.getrelationship5(),
                     gv.getrelationship7()
                 )
+                val first="SELECT parent_id FROM `mood_disorders_scale_w` where `parent_id`= '"+ gv.getuser()+ "'"
+                val record = con.getfirst(first)
+                if (record.toString() == null || record.toString() == "")
+                {
+                    val intent = Intent(this@user, child_emotions::class.java)
+                    startActivity(intent)
+                }else
+                {
+                    val intent = Intent(this@user, main::class.java)
+                    startActivity(intent)
+                }
             }.start()
-            
 
-            Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
+            /*Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
             var intent = Intent(this@user, main::class.java)
             startActivity(intent)
+
+             */
 
 
 
