@@ -15,8 +15,8 @@ class main : AppCompatActivity() {
         //建立共用變數類別
         val gv = applicationContext as GlobalVariable
         val txtdashboard = findViewById (R.id.txtdashboard) as TextView
-        txtdashboard.text =  gv.getuser()
-        
+        txtdashboard.text =  gv.getuser() + "家長"
+
         signout.setOnClickListener {
             startActivity(Intent(this,login_page::class.java))
         }
