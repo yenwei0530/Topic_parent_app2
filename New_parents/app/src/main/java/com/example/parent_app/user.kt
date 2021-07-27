@@ -435,6 +435,38 @@ class user : AppCompatActivity() {
             }
         }
         //-----------------------------------↑-SPINNER-↑-------------------------------------//
+        /*var q1   = ""
+        val q2   = ""
+        val q3   = ""
+        val q4   = ""
+        val q4_1 = ""
+        val q5   = ""
+        val q6   = ""
+        val q7   = ""
+        val q8   = ""
+
+        Thread {
+            val con = MysqlCon()
+            val first="SELECT parent_id FROM `relationship` where `parent_id`= '"+ gv.getuser()+ "'"
+            val record = con.getfirst(first)
+            if (record.toString() != "")
+            {
+                val first = "SELECT relationship FROM `relationship` where `parent_id`= '"+ gv.getuser()+ "'"
+                val record = con.getfirst(first)
+                q1 = record
+                Log.e("re",q1)
+            }
+        }.start()
+
+         */
+
+
+
+
+
+
+
+
 
         imageView10.setOnClickListener {
             startActivity(Intent(this,main::class.java))

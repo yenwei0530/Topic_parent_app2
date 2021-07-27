@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -13,9 +14,9 @@ class main : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //建立共用變數類別
         val gv = applicationContext as GlobalVariable
-
-        txtdashboard.text == "家長"
-
+        val txtdashboard = findViewById (R.id.txtdashboard) as TextView
+        txtdashboard.text =  gv.getuser()
+        
         signout.setOnClickListener {
             startActivity(Intent(this,login_page::class.java))
         }
