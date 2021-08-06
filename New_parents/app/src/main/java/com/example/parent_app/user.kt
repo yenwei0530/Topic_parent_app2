@@ -555,7 +555,10 @@ class user : AppCompatActivity() {
                     gv.getrelationship3(),
                     gv.getrelationship4(),
                     gv.getrelationship5(),
-                    gv.getrelationship7()
+                    gv.getrelationship6(),
+                    gv.getrelationship7(),
+                    gv.getrelationship8(),
+                    gv.getrelationship9()
                 )
                 val first="SELECT parent_id FROM `mood_disorders_scale_w` where `parent_id`= '"+ gv.getuser()+ "'"
                 val record = con.getfirst(first)

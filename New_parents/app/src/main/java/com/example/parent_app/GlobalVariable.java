@@ -8,6 +8,7 @@ public class GlobalVariable extends Application {
     private String password;  //密碼
     private String sex;  //性別
     private String student; //
+    private String statistics;
     //----------------------------------------------------------------------------------------
     //user(Activity) & relationship (SQL)
     //個人資料
@@ -86,6 +87,9 @@ public class GlobalVariable extends Application {
         this.password = password;
     }
     public void setstudent(String student){ this.student = student;}
+    public void setstatistics(String statistics) {
+        this.statistics = statistics;
+    }
     //----------------------------------------------------------------------------------------
     //user(Activity) & relationship (SQL)
     //個人資料
@@ -188,6 +192,9 @@ public class GlobalVariable extends Application {
     public String getuser() { return user;  }
     public String getpassword() { return password; }
     public String getstudent() {return student;}
+    public String getstatistics() {
+        return statistics;
+    }
     //----------------------------------------------------------------------------------------
     //user(Activity) & relationship (SQL)
     //個人資料

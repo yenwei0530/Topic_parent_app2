@@ -7,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MysqlCon {
 
@@ -37,6 +39,307 @@ public class MysqlCon {
             Log.e("DB", "遠端連接失敗");
             Log.e("DB", e.toString());
         }
+    }
+    //取得日記填寫資料
+    public ArrayList<HashMap<String, String>> getdiaryvalue(String id, String date) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `diary` as a LEFT JOIN (SELECT `parent_id`,`student_id` FROM `relationship`) as b on a.`student_id` =b.`student_id` where `parent_id`='" +  id + "' and `write_diary_time`='"+  date + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String mood = rs.getString("mood");
+                String weather = rs.getString("weather");
+                String person = rs.getString("person");
+                String time = rs.getString("time");
+                String fraction = rs.getString("fraction");
+
+
+                hashMap.put("mood", mood);
+                hashMap.put("weather", weather);
+                hashMap.put("person", person);
+                hashMap.put("time", time);
+                hashMap.put("fraction", fraction);
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得溫度計填寫資料
+    public ArrayList<HashMap<String, String>> getthvalue(String id,String date) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `mood_thermometer` as a LEFT JOIN (SELECT `parent_id`,`student_id` FROM `relationship`) as b on a.`student_id` =b.`student_id` where  b.`parent_id`='" +  id + "'and a.`write_time`='"+  date + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String tmmt_mood1 = rs.getString("tmmt_mood1");
+                String tmmt_mood2 = rs.getString("tmmt_mood2");
+                String tmmt_body = rs.getString("tmmt_body");
+                String tmmt_idea = rs.getString("tmmt_idea");
+                String tmmt_calmidea = rs.getString("tmmt_calmidea");
+                String tmmt_mood3 = rs.getString("tmmt_mood3");
+
+
+                hashMap.put("tmmt_mood1", tmmt_mood1);
+                hashMap.put("tmmt_mood2", tmmt_mood2);
+                hashMap.put("tmmt_body", tmmt_body);
+                hashMap.put("tmmt_idea", tmmt_idea);
+                hashMap.put("tmmt_calmidea", tmmt_calmidea);
+                hashMap.put("tmmt_mood3", tmmt_mood3);
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得interactive填寫資料
+    public ArrayList<HashMap<String, String>> getinteractive1(String id,String date) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `interactive_scale_w` where  `parent_id`='" +  id + "'and  `write_time`='"+  date + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String q1 = rs.getString("q1");
+                String q2 = rs.getString("q2");
+                String q3 = rs.getString("q3");
+                String q4 = rs.getString("q4");
+                String q5 = rs.getString("q5");
+                String q6 = rs.getString("q6");
+
+
+                hashMap.put("q1", q1);
+                hashMap.put("q2", q2);
+                hashMap.put("q3", q3);
+                hashMap.put("q4", q4);
+                hashMap.put("q5", q5);
+                hashMap.put("q6", q6);
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得個人資料
+    public ArrayList<HashMap<String, String>> getrelationship(String id) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `relationship` where  `parent_id`='" +  id  + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String relationship = rs.getString("relationship");
+                String cohabitation = rs.getString("cohabitation");
+                String discipline = rs.getString("discipline");
+                String home_order = rs.getString("home_order");
+                String brothers_sisters	 = rs.getString("brothers_sisters");
+                String drug = rs.getString("drug");
+                String income = rs.getString("income");
+                String f_educate = rs.getString("f_educate");
+                String m_educate = rs.getString("m_educate");
+
+
+                hashMap.put("relationship", relationship);
+                hashMap.put("cohabitation", cohabitation);
+                hashMap.put("discipline", discipline);
+                hashMap.put("home_order", home_order);
+                hashMap.put("brothers_sisters", brothers_sisters);
+                hashMap.put("drug", drug);
+                hashMap.put("income", income);
+                hashMap.put("f_educate", f_educate);
+                hashMap.put("m_educate", m_educate);
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得孩子行為填寫資料
+    public ArrayList<HashMap<String, String>> getdisorders(String id,String date) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `mood_disorders_scale_w` where  `parent_id`='" +  id + "'and  `write_time`='"+  date + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String q1 = rs.getString("q1");
+                String q2 = rs.getString("q2");
+                String q3 = rs.getString("q3");
+                String q4 = rs.getString("q4");
+                String q5 = rs.getString("q5");
+                String q6 = rs.getString("q6");
+                String q7 = rs.getString("q7");
+                String q8 = rs.getString("q8");
+                String q9 = rs.getString("q9");
+                String q10 = rs.getString("q10");
+                String q11 = rs.getString("q11");
+                String q12 = rs.getString("q12");
+                String q13 = rs.getString("q13");
+                String q14 = rs.getString("q14");
+                String q15 = rs.getString("q15");
+                String q16 = rs.getString("q16");
+                String q17 = rs.getString("q17");
+                String q18 = rs.getString("q18");
+                String q19 = rs.getString("q19");
+                String q20 = rs.getString("q20");
+                String q21 = rs.getString("q21");
+                String q22 = rs.getString("q22");
+                String q23 = rs.getString("q23");
+                String q24 = rs.getString("q24");
+                String q25 = rs.getString("q25");
+                String q26 = rs.getString("q26");
+                String q27 = rs.getString("q27");
+                String q28 = rs.getString("q28");
+
+
+                hashMap.put("q1", q1);
+                hashMap.put("q2", q2);
+                hashMap.put("q3", q3);
+                hashMap.put("q4", q4);
+                hashMap.put("q5", q5);
+                hashMap.put("q6", q6);
+                hashMap.put("q7", q7);
+                hashMap.put("q8", q8);
+                hashMap.put("q9", q9);
+                hashMap.put("q10", q10);
+                hashMap.put("q11", q11);
+                hashMap.put("q12", q12);
+                hashMap.put("q13", q13);
+                hashMap.put("q14", q14);
+                hashMap.put("q15", q15);
+                hashMap.put("q16", q16);
+                hashMap.put("q17", q17);
+                hashMap.put("q18", q18);
+                hashMap.put("q19", q19);
+                hashMap.put("q20", q20);
+                hashMap.put("q21", q21);
+                hashMap.put("q22", q22);
+                hashMap.put("q23", q23);
+                hashMap.put("q24", q24);
+                hashMap.put("q25", q25);
+                hashMap.put("q26", q26);
+                hashMap.put("q27", q27);
+                hashMap.put("q28", q28);
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得您與孩子的互動填寫資料
+    public ArrayList<HashMap<String, String>> getinteractive(String id,String date) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `interactive_scale_w` where  `parent_id`='" +  id + "'and  `write_time`='"+  date + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String q1 = rs.getString("q1");
+                String q2 = rs.getString("q2");
+                String q3 = rs.getString("q3");
+                String q4 = rs.getString("q4");
+                String q5 = rs.getString("q5");
+                String q6 = rs.getString("q6");
+
+
+                hashMap.put("q1", q1);
+                hashMap.put("q2", q2);
+                hashMap.put("q3", q3);
+                hashMap.put("q4", q4);
+                hashMap.put("q5", q5);
+                hashMap.put("q6", q6);
+
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得天數
+    public ArrayList<HashMap<String, String>> getmaxdate(String id) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT a.`adaptation_scale`,b.date FROM `student` as a LEFT JOIN (SELECT *,MAX(`write_time`) as date FROM `adaptation_scale_w` where `parent_id` ='" +  id + "') as b on a.user_id = b.student_id where b.`parent_id` ='" +  id + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String date = rs.getString("date");
+                String adaptation_scale = rs.getString("adaptation_scale");
+
+                hashMap.put("date", date);
+                hashMap.put("adaptation_scale", adaptation_scale);
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
     }
 
 
@@ -141,7 +444,7 @@ public class MysqlCon {
         }
     }
 
-    public void relationship(String parent_id, String student_id, String relationship, String cohabitation, String discipline, String home_order, String brothers_sisters, String income) {
+    public void relationship(String parent_id, String student_id, String relationship, String cohabitation, String discipline, String home_order, String brothers_sisters,String drug, String income, String f_educate, String m_educate) {
         try {
             SimpleDateFormat sDateFormat = null;
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
@@ -153,7 +456,7 @@ public class MysqlCon {
             }
 
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "INSERT INTO `relationship`(`parent_id`,`student_id`, `relationship`, `cohabitation`, `discipline`, `home_order`, `brothers_sisters`, `income`) VALUES('" + parent_id + "','" + student_id + "','" + relationship + "','" + cohabitation + "','" + discipline + "','" + home_order + "','" + brothers_sisters + "','" + income + "')";
+            String sql = "INSERT INTO `relationship`(`parent_id`, `student_id`, `relationship`, `cohabitation`, `discipline`, `home_order`, `brothers_sisters`, `drug`, `income`, `f_educate`, `m_educate`) VALUES('" + parent_id + "','" + student_id + "','" + relationship + "','" + cohabitation + "','" + discipline + "','" + home_order + "','" + brothers_sisters + "','" + drug + "','" + income + "','" + f_educate + "','" + m_educate + "')";
             Statement st = con.createStatement();
             st.executeUpdate(sql);
             st.close();

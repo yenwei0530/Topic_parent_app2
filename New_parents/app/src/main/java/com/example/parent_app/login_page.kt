@@ -77,9 +77,18 @@ class login_page : AppCompatActivity() {
                         startActivity(intent)
                     }else
                     {
-                        gv.setuser(username_input.text.toString())
-                        val intent = Intent(this@login_page, main::class.java)
-                        startActivity(intent)
+                        val first="SELECT parent_id FROM `mood_disorders_scale_w` where `parent_id`= '"+ username_input.text.toString()+ "'"
+                        val record = con.getfirst(first)
+                        if(record.toString() == null || record.toString() == ""){
+                            gv.setuser(username_input.text.toString())
+                            val intent = Intent(this, child_emotions::class.java)
+                            startActivity(intent)
+                        }else{
+                            gv.setuser(username_input.text.toString())
+                            val intent = Intent(this@login_page, main::class.java)
+                            startActivity(intent)
+                        }
+
                     }
                 }.start()
 
