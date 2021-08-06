@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.parent_app">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".GlobalVariable"
@@ -11,6 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parent_app">
+        <activity android:name=".note9"></activity>
+        <activity android:name=".note8" />
+        <activity android:name=".note7" />
+        <activity android:name=".note6" />
+        <activity android:name=".note5" />
+        <activity android:name=".note4" />
+        <activity android:name=".note3" />
+        <activity android:name=".note2" />
+        <activity android:name=".note1" />
         <activity android:name=".give_back" />
         <activity android:name=".Contest" />
         <activity android:name=".for_test" />

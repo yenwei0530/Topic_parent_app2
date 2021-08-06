@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import android.util.Log
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -96,5 +97,9 @@ class login_page : AppCompatActivity() {
             }
 
         }
+    }
+
+    fun note(view: View) {
+        startActivity(Intent(this,note1::class.java))
     }
 }
