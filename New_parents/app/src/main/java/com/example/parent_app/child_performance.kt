@@ -29,12 +29,12 @@ class child_performance : AppCompatActivity() {
         radioButton1_emotions2.setOnClickListener {
             performance_ans1 = 1
             gv.setperformance1("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton2_emotions2.setOnClickListener {
             performance_ans1 = 2
             gv.setperformance1("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton3.setOnClickListener {
             performance_ans1 = 3
@@ -44,23 +44,23 @@ class child_performance : AppCompatActivity() {
         radioButton4.setOnClickListener {
             performance_ans1 = 4
             gv.setperformance1("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton5.setOnClickListener {
             performance_ans1 = 5
             gv.setperformance1("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 2 第二題 ↓↓
         radioButton6.setOnClickListener {
             performance_ans2 = 1
             gv.setperformance2("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton7.setOnClickListener {
             performance_ans2 = 2
             gv.setperformance2("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton8.setOnClickListener {
             performance_ans2 = 3
@@ -70,23 +70,23 @@ class child_performance : AppCompatActivity() {
         radioButton9.setOnClickListener {
             performance_ans2 = 4
             gv.setperformance2("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton10.setOnClickListener {
             performance_ans2 = 5
             gv.setperformance2("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 3 第三題 ↓↓
         radioButton11.setOnClickListener {
             performance_ans3 = 1
             gv.setperformance3("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton12.setOnClickListener {
             performance_ans3 = 2
             gv.setperformance3("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton13.setOnClickListener {
             performance_ans3 = 3
@@ -96,23 +96,23 @@ class child_performance : AppCompatActivity() {
         radioButton14.setOnClickListener {
             performance_ans3 = 4
             gv.setperformance3("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton15.setOnClickListener {
             performance_ans3 = 5
             gv.setperformance3("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 4 第四題 ↓↓
         radioButton16.setOnClickListener {
             performance_ans4 = 1
             gv.setperformance4("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton17.setOnClickListener {
             performance_ans4 = 2
             gv.setperformance4("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton18.setOnClickListener {
             performance_ans4 = 3
@@ -122,23 +122,23 @@ class child_performance : AppCompatActivity() {
         radioButton19.setOnClickListener {
             performance_ans4 = 4
             gv.setperformance4("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton20.setOnClickListener {
             performance_ans4 = 5
             gv.setperformance4("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 5 第五題 ↓↓
         radioButton21.setOnClickListener {
             performance_ans5 = 1
             gv.setperformance5("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton22_performance.setOnClickListener {
             performance_ans5 = 2
             gv.setperformance5("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton23.setOnClickListener {
             performance_ans5 = 3
@@ -148,23 +148,23 @@ class child_performance : AppCompatActivity() {
         radioButton23_emotions2.setOnClickListener {
             performance_ans5 = 4
             gv.setperformance5("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton25.setOnClickListener {
             performance_ans5 = 5
             gv.setperformance5("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 6 第六題 ↓↓
         radioButton26.setOnClickListener {
             performance_ans6 = 1
             gv.setperformance6("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton27.setOnClickListener {
             performance_ans6 = 2
             gv.setperformance6("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton28.setOnClickListener {
             performance_ans6 = 3
@@ -174,23 +174,23 @@ class child_performance : AppCompatActivity() {
         radioButton29.setOnClickListener {
             performance_ans6 = 4
             gv.setperformance6("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton30.setOnClickListener {
             performance_ans6 = 5
             gv.setperformance6("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 7 第七題 ↓↓
         radioButton31.setOnClickListener {
             performance_ans7 = 1
             gv.setperformance7("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton32.setOnClickListener {
             performance_ans7 = 2
             gv.setperformance7("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton33.setOnClickListener {
             performance_ans7 = 3
@@ -200,23 +200,23 @@ class child_performance : AppCompatActivity() {
         radioButton34.setOnClickListener {
             performance_ans7 = 4
             gv.setperformance7("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton35.setOnClickListener {
             performance_ans7 = 5
             gv.setperformance7("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 8 第八題 ↓↓
         radioButton36.setOnClickListener {
             performance_ans8 = 1
             gv.setperformance8("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton37.setOnClickListener {
             performance_ans8 = 2
             gv.setperformance8("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton38.setOnClickListener {
             performance_ans8 = 3
@@ -226,23 +226,23 @@ class child_performance : AppCompatActivity() {
         radioButton39.setOnClickListener {
             performance_ans8 = 4
             gv.setperformance8("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton40.setOnClickListener {
             performance_ans8 = 5
             gv.setperformance8("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 9 第九題 ↓↓
         radioButton41.setOnClickListener {
             performance_ans9 = 1
             gv.setperformance9("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton42.setOnClickListener {
             performance_ans9 = 2
             gv.setperformance9("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton43.setOnClickListener {
             performance_ans9 = 3
@@ -252,23 +252,23 @@ class child_performance : AppCompatActivity() {
         radioButton44.setOnClickListener {
             performance_ans9 = 4
             gv.setperformance9("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton45.setOnClickListener {
             performance_ans9 = 5
             gv.setperformance9("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 10 第十題 ↓↓
         radioButton46.setOnClickListener {
             performance_ans10 = 1
             gv.setperformance10("1")
-            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton47.setOnClickListener {
             performance_ans10 = 2
             gv.setperformance10("2")
-            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton48.setOnClickListener {
             performance_ans10 = 3
@@ -278,12 +278,12 @@ class child_performance : AppCompatActivity() {
         radioButton49.setOnClickListener {
             performance_ans10 = 4
             gv.setperformance10("4")
-            Toast.makeText(this@child_performance, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton50.setOnClickListener {
             performance_ans10 = 5
             gv.setperformance10("5")
-            Toast.makeText(this@child_performance, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_performance, "總是這樣", Toast.LENGTH_SHORT).show()
         }
 
         button9.setOnClickListener {

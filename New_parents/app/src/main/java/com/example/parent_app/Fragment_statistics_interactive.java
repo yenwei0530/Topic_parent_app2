@@ -124,11 +124,11 @@ public class Fragment_statistics_interactive extends Fragment {
 
         //填資料
         List<DataEntry> data = new ArrayList<>();
-        data.add(new ValueDataEntry("總是這樣", a));
-        data.add(new ValueDataEntry("經常這樣", b));
+        data.add(new ValueDataEntry("從不這樣", a));
+        data.add(new ValueDataEntry("很少這樣", b));
         data.add(new ValueDataEntry("有時這樣", c));
-        data.add(new ValueDataEntry("很少這樣", d));
-        data.add(new ValueDataEntry("從不這樣", e));
+        data.add(new ValueDataEntry("經常這樣", d));
+        data.add(new ValueDataEntry("總是這樣", e));
 
 
         //建圖表
@@ -172,11 +172,11 @@ public class Fragment_statistics_interactive extends Fragment {
 
         //填資料
         List<DataEntry> data2 = new ArrayList<>();
-        data2.add(new ValueDataEntry("總是這樣", a));
-        data2.add(new ValueDataEntry("經常這樣", b));
+        data2.add(new ValueDataEntry("從不這樣", a));
+        data2.add(new ValueDataEntry("很少這樣", b));
         data2.add(new ValueDataEntry("有時這樣", c));
-        data2.add(new ValueDataEntry("很少這樣", d));
-        data2.add(new ValueDataEntry("從不這樣", e));
+        data2.add(new ValueDataEntry("經常這樣", d));
+        data2.add(new ValueDataEntry("總是這樣", e));
 
 
         //建圖表
@@ -222,11 +222,11 @@ public class Fragment_statistics_interactive extends Fragment {
 
         //填資料
         List<DataEntry> data3 = new ArrayList<>();
-        data3.add(new ValueDataEntry("總是這樣", a));
-        data3.add(new ValueDataEntry("經常這樣", b));
+        data3.add(new ValueDataEntry("從不這樣", a));
+        data3.add(new ValueDataEntry("很少這樣", b));
         data3.add(new ValueDataEntry("有時這樣", c));
-        data3.add(new ValueDataEntry("很少這樣", d));
-        data3.add(new ValueDataEntry("從不這樣", e));
+        data3.add(new ValueDataEntry("經常這樣", d));
+        data3.add(new ValueDataEntry("總是這樣", e));
 
 
         //建圖表
@@ -273,11 +273,11 @@ public class Fragment_statistics_interactive extends Fragment {
 
         //填資料
         List<DataEntry> data4 = new ArrayList<>();
-        data4.add(new ValueDataEntry("總是這樣", a));
-        data4.add(new ValueDataEntry("經常這樣", b));
+        data4.add(new ValueDataEntry("從不這樣", a));
+        data4.add(new ValueDataEntry("很少這樣", b));
         data4.add(new ValueDataEntry("有時這樣", c));
-        data4.add(new ValueDataEntry("很少這樣", d));
-        data4.add(new ValueDataEntry("從不這樣", e));
+        data4.add(new ValueDataEntry("經常這樣", d));
+        data4.add(new ValueDataEntry("總是這樣", e));
 
 
         //建圖表
@@ -320,11 +320,11 @@ public class Fragment_statistics_interactive extends Fragment {
 
         //填資料
         List<DataEntry> data5 = new ArrayList<>();
-        data5.add(new ValueDataEntry("總是這樣", a));
-        data5.add(new ValueDataEntry("經常這樣", b));
+        data5.add(new ValueDataEntry("從不這樣", a));
+        data5.add(new ValueDataEntry("很少這樣", b));
         data5.add(new ValueDataEntry("有時這樣", c));
-        data5.add(new ValueDataEntry("很少這樣", d));
-        data5.add(new ValueDataEntry("從不這樣", e));
+        data5.add(new ValueDataEntry("經常這樣", d));
+        data5.add(new ValueDataEntry("總是這樣", e));
 
 
         //建圖表
@@ -367,11 +367,11 @@ public class Fragment_statistics_interactive extends Fragment {
 
         //填資料
         List<DataEntry> data6 = new ArrayList<>();
-        data6.add(new ValueDataEntry("總是這樣", a));
-        data6.add(new ValueDataEntry("經常這樣", b));
+        data6.add(new ValueDataEntry("從不這樣", a));
+        data6.add(new ValueDataEntry("很少這樣", b));
         data6.add(new ValueDataEntry("有時這樣", c));
-        data6.add(new ValueDataEntry("很少這樣", d));
-        data6.add(new ValueDataEntry("從不這樣", e));
+        data6.add(new ValueDataEntry("經常這樣", d));
+        data6.add(new ValueDataEntry("總是這樣", e));
 
 
         //建圖表

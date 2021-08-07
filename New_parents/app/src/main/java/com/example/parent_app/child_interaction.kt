@@ -26,12 +26,12 @@ class child_interaction : AppCompatActivity() {
         radioButton1_emotions2.setOnClickListener {
             interaction_ans1 = 1
             gv.setinteraction1("1")
-            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton2_emotions2.setOnClickListener {
             interaction_ans1 = 2
             gv.setinteraction1("2")
-            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton3.setOnClickListener {
             interaction_ans1 = 3
@@ -41,23 +41,23 @@ class child_interaction : AppCompatActivity() {
         radioButton4.setOnClickListener {
             interaction_ans1 = 4
             gv.setinteraction1("4")
-            Toast.makeText(this@child_interaction, "很少這樣" , Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "經常這樣" , Toast.LENGTH_SHORT).show()
         }
         radioButton5.setOnClickListener {
             interaction_ans1 = 5
             gv.setinteraction1("5")
-            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 2 第二題 ↓↓
         radioButton6.setOnClickListener {
             interaction_ans2 = 1
             gv.setinteraction2("1")
-            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton7.setOnClickListener {
             interaction_ans2 = 2
             gv.setinteraction2("2")
-            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton8.setOnClickListener {
             interaction_ans2 = 3
@@ -67,23 +67,23 @@ class child_interaction : AppCompatActivity() {
         radioButton9.setOnClickListener {
             interaction_ans2 = 4
             gv.setinteraction2("4")
-            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton10.setOnClickListener {
             interaction_ans2 = 5
             gv.setinteraction2("5")
-            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 3 第三題 ↓↓
         radioButton11.setOnClickListener {
             interaction_ans3 = 1
             gv.setinteraction3("1")
-            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton12.setOnClickListener {
             interaction_ans3 = 2
             gv.setinteraction3("2")
-            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton13.setOnClickListener {
             interaction_ans3 = 3
@@ -93,23 +93,23 @@ class child_interaction : AppCompatActivity() {
         radioButton14.setOnClickListener {
             interaction_ans3 = 4
             gv.setinteraction3("4")
-            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton15.setOnClickListener {
             interaction_ans3 = 5
             gv.setinteraction3("5")
-            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 4 第四題 ↓↓
         radioButton16.setOnClickListener {
             interaction_ans4 = 1
             gv.setinteraction4("1")
-            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton17.setOnClickListener {
             interaction_ans4 = 2
             gv.setinteraction4("2")
-            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton18.setOnClickListener {
             interaction_ans4 = 3
@@ -119,23 +119,23 @@ class child_interaction : AppCompatActivity() {
         radioButton19.setOnClickListener {
             interaction_ans4 = 4
             gv.setinteraction4("4")
-            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton20.setOnClickListener {
             interaction_ans4 = 5
             gv.setinteraction4("5")
-            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 5 第五題 ↓↓
         radioButton21.setOnClickListener {
             interaction_ans5 = 1
             gv.setinteraction5("1")
-            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton22_interaction.setOnClickListener {
             interaction_ans5 = 2
             gv.setinteraction5("2")
-            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton23.setOnClickListener {
             interaction_ans5 = 3
@@ -145,23 +145,23 @@ class child_interaction : AppCompatActivity() {
         radioButton23_emotions2.setOnClickListener {
             interaction_ans5 = 4
             gv.setinteraction5("4")
-            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton25.setOnClickListener {
             interaction_ans5 = 5
             gv.setinteraction5("5")
-            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 6 第六題
         radioButton26.setOnClickListener {
             interaction_ans6 = 1
             gv.setinteraction6("1")
-            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton27.setOnClickListener {
             interaction_ans6 = 2
             gv.setinteraction6("2")
-            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton28.setOnClickListener {
             interaction_ans6 = 3
@@ -171,12 +171,12 @@ class child_interaction : AppCompatActivity() {
         radioButton29.setOnClickListener {
             interaction_ans6 = 4
             gv.setinteraction6("4")
-            Toast.makeText(this@child_interaction, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton30.setOnClickListener {
             interaction_ans6 = 5
             gv.setinteraction6("5")
-            Toast.makeText(this@child_interaction, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@child_interaction, "總是這樣", Toast.LENGTH_SHORT).show()
         }
 
 

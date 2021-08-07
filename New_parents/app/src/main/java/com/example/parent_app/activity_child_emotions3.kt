@@ -56,11 +56,11 @@ class activity_child_emotions3 : AppCompatActivity() {
         // radiogroup 1 第十四題 ↓↓
         radioButton1_emotions3.setOnClickListener {
             emotions_ans14 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton2_emotions3.setOnClickListener {
             emotions_ans14 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton3.setOnClickListener {
             emotions_ans14 = 3
@@ -68,20 +68,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton4.setOnClickListener {
             emotions_ans14 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton5.setOnClickListener {
             emotions_ans14 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 2 第十五題 ↓↓
         radioButton6.setOnClickListener {
             emotions_ans15 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton7.setOnClickListener {
             emotions_ans15 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton8.setOnClickListener {
             emotions_ans15 = 3
@@ -89,20 +89,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton9.setOnClickListener {
             emotions_ans15 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton10.setOnClickListener {
             emotions_ans15 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 3 第十六題 ↓↓
         radioButton11.setOnClickListener {
             emotions_ans16 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton12.setOnClickListener {
             emotions_ans16 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton13.setOnClickListener {
             emotions_ans16 = 3
@@ -110,20 +110,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton14.setOnClickListener {
             emotions_ans16 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton15.setOnClickListener {
             emotions_ans16 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 4 第十七題 ↓↓
         radioButton16.setOnClickListener {
             emotions_ans17 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton17.setOnClickListener {
             emotions_ans17 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton18.setOnClickListener {
             emotions_ans17 = 3
@@ -131,20 +131,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton19.setOnClickListener {
             emotions_ans17 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton20.setOnClickListener {
             emotions_ans17 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 4 第十七題 ↓↓
         radioButton16.setOnClickListener {
             emotions_ans17 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton17.setOnClickListener {
             emotions_ans17 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton18.setOnClickListener {
             emotions_ans17 = 3
@@ -152,20 +152,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton19.setOnClickListener {
             emotions_ans17 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton20.setOnClickListener {
             emotions_ans17 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 4 第十七題 ↓↓
         radioButton16.setOnClickListener {
             emotions_ans17 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton17.setOnClickListener {
             emotions_ans17 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton18.setOnClickListener {
             emotions_ans17 = 3
@@ -173,20 +173,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton19.setOnClickListener {
             emotions_ans17 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton20.setOnClickListener {
             emotions_ans17 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 5 第十八題 ↓↓
         radioButton21.setOnClickListener {
             emotions_ans18 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton22.setOnClickListener {
             emotions_ans18 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton23.setOnClickListener {
             emotions_ans18 = 3
@@ -194,20 +194,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton24_emotions3.setOnClickListener {
             emotions_ans18 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton25.setOnClickListener {
             emotions_ans18 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 6 第十九題 ↓↓
         radioButton26.setOnClickListener {
             emotions_ans19 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton27.setOnClickListener {
             emotions_ans19 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton28.setOnClickListener {
             emotions_ans19 = 3
@@ -215,20 +215,20 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton29.setOnClickListener {
             emotions_ans19 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton30.setOnClickListener {
             emotions_ans19 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
         // radiogroup 7 第二十題 ↓↓
         radioButton31.setOnClickListener {
             emotions_ans20 = 1
-            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton32.setOnClickListener {
             emotions_ans20 = 2
-            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton33.setOnClickListener {
             emotions_ans20 = 3
@@ -236,11 +236,11 @@ class activity_child_emotions3 : AppCompatActivity() {
         }
         radioButton34.setOnClickListener {
             emotions_ans20 = 4
-            Toast.makeText(this@activity_child_emotions3, "很少這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "經常這樣", Toast.LENGTH_SHORT).show()
         }
         radioButton35.setOnClickListener {
             emotions_ans20 = 5
-            Toast.makeText(this@activity_child_emotions3, "從不這樣", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@activity_child_emotions3, "總是這樣", Toast.LENGTH_SHORT).show()
         }
 
 
