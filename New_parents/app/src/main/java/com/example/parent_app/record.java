@@ -99,7 +99,7 @@ public class record extends AppCompatActivity {
             public void run ( ) {
                 MysqlCon con = new MysqlCon();
                 con.run();
-                arrayList=con.getdisorders(gv.getuser(),gv.getstatistics());
+                arrayList=con.getdisorders(gv.getuser());
             };
         };
 
@@ -625,7 +625,7 @@ public class record extends AppCompatActivity {
                     public void run ( ) {
                         MysqlCon con = new MysqlCon();
                         con.run();
-                        arrayList=con.getdisorders(gv.getuser(),gv.getstatistics());
+                        arrayList=con.getdisorders(gv.getuser());
                     };
                 };
 
@@ -1171,6 +1171,14 @@ public class record extends AppCompatActivity {
 
                 Log.v("DB", "寫入資料完成：" + arrayList);
 
+                if(arrayList.size()==0){
+                    textView1.setText(".....");
+                    textView2.setText(".....");
+                    textView3.setText(".....");
+                    textView4.setText(".....");
+                    textView5.setText(".....");
+                    textView6.setText(".....");
+                }else{
 
                 if(arrayList.get(0).get("q1").equals("1")){
                     textView1.setText("總是這樣");
@@ -1266,7 +1274,7 @@ public class record extends AppCompatActivity {
                 }
                 if(arrayList.get(0).get("q6").equals("5")){
                     textView6.setText("從不這樣");
-                }
+                } }
 
             }
         });

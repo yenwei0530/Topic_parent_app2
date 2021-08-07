@@ -76,6 +76,21 @@ public class MysqlCon {
         return arrayList;
     }
 
+    //修改資料
+    public void updaterelationship(String id,String relationship,String cohabitation,String discipline,String home_order,String brothers_sisters,String drug,String income,String f_educate,String m_educate) {
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "UPDATE `relationship` SET `relationship`='" +  relationship + "',`cohabitation`='" +  cohabitation + "',`discipline`='" +  discipline + "',`home_order`='" +  home_order + "',`brothers_sisters`='" +  brothers_sisters + "',`drug`='" +  drug + "',`income`='" +  income + "',`f_educate`='" +  f_educate + "',`m_educate`='" +  m_educate + "' where  `parent_id`='" +  id + "'";
+            Log.v("DB", "修改資料完成：" + sql);
+            Statement st = con.createStatement();
+            st.executeUpdate(sql);
+            st.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     //取得溫度計填寫資料
     public ArrayList<HashMap<String, String>> getthvalue(String id,String date) {
         ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
@@ -196,11 +211,11 @@ public class MysqlCon {
     }
 
     //取得孩子行為填寫資料
-    public ArrayList<HashMap<String, String>> getdisorders(String id,String date) {
+    public ArrayList<HashMap<String, String>> getdisorders(String id) {
         ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "SELECT * FROM `mood_disorders_scale_w` where  `parent_id`='" +  id + "'and  `write_time`='"+  date + "'";
+            String sql = "SELECT * FROM `mood_disorders_scale_w` where  `parent_id`='" +  id + "'";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
             while (rs.next())
@@ -276,6 +291,44 @@ public class MysqlCon {
         return arrayList;
     }
 
+    //取得是否填寫過孩子的行為
+    public String getsdisorderscount(String id) {
+        String data = "";
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT COUNT(*)  FROM `mood_disorders_scale_w` where `parent_id`='" +  id + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()) {
+                String count = rs.getString("COUNT(*)");
+                data = count;
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    //取得是否填寫過孩子的行為
+    public String getadaptationcount(String id) {
+        String data = "";
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT COUNT(*)  FROM `adaptation_scale_w` where `parent_id`='" +  id + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()) {
+                String count = rs.getString("COUNT(*)");
+                data = count;
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
     //取得您與孩子的互動填寫資料
     public ArrayList<HashMap<String, String>> getinteractive(String id,String date) {
         ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
@@ -303,6 +356,32 @@ public class MysqlCon {
                 hashMap.put("q5", q5);
                 hashMap.put("q6", q6);
 
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
+    //取得親子綁定
+    public ArrayList<HashMap<String, String>> getstudent(String id) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT * FROM `relationship` where  `parent_id`='" +  id + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String student_id = rs.getString("student_id");
+
+                hashMap.put("student_id", student_id);
 
                 arrayList.add(hashMap);
             }

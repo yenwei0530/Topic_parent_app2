@@ -343,7 +343,6 @@ class child_performance : AppCompatActivity() {
 
 
 
-                Toast.makeText(this, "點擊任意處即可返回主頁面", Toast.LENGTH_SHORT).show()
                 var intent = Intent(this, main::class.java)
                 startActivity(intent)
 
