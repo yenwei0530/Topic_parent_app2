@@ -158,18 +158,13 @@
                                 android:inputType="textPersonName" />
                         </TableRow>
 
-
-                        <TableRow
+                        <TextView
+                            android:id="@+id/textView4_1"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="wrap_content"
+                            android:text="該位孩子有兄弟姊妹人數幾人:"
+                            android:textSize="@dimen/dp_16" />
 
-                            <TextView
-                                android:id="@+id/textView4_1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="兄弟姊妹人數:"
-                                android:textSize="@dimen/dp_16" />
-                        </TableRow>
 
                         <TableRow
                             android:layout_width="match_parent"
@@ -288,7 +283,7 @@
                         style="@style/loginButton"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/loginViewsMargin"
-                        android:text="修改"
+                        android:text="完成"
                         app:initialCornerAngle="27dp"
                         app:spinning_bar_color="#FFF"
                         app:spinning_bar_padding="6dp"
