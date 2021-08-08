@@ -49,7 +49,7 @@
             android:layout_width="@dimen/dp_300"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="1:總是這樣   2:經常這樣   3:有時這樣   4:很少這樣   5:從不這樣"
+            android:text="1:從不這樣   2:很少這樣   3:有時這樣   4:經常這樣   5:總是這樣"
             android:textSize="@dimen/sp_18" />
 
         <androidx.cardview.widget.CardView
