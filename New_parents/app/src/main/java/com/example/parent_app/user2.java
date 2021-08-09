@@ -1,5 +1,6 @@
 package com.example.parent_app;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -36,12 +37,18 @@ public class user2 extends AppCompatActivity {
     String relationship7 ;
     String relationship8 ;
     String relationship9 ;
+    ProgressDialog progressDialog;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user2);
+
+
+
+        //建立等待畫面
+        progressDialog = new ProgressDialog(user2.this);
 
         //建立共用變數類別
         GlobalVariable gv = (GlobalVariable)getApplicationContext();
@@ -392,6 +399,16 @@ public class user2 extends AppCompatActivity {
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                progressDialog.show();
+                progressDialog.setContentView(R.layout.progress_dialog);
+                progressDialog.getWindow().setBackgroundDrawableResource(
+                        android.R.color.transparent
+                );
+
+                progressDialog.setCanceledOnTouchOutside(false);//點擊ProgressDialog外的區域不消失
+
                 if(relationship1.equals("其他")){
                     relationship1 =editTextTextPersonName.getText().toString();
                 }
@@ -430,7 +447,7 @@ public class user2 extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                Toast.makeText(user2.this,"修改完成"/*這行可直接取得選中內容*/,Toast.LENGTH_SHORT).show();
+                Toast.makeText(user2.this,"修改完成",Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

@@ -547,9 +547,8 @@ class user : AppCompatActivity() {
 
             Thread {
                 val con = MysqlCon()
-                con.relationship(
+                con.updaterelationship(
                     gv.getuser(),
-                    gv.getstudent(),
                     gv.getrelationship1(),
                     gv.getrelationship2(),
                     gv.getrelationship3(),

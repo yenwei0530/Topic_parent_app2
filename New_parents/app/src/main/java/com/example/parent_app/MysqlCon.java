@@ -607,6 +607,25 @@ public class MysqlCon {
         return data;
     }
 
+    public String getr(String recordtimesql) {
+        String data = "";
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            //Connection con = DriverManager.getConnection(url);
+            //String sql = "SELECT * FROM parent";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(recordtimesql);
+            while (rs.next()) {
+                String time = rs.getString("relationship");
+                data = time;
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
 }
 
 
