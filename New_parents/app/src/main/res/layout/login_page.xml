@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     tools:context=".login_page">
 
     <ImageView
@@ -93,13 +93,13 @@
             android:layout_marginLeft="62dp"
             android:layout_marginTop="18.7dp"
             android:layout_marginRight="62dp"
-            android:background="@drawable/blue_fill__rounded_color"
+            android:background="#99FF9800"
             android:fontFamily="@font/poppins_medium"
             android:gravity="center"
             android:paddingTop="14dp"
             android:paddingBottom="14dp"
             android:text="Login"
-            android:textColor="#ffffff"
+            android:textColor="#686868"
             android:textSize="@dimen/sp_12" />
 
         <TextView
@@ -109,7 +109,7 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="若忘記帳號密碼，請聯絡輔導老師~"
-            android:textColor="#019858"
+            android:textColor="#7A7A7A"
             android:textSize="@dimen/sp_12" />
 
     </LinearLayout>
