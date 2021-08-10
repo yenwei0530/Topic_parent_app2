@@ -7,6 +7,7 @@ import android.text.InputType
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -57,6 +58,9 @@ class user : AppCompatActivity() {
             spinner1.onItemSelectedListener = object :
                     AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    //關閉虛擬鍵盤
+                    val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(spinner1.windowToken, 0)
                     //Toast.makeText(this@user, "您與孩子的關係: " + ques1[position] , Toast.LENGTH_SHORT).show()
                     if (spinner1.getSelectedItem().toString() == "生父"){
                         ques1ans = 1
@@ -113,6 +117,9 @@ class user : AppCompatActivity() {
         spinner2.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner2.windowToken, 0)
                 //Toast.makeText(this@user, "是否與孩子同住: " + ques2[position], Toast.LENGTH_SHORT).show()
                 if (spinner2.getSelectedItem().toString() == "一直如此") {
                     ques2ans = 1
@@ -139,6 +146,9 @@ class user : AppCompatActivity() {
         spinner3.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner3.windowToken, 0)
                 //Toast.makeText(this@user, "平常孩子在家由誰照顧和管教? " + ques3[position] , Toast.LENGTH_SHORT).show()
                 if (spinner3.getSelectedItem().toString() == "父母雙親"){
                     ques3ans = 1
@@ -189,6 +199,9 @@ class user : AppCompatActivity() {
         spinner4.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner4.windowToken, 0)
                 //Toast.makeText(this@user, "該位孩子在家中排行: " + ques4[position] , Toast.LENGTH_SHORT).show()
                 if (spinner4.getSelectedItem().toString() == "第一"){
                     ques4ans = 1
@@ -240,6 +253,9 @@ class user : AppCompatActivity() {
         spinner4_1.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner4_1.windowToken, 0)
                 //Toast.makeText(this@user, "兄弟姊妹人數: " + ques4_1[position] + "人", Toast.LENGTH_SHORT).show()
                 if (spinner4_1.getSelectedItem().toString() == "1"){
                     ques4_1ans = 1
@@ -291,6 +307,9 @@ class user : AppCompatActivity() {
         spinner5.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner5.windowToken, 0)
                 //Toast.makeText(this@user, "該孩子目前是否服過動或情緒藥物: " + ques5[position], Toast.LENGTH_SHORT).show()
                 if (spinner5.getSelectedItem().toString() == "是,藥名"){
                     ques5ans = 1
@@ -317,6 +336,9 @@ class user : AppCompatActivity() {
         spinner6.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner6.windowToken, 0)
                 //Toast.makeText(this@user, "家中經濟來源: " + ques6[position], Toast.LENGTH_SHORT).show()
                 if (spinner6.getSelectedItem().toString() == "父母雙薪"){
                     ques6ans = 1
@@ -355,6 +377,9 @@ class user : AppCompatActivity() {
         spinner7.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner7.windowToken, 0)
                 //Toast.makeText(this@user, "父親教育程度: " + ques7[position], Toast.LENGTH_SHORT).show()
                 if (spinner7.getSelectedItem().toString() == "不識字"){
                     ques7ans = 1
@@ -398,6 +423,9 @@ class user : AppCompatActivity() {
         spinner8.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                //關閉虛擬鍵盤
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(spinner8.windowToken, 0)
                 //Toast.makeText(this@user, "母親教育程度: " + ques8[position], Toast.LENGTH_SHORT).show()
                 if (spinner8.getSelectedItem().toString() == "不識字"){
                     ques8ans = 1

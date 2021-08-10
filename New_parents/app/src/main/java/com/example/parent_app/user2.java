@@ -1,12 +1,14 @@
 package com.example.parent_app;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -282,6 +284,9 @@ public class user2 extends AppCompatActivity {
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner1.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("其他")){
                     relationship1 ="其他";
                 }else{
@@ -296,6 +301,9 @@ public class user2 extends AppCompatActivity {
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner2.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("曾經有但現在沒有(同住多久?___年)")){
                     relationship2 ="曾經有但現在沒有(同住多久?___年)";
                 }else{
@@ -310,6 +318,9 @@ public class user2 extends AppCompatActivity {
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner3.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("其他")){
                     relationship3 ="其他";
                 }else{
@@ -324,6 +335,9 @@ public class user2 extends AppCompatActivity {
         spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner4.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("其他")){
                     relationship4 ="其他";
                 }else{
@@ -338,6 +352,9 @@ public class user2 extends AppCompatActivity {
         spinner4_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner4_1.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("其他")){
                     relationship5 ="其他";
                 }else{
@@ -352,6 +369,9 @@ public class user2 extends AppCompatActivity {
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner5.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("否")){
                     relationship6 =parent.getSelectedItem().toString();
                     editTextTextPersonName6.setText("");
@@ -366,6 +386,9 @@ public class user2 extends AppCompatActivity {
         spinner6.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner6.getWindowToken(), 0);
                 if(parent.getSelectedItem().toString().equals("其他")){
                     relationship7 ="其他";
                 }else{
@@ -380,6 +403,9 @@ public class user2 extends AppCompatActivity {
         spinner7.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner7.getWindowToken(), 0);
                     relationship8 =parent.getSelectedItem().toString();
             }
             @Override
@@ -389,6 +415,9 @@ public class user2 extends AppCompatActivity {
         spinner8.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //關閉虛擬鍵盤
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(spinner8.getWindowToken(), 0);
                 relationship9 =parent.getSelectedItem().toString();
                 //Toast.makeText(view.getContext(),relationship1[0]+ relationship2[0]+relationship3[0]+ relationship4[0]+relationship5[0]+ relationship6[0]+relationship7[0]+ relationship8[0]+relationship9[0]/*這行可直接取得選中內容*/,Toast.LENGTH_SHORT).show();
             }
@@ -458,6 +487,7 @@ public class user2 extends AppCompatActivity {
                 finish();
             }
         });
+
 
 
 
