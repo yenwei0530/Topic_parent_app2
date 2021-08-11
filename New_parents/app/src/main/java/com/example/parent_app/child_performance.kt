@@ -326,7 +326,6 @@ class child_performance : AppCompatActivity() {
                 Thread {
                     val con = MysqlCon()
                     con.adaptation_scale_w(
-                        gv.getstudent(),
                         gv.getuser(),
                         gv.getperformance1(),
                         gv.getperformance2(),

@@ -398,7 +398,7 @@ public class MysqlCon {
         ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "SELECT a.`adaptation_scale`,b.date FROM `student` as a LEFT JOIN (SELECT *,MAX(`write_time`) as date FROM `adaptation_scale_w` where `parent_id` ='" +  id + "') as b on a.user_id = b.student_id where b.`parent_id` ='" +  id + "'";
+            String sql = "SELECT v.date,`student`.`adaptation_scale` FROM `student` INNER JOIN (SELECT a.`student_id`,b.date, b.parent_id FROM `relationship` as a LEFT JOIN (SELECT *,MAX(`write_time`) as date FROM `adaptation_scale_w` where `parent_id` ='" +  id + "') as b on a.parent_id = b.parent_id WHERE b.parent_id ='" +  id + "') as v ON`student`.`user_id`= v.`student_id`";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
             while (rs.next())
@@ -471,7 +471,7 @@ public class MysqlCon {
         }
     }
 
-    public void adaptation_scale_w(String Student_id, String parent_id, String q1, String q2, String q3, String q4, String q5, String q6, String q7, String q8, String q9, String q10) {
+    public void adaptation_scale_w( String parent_id, String q1, String q2, String q3, String q4, String q5, String q6, String q7, String q8, String q9, String q10) {
         try {
             SimpleDateFormat sDateFormat = null;
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
@@ -483,7 +483,7 @@ public class MysqlCon {
             }
 
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "INSERT INTO `adaptation_scale_w`(`student_id`,`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`,`q8`,`q9`,`q10`,`write_time`) VALUES('" + Student_id + "','" + parent_id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + q7 + "','" + q8 + "','" + q9 + "','" + q10 + "','" + date + "')";
+            String sql = "INSERT INTO `adaptation_scale_w`(`parent_id`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`,`q8`,`q9`,`q10`,`write_time`) VALUES('" + parent_id + "','" + q1 + "','" + q2 + "','" + q3 + "','" + q4 + "','" + q5 + "','" + q6 + "','" + q7 + "','" + q8 + "','" + q9 + "','" + q10 + "','" + date + "')";
             Statement st = con.createStatement();
             st.executeUpdate(sql);
             st.close();
