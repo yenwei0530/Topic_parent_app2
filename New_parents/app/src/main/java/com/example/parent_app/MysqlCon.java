@@ -76,6 +76,34 @@ public class MysqlCon {
         return arrayList;
     }
 
+    //取得日記填寫資料
+    public ArrayList<HashMap<String, String>> getstdname(String id) {
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+        try {
+            Connection con = DriverManager.getConnection(url, db_user, db_password);
+            String sql = "SELECT `student`.`student_name` FROM `student` INNER JOIN `relationship`ON `student`.`user_id` =`relationship`.`student_id` where `relationship`.`parent_id`='" +  id + "'";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next())
+            {
+                HashMap<String, String> hashMap = new HashMap<>();
+
+                String student_name = rs.getString("student_name");
+
+                hashMap.put("student_name", student_name);
+
+
+                arrayList.add(hashMap);
+            }
+            st.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Log.v("DB", "寫入資料完成：" + arrayList);
+        return arrayList;
+    }
+
     //修改資料
     public void updaterelationship(String id,String relationship,String cohabitation,String discipline,String home_order,String brothers_sisters,String drug,String income,String f_educate,String m_educate) {
         try {

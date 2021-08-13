@@ -29,7 +29,23 @@ class main : AppCompatActivity() {
         var gv = applicationContext as GlobalVariable
 
         val txtdashboard = findViewById (R.id.txtdashboard) as TextView
-        txtdashboard.text =  gv.getuser() + "家長"
+
+        val thread1: Thread = object : Thread() {
+            override fun run() {
+                val con = MysqlCon()
+                con.run()
+                arrayList = con.getstdname(gv.getuser())
+            }
+        }
+        thread1.start()
+
+        try {
+            thread1.join()
+        } catch (e: InterruptedException) {
+            e.printStackTrace()
+        }
+
+        txtdashboard.text =  arrayList.get(0).get("student_name") + "家長"
 
         signout.setOnClickListener {
             startActivity(Intent(this,login_page::class.java))
