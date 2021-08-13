@@ -49,8 +49,8 @@
                 android:textSize="@dimen/sp_18" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/dp_300"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_320"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -59,7 +59,7 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_400">
+                    android:layout_height="match_parent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -99,7 +99,6 @@
                                         android:id="@+id/radioButton1_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/dp_20" />
 
@@ -107,7 +106,6 @@
                                         android:id="@+id/radioButton2_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/dp_20" />
 
@@ -115,7 +113,6 @@
                                         android:id="@+id/radioButton3_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/dp_20" />
 
@@ -123,7 +120,6 @@
                                         android:id="@+id/radioButton4_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/dp_20" />
 
@@ -131,7 +127,6 @@
                                         android:id="@+id/radioButton5_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/dp_20" />
                                 </RadioGroup>
@@ -166,7 +161,6 @@
                                         android:id="@+id/radioButton6_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -174,7 +168,6 @@
                                         android:id="@+id/radioButton7_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -182,7 +175,6 @@
                                         android:id="@+id/radioButton8_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -190,7 +182,6 @@
                                         android:id="@+id/radioButton9_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -198,7 +189,6 @@
                                         android:id="@+id/radioButton10_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -233,7 +223,6 @@
                                         android:id="@+id/radioButton11_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -241,7 +230,6 @@
                                         android:id="@+id/radioButton12_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -249,7 +237,6 @@
                                         android:id="@+id/radioButton13_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -257,7 +244,6 @@
                                         android:id="@+id/radioButton14_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -265,7 +251,6 @@
                                         android:id="@+id/radioButton15_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -299,7 +284,6 @@
                                         android:id="@+id/radioButton16_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -307,7 +291,6 @@
                                         android:id="@+id/radioButton17_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -315,7 +298,6 @@
                                         android:id="@+id/radioButton18_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -323,7 +305,6 @@
                                         android:id="@+id/radioButton19_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -331,7 +312,6 @@
                                         android:id="@+id/radioButton20_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -365,7 +345,6 @@
                                         android:id="@+id/radioButton21_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -373,7 +352,6 @@
                                         android:id="@+id/radioButton22_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -381,7 +359,6 @@
                                         android:id="@+id/radioButton23_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -389,7 +366,6 @@
                                         android:id="@+id/radioButton24_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -397,7 +373,6 @@
                                         android:id="@+id/radioButton25_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -432,7 +407,6 @@
                                         android:id="@+id/radioButton26_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -440,7 +414,6 @@
                                         android:id="@+id/radioButton27_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -448,7 +421,6 @@
                                         android:id="@+id/radioButton28_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -456,7 +428,6 @@
                                         android:id="@+id/radioButton29_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -464,7 +435,6 @@
                                         android:id="@+id/radioButton30_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -498,7 +468,6 @@
                                         android:id="@+id/radioButton31_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -506,7 +475,6 @@
                                         android:id="@+id/radioButton32_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -514,7 +482,6 @@
                                         android:id="@+id/radioButton33_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -522,7 +489,6 @@
                                         android:id="@+id/radioButton34_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -530,7 +496,6 @@
                                         android:id="@+id/radioButton35_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
@@ -565,7 +530,6 @@
                                         android:id="@+id/radioButton36_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="1"
                                         android:textSize="@dimen/sp_20" />
 
@@ -573,7 +537,6 @@
                                         android:id="@+id/radioButton37_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="2"
                                         android:textSize="@dimen/sp_20" />
 
@@ -581,7 +544,6 @@
                                         android:id="@+id/radioButton38_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="3"
                                         android:textSize="@dimen/sp_20" />
 
@@ -589,7 +551,6 @@
                                         android:id="@+id/radioButton39_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="4"
                                         android:textSize="@dimen/sp_20" />
 
@@ -597,7 +558,6 @@
                                         android:id="@+id/radioButton40_emotions2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:paddingRight="@dimen/dp_20"
                                         android:text="5"
                                         android:textSize="@dimen/sp_20" />
                                 </RadioGroup>
