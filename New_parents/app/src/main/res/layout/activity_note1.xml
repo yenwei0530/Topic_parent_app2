@@ -16,18 +16,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/page1" />
-
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="@dimen/dp_50"
+        android:layout_width="0dp"
         android:layout_height="@dimen/dp_50"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="16dp"
         android:background="#00FFFFFF"
         android:onClick="next"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:srcCompat="@drawable/right_next" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="245dp"
+        android:background="#00FFFFFF"
+        android:onClick="back"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/left_next" />
 </androidx.constraintlayout.widget.ConstraintLayout>

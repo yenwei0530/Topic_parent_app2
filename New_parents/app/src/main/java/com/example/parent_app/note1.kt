@@ -14,4 +14,8 @@ class note1 : AppCompatActivity() {
     fun next(view: View) {
         startActivity(Intent(this,note2::class.java))
     }
+
+    fun back(view: View) {
+        startActivity(Intent(this,login_page::class.java))
+    }
 }
