@@ -115,451 +115,451 @@ public class record extends AppCompatActivity {
 
 
         if(arrayList.get(0).get("q1").equals("1")){
-            textView1.setText("總是這樣");
+            textView1.setText("從不這樣");
         }
         if(arrayList.get(0).get("q1").equals("2")){
-            textView1.setText("經常這樣");
+            textView1.setText("很少這樣");
         }
         if(arrayList.get(0).get("q1").equals("3")){
             textView1.setText("有時這樣");
         }
         if(arrayList.get(0).get("q1").equals("4")){
-            textView1.setText("很少這樣");
+            textView1.setText("經常這樣");
         }
         if(arrayList.get(0).get("q1").equals("5")){
-            textView1.setText("從不這樣");
+            textView1.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q2").equals("1")){
-            textView2.setText("總是這樣");
+            textView2.setText("從不這樣");
         }
         if(arrayList.get(0).get("q2").equals("2")){
-            textView2.setText("經常這樣");
+            textView2.setText("很少這樣");
         }
         if(arrayList.get(0).get("q2").equals("3")){
             textView2.setText("有時這樣");
         }
         if(arrayList.get(0).get("q2").equals("4")){
-            textView2.setText("很少這樣");
+            textView2.setText("經常這樣");
         }
         if(arrayList.get(0).get("q2").equals("5")){
-            textView2.setText("從不這樣");
+            textView2.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q3").equals("1")){
-            textView3.setText("總是這樣");
+            textView3.setText("從不這樣");
         }
         if(arrayList.get(0).get("q3").equals("2")){
-            textView3.setText("經常這樣");
+            textView3.setText("很少這樣");
         }
         if(arrayList.get(0).get("q3").equals("3")){
             textView3.setText("有時這樣");
         }
         if(arrayList.get(0).get("q3").equals("4")){
-            textView3.setText("很少這樣");
+            textView3.setText("經常這樣");
         }
         if(arrayList.get(0).get("q3").equals("5")){
-            textView3.setText("從不這樣");
+            textView3.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q4").equals("1")){
-            textView4.setText("總是這樣");
+            textView4.setText("從不這樣");
         }
         if(arrayList.get(0).get("q4").equals("2")){
-            textView4.setText("經常這樣");
+            textView4.setText("很少這樣");
         }
         if(arrayList.get(0).get("q4").equals("3")){
             textView4.setText("有時這樣");
         }
         if(arrayList.get(0).get("q4").equals("4")){
-            textView4.setText("很少這樣");
+            textView4.setText("經常這樣");
         }
         if(arrayList.get(0).get("q4").equals("5")){
-            textView4.setText("從不這樣");
+            textView4.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q5").equals("1")){
-            textView5.setText("總是這樣");
+            textView5.setText("從不這樣");
         }
         if(arrayList.get(0).get("q5").equals("2")){
-            textView5.setText("經常這樣");
+            textView5.setText("很少這樣");
         }
         if(arrayList.get(0).get("q5").equals("3")){
             textView5.setText("有時這樣");
         }
         if(arrayList.get(0).get("q5").equals("4")){
-            textView5.setText("很少這樣");
+            textView5.setText("經常這樣");
         }
         if(arrayList.get(0).get("q5").equals("5")){
-            textView5.setText("從不這樣");
+            textView5.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q6").equals("1")){
-            textView6.setText("總是這樣");
+            textView6.setText("從不這樣");
         }
         if(arrayList.get(0).get("q6").equals("2")){
-            textView6.setText("經常這樣");
+            textView6.setText("很少這樣");
         }
         if(arrayList.get(0).get("q6").equals("3")){
             textView6.setText("有時這樣");
         }
         if(arrayList.get(0).get("q6").equals("4")){
-            textView6.setText("很少這樣");
+            textView6.setText("經常這樣");
         }
         if(arrayList.get(0).get("q6").equals("5")){
-            textView6.setText("從不這樣");
+            textView6.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q7").equals("1")){
-            textView7.setText("總是這樣");
+            textView7.setText("從不這樣");
         }
         if(arrayList.get(0).get("q7").equals("2")){
-            textView7.setText("經常這樣");
+            textView7.setText("很少這樣");
         }
         if(arrayList.get(0).get("q7").equals("3")){
             textView7.setText("有時這樣");
         }
         if(arrayList.get(0).get("q7").equals("4")){
-            textView7.setText("很少這樣");
+            textView7.setText("經常這樣");
         }
         if(arrayList.get(0).get("q7").equals("5")){
-            textView7.setText("從不這樣");
+            textView7.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q8").equals("1")){
-            textView8.setText("總是這樣");
+            textView8.setText("從不這樣");
         }
         if(arrayList.get(0).get("q8").equals("2")){
-            textView8.setText("經常這樣");
+            textView8.setText("很少這樣");
         }
         if(arrayList.get(0).get("q8").equals("3")){
             textView8.setText("有時這樣");
         }
         if(arrayList.get(0).get("q8").equals("4")){
-            textView8.setText("很少這樣");
+            textView8.setText("經常這樣");
         }
         if(arrayList.get(0).get("q8").equals("5")){
-            textView8.setText("從不這樣");
+            textView8.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q9").equals("1")){
-            textView9.setText("總是這樣");
+            textView9.setText("從不這樣");
         }
         if(arrayList.get(0).get("q9").equals("2")){
-            textView9.setText("經常這樣");
+            textView9.setText("很少這樣");
         }
         if(arrayList.get(0).get("q9").equals("3")){
             textView9.setText("有時這樣");
         }
         if(arrayList.get(0).get("q9").equals("4")){
-            textView9.setText("很少這樣");
+            textView9.setText("經常這樣");
         }
         if(arrayList.get(0).get("q9").equals("5")){
-            textView9.setText("從不這樣");
+            textView9.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q10").equals("1")){
-            textView10.setText("總是這樣");
+            textView10.setText("從不這樣");
         }
         if(arrayList.get(0).get("q10").equals("2")){
-            textView10.setText("經常這樣");
+            textView10.setText("很少這樣");
         }
         if(arrayList.get(0).get("q10").equals("3")){
             textView10.setText("有時這樣");
         }
         if(arrayList.get(0).get("q10").equals("4")){
-            textView10.setText("很少這樣");
+            textView10.setText("經常這樣");
         }
         if(arrayList.get(0).get("q10").equals("5")){
-            textView10.setText("從不這樣");
+            textView10.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q11").equals("1")){
-            textView11.setText("總是這樣");
+            textView11.setText("從不這樣");
         }
         if(arrayList.get(0).get("q11").equals("2")){
-            textView11.setText("經常這樣");
+            textView11.setText("很少這樣");
         }
         if(arrayList.get(0).get("q11").equals("3")){
             textView11.setText("有時這樣");
         }
         if(arrayList.get(0).get("q11").equals("4")){
-            textView11.setText("很少這樣");
+            textView11.setText("經常這樣");
         }
         if(arrayList.get(0).get("q11").equals("5")){
-            textView11.setText("從不這樣");
+            textView11.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q12").equals("1")){
-            textView12.setText("總是這樣");
+            textView12.setText("從不這樣");
         }
         if(arrayList.get(0).get("q12").equals("2")){
-            textView12.setText("經常這樣");
+            textView12.setText("很少這樣");
         }
         if(arrayList.get(0).get("q12").equals("3")){
             textView12.setText("有時這樣");
         }
         if(arrayList.get(0).get("q12").equals("4")){
-            textView12.setText("很少這樣");
+            textView12.setText("經常這樣");
         }
         if(arrayList.get(0).get("q12").equals("5")){
-            textView12.setText("從不這樣");
+            textView12.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q13").equals("1")){
-            textView13.setText("總是這樣");
+            textView13.setText("從不這樣");
         }
         if(arrayList.get(0).get("q13").equals("2")){
-            textView13.setText("經常這樣");
+            textView13.setText("很少這樣");
         }
         if(arrayList.get(0).get("q13").equals("3")){
             textView13.setText("有時這樣");
         }
         if(arrayList.get(0).get("q13").equals("4")){
-            textView13.setText("很少這樣");
+            textView13.setText("經常這樣");
         }
         if(arrayList.get(0).get("q13").equals("5")){
-            textView13.setText("從不這樣");
+            textView13.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q14").equals("1")){
-            textView14.setText("總是這樣");
+            textView14.setText("從不這樣");
         }
         if(arrayList.get(0).get("q14").equals("2")){
-            textView14.setText("經常這樣");
+            textView14.setText("很少這樣");
         }
         if(arrayList.get(0).get("q14").equals("3")){
             textView14.setText("有時這樣");
         }
         if(arrayList.get(0).get("q14").equals("4")){
-            textView14.setText("很少這樣");
+            textView14.setText("經常這樣");
         }
         if(arrayList.get(0).get("q14").equals("5")){
-            textView14.setText("從不這樣");
+            textView14.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q15").equals("1")){
-            textView15.setText("總是這樣");
+            textView15.setText("從不這樣");
         }
         if(arrayList.get(0).get("q15").equals("2")){
-            textView15.setText("經常這樣");
+            textView15.setText("很少這樣");
         }
         if(arrayList.get(0).get("q15").equals("3")){
             textView15.setText("有時這樣");
         }
         if(arrayList.get(0).get("q15").equals("4")){
-            textView15.setText("很少這樣");
+            textView15.setText("經常這樣");
         }
         if(arrayList.get(0).get("q15").equals("5")){
-            textView15.setText("從不這樣");
+            textView15.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q16").equals("1")){
-            textView16.setText("總是這樣");
+            textView16.setText("從不這樣");
         }
         if(arrayList.get(0).get("q16").equals("2")){
-            textView16.setText("經常這樣");
+            textView16.setText("很少這樣");
         }
         if(arrayList.get(0).get("q16").equals("3")){
             textView16.setText("有時這樣");
         }
         if(arrayList.get(0).get("q16").equals("4")){
-            textView16.setText("很少這樣");
+            textView16.setText("經常這樣");
         }
         if(arrayList.get(0).get("q16").equals("5")){
-            textView16.setText("從不這樣");
+            textView16.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q17").equals("1")){
-            textView17.setText("總是這樣");
+            textView17.setText("從不這樣");
         }
         if(arrayList.get(0).get("q17").equals("2")){
-            textView17.setText("經常這樣");
+            textView17.setText("很少這樣");
         }
         if(arrayList.get(0).get("q17").equals("3")){
             textView17.setText("有時這樣");
         }
         if(arrayList.get(0).get("q17").equals("4")){
-            textView17.setText("很少這樣");
+            textView17.setText("經常這樣");
         }
         if(arrayList.get(0).get("q17").equals("5")){
-            textView17.setText("從不這樣");
+            textView17.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q18").equals("1")){
-            textView18.setText("總是這樣");
+            textView18.setText("從不這樣");
         }
         if(arrayList.get(0).get("q18").equals("2")){
-            textView18.setText("經常這樣");
+            textView18.setText("很少這樣");
         }
         if(arrayList.get(0).get("q18").equals("3")){
             textView18.setText("有時這樣");
         }
         if(arrayList.get(0).get("q18").equals("4")){
-            textView18.setText("很少這樣");
+            textView18.setText("經常這樣");
         }
         if(arrayList.get(0).get("q18").equals("5")){
-            textView18.setText("從不這樣");
+            textView18.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q19").equals("1")){
-            textView19.setText("總是這樣");
+            textView19.setText("從不這樣");
         }
         if(arrayList.get(0).get("q19").equals("2")){
-            textView19.setText("經常這樣");
+            textView19.setText("很少這樣");
         }
         if(arrayList.get(0).get("q19").equals("3")){
             textView19.setText("有時這樣");
         }
         if(arrayList.get(0).get("q19").equals("4")){
-            textView19.setText("很少這樣");
+            textView19.setText("經常這樣");
         }
         if(arrayList.get(0).get("q19").equals("5")){
-            textView19.setText("從不這樣");
+            textView19.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q20").equals("1")){
-            textView20.setText("總是這樣");
+            textView20.setText("從不這樣");
         }
         if(arrayList.get(0).get("q20").equals("2")){
-            textView20.setText("經常這樣");
+            textView20.setText("很少這樣");
         }
         if(arrayList.get(0).get("q20").equals("3")){
             textView20.setText("有時這樣");
         }
         if(arrayList.get(0).get("q20").equals("4")){
-            textView20.setText("很少這樣");
+            textView20.setText("經常這樣");
         }
         if(arrayList.get(0).get("q20").equals("5")){
-            textView20.setText("從不這樣");
+            textView20.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q21").equals("1")){
-            textView21.setText("總是這樣");
+            textView21.setText("從不這樣");
         }
         if(arrayList.get(0).get("q21").equals("2")){
-            textView21.setText("經常這樣");
+            textView21.setText("很少這樣");
         }
         if(arrayList.get(0).get("q21").equals("3")){
             textView21.setText("有時這樣");
         }
         if(arrayList.get(0).get("q21").equals("4")){
-            textView21.setText("很少這樣");
+            textView21.setText("經常這樣");
         }
         if(arrayList.get(0).get("q21").equals("5")){
-            textView21.setText("從不這樣");
+            textView21.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q22").equals("1")){
-            textView22.setText("總是這樣");
+            textView22.setText("從不這樣");
         }
         if(arrayList.get(0).get("q22").equals("2")){
-            textView22.setText("經常這樣");
+            textView22.setText("很少這樣");
         }
         if(arrayList.get(0).get("q22").equals("3")){
             textView22.setText("有時這樣");
         }
         if(arrayList.get(0).get("q22").equals("4")){
-            textView22.setText("很少這樣");
+            textView22.setText("經常這樣");
         }
         if(arrayList.get(0).get("q22").equals("5")){
-            textView22.setText("從不這樣");
+            textView22.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q23").equals("1")){
-            textView23.setText("總是這樣");
+            textView23.setText("從不這樣");
         }
         if(arrayList.get(0).get("q23").equals("2")){
-            textView23.setText("經常這樣");
+            textView23.setText("很少這樣");
         }
         if(arrayList.get(0).get("q23").equals("3")){
             textView23.setText("有時這樣");
         }
         if(arrayList.get(0).get("q23").equals("4")){
-            textView23.setText("很少這樣");
+            textView23.setText("經常這樣");
         }
         if(arrayList.get(0).get("q23").equals("5")){
-            textView23.setText("從不這樣");
+            textView23.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q24").equals("1")){
-            textView24.setText("總是這樣");
+            textView24.setText("從不這樣");
         }
         if(arrayList.get(0).get("q24").equals("2")){
-            textView24.setText("經常這樣");
+            textView24.setText("很少這樣");
         }
         if(arrayList.get(0).get("q24").equals("3")){
             textView24.setText("有時這樣");
         }
         if(arrayList.get(0).get("q24").equals("4")){
-            textView24.setText("很少這樣");
+            textView24.setText("經常這樣");
         }
         if(arrayList.get(0).get("q24").equals("5")){
-            textView24.setText("從不這樣");
+            textView24.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q25").equals("1")){
-            textView25.setText("總是這樣");
+            textView25.setText("從不這樣");
         }
         if(arrayList.get(0).get("q25").equals("2")){
-            textView25.setText("經常這樣");
+            textView25.setText("很少這樣");
         }
         if(arrayList.get(0).get("q25").equals("3")){
             textView25.setText("有時這樣");
         }
         if(arrayList.get(0).get("q25").equals("4")){
-            textView25.setText("很少這樣");
+            textView25.setText("經常這樣");
         }
         if(arrayList.get(0).get("q25").equals("5")){
-            textView25.setText("從不這樣");
+            textView25.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q26").equals("1")){
-            textView26.setText("總是這樣");
+            textView26.setText("從不這樣");
         }
         if(arrayList.get(0).get("q26").equals("2")){
-            textView26.setText("經常這樣");
+            textView26.setText("很少這樣");
         }
         if(arrayList.get(0).get("q26").equals("3")){
             textView26.setText("有時這樣");
         }
         if(arrayList.get(0).get("q26").equals("4")){
-            textView26.setText("很少這樣");
+            textView26.setText("經常這樣");
         }
         if(arrayList.get(0).get("q26").equals("5")){
-            textView26.setText("從不這樣");
+            textView26.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q27").equals("1")){
-            textView27.setText("總是這樣");
+            textView27.setText("從不這樣");
         }
         if(arrayList.get(0).get("q27").equals("2")){
-            textView27.setText("經常這樣");
+            textView27.setText("很少這樣");
         }
         if(arrayList.get(0).get("q27").equals("3")){
             textView27.setText("有時這樣");
         }
         if(arrayList.get(0).get("q27").equals("4")){
-            textView27.setText("很少這樣");
+            textView27.setText("經常這樣");
         }
         if(arrayList.get(0).get("q27").equals("5")){
-            textView27.setText("從不這樣");
+            textView27.setText("總是這樣");
         }
 
         if(arrayList.get(0).get("q28").equals("1")){
-            textView28.setText("總是這樣");
+            textView28.setText("從不這樣");
         }
         if(arrayList.get(0).get("q28").equals("2")){
-            textView28.setText("經常這樣");
+            textView28.setText("很少這樣");
         }
         if(arrayList.get(0).get("q28").equals("3")){
             textView28.setText("有時這樣");
         }
         if(arrayList.get(0).get("q28").equals("4")){
-            textView28.setText("很少這樣");
+            textView28.setText("經常這樣");
         }
         if(arrayList.get(0).get("q28").equals("5")){
-            textView28.setText("從不這樣");
+            textView28.setText("總是這樣");
         }
 
         r1.setOnClickListener(new View.OnClickListener() {
@@ -641,451 +641,451 @@ public class record extends AppCompatActivity {
 
 
                 if(arrayList.get(0).get("q1").equals("1")){
-                    textView1.setText("總是這樣");
+                    textView1.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("2")){
-                    textView1.setText("經常這樣");
+                    textView1.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("3")){
                     textView1.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("4")){
-                    textView1.setText("很少這樣");
+                    textView1.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("5")){
-                    textView1.setText("從不這樣");
+                    textView1.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q2").equals("1")){
-                    textView2.setText("總是這樣");
+                    textView2.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("2")){
-                    textView2.setText("經常這樣");
+                    textView2.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("3")){
                     textView2.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("4")){
-                    textView2.setText("很少這樣");
+                    textView2.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("5")){
-                    textView2.setText("從不這樣");
+                    textView2.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q3").equals("1")){
-                    textView3.setText("總是這樣");
+                    textView3.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("2")){
-                    textView3.setText("經常這樣");
+                    textView3.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("3")){
                     textView3.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("4")){
-                    textView3.setText("很少這樣");
+                    textView3.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("5")){
-                    textView3.setText("從不這樣");
+                    textView3.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q4").equals("1")){
-                    textView4.setText("總是這樣");
+                    textView4.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("2")){
-                    textView4.setText("經常這樣");
+                    textView4.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("3")){
                     textView4.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("4")){
-                    textView4.setText("很少這樣");
+                    textView4.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("5")){
-                    textView4.setText("從不這樣");
+                    textView4.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q5").equals("1")){
-                    textView5.setText("總是這樣");
+                    textView5.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("2")){
-                    textView5.setText("經常這樣");
+                    textView5.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("3")){
                     textView5.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("4")){
-                    textView5.setText("很少這樣");
+                    textView5.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("5")){
-                    textView5.setText("從不這樣");
+                    textView5.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q6").equals("1")){
-                    textView6.setText("總是這樣");
+                    textView6.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("2")){
-                    textView6.setText("經常這樣");
+                    textView6.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("3")){
                     textView6.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("4")){
-                    textView6.setText("很少這樣");
+                    textView6.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("5")){
-                    textView6.setText("從不這樣");
+                    textView6.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q7").equals("1")){
-                    textView7.setText("總是這樣");
+                    textView7.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q7").equals("2")){
-                    textView7.setText("經常這樣");
+                    textView7.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q7").equals("3")){
                     textView7.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q7").equals("4")){
-                    textView7.setText("很少這樣");
+                    textView7.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q7").equals("5")){
-                    textView7.setText("從不這樣");
+                    textView7.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q8").equals("1")){
-                    textView8.setText("總是這樣");
+                    textView8.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q8").equals("2")){
-                    textView8.setText("經常這樣");
+                    textView8.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q8").equals("3")){
                     textView8.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q8").equals("4")){
-                    textView8.setText("很少這樣");
+                    textView8.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q8").equals("5")){
-                    textView8.setText("從不這樣");
+                    textView8.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q9").equals("1")){
-                    textView9.setText("總是這樣");
+                    textView9.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q9").equals("2")){
-                    textView9.setText("經常這樣");
+                    textView9.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q9").equals("3")){
                     textView9.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q9").equals("4")){
-                    textView9.setText("很少這樣");
+                    textView9.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q9").equals("5")){
-                    textView9.setText("從不這樣");
+                    textView9.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q10").equals("1")){
-                    textView10.setText("總是這樣");
+                    textView10.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q10").equals("2")){
-                    textView10.setText("經常這樣");
+                    textView10.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q10").equals("3")){
                     textView10.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q10").equals("4")){
-                    textView10.setText("很少這樣");
+                    textView10.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q10").equals("5")){
-                    textView10.setText("從不這樣");
+                    textView10.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q11").equals("1")){
-                    textView11.setText("總是這樣");
+                    textView11.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q11").equals("2")){
-                    textView11.setText("經常這樣");
+                    textView11.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q11").equals("3")){
                     textView11.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q11").equals("4")){
-                    textView11.setText("很少這樣");
+                    textView11.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q11").equals("5")){
-                    textView11.setText("從不這樣");
+                    textView11.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q12").equals("1")){
-                    textView12.setText("總是這樣");
+                    textView12.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q12").equals("2")){
-                    textView12.setText("經常這樣");
+                    textView12.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q12").equals("3")){
                     textView12.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q12").equals("4")){
-                    textView12.setText("很少這樣");
+                    textView12.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q12").equals("5")){
-                    textView12.setText("從不這樣");
+                    textView12.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q13").equals("1")){
-                    textView13.setText("總是這樣");
+                    textView13.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q13").equals("2")){
-                    textView13.setText("經常這樣");
+                    textView13.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q13").equals("3")){
                     textView13.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q13").equals("4")){
-                    textView13.setText("很少這樣");
+                    textView13.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q13").equals("5")){
-                    textView13.setText("從不這樣");
+                    textView13.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q14").equals("1")){
-                    textView14.setText("總是這樣");
+                    textView14.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q14").equals("2")){
-                    textView14.setText("經常這樣");
+                    textView14.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q14").equals("3")){
                     textView14.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q14").equals("4")){
-                    textView14.setText("很少這樣");
+                    textView14.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q14").equals("5")){
-                    textView14.setText("從不這樣");
+                    textView14.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q15").equals("1")){
-                    textView15.setText("總是這樣");
+                    textView15.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q15").equals("2")){
-                    textView15.setText("經常這樣");
+                    textView15.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q15").equals("3")){
                     textView15.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q15").equals("4")){
-                    textView15.setText("很少這樣");
+                    textView15.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q15").equals("5")){
-                    textView15.setText("從不這樣");
+                    textView15.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q16").equals("1")){
-                    textView16.setText("總是這樣");
+                    textView16.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q16").equals("2")){
-                    textView16.setText("經常這樣");
+                    textView16.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q16").equals("3")){
                     textView16.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q16").equals("4")){
-                    textView16.setText("很少這樣");
+                    textView16.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q16").equals("5")){
-                    textView16.setText("從不這樣");
+                    textView16.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q17").equals("1")){
-                    textView17.setText("總是這樣");
+                    textView17.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q17").equals("2")){
-                    textView17.setText("經常這樣");
+                    textView17.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q17").equals("3")){
                     textView17.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q17").equals("4")){
-                    textView17.setText("很少這樣");
+                    textView17.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q17").equals("5")){
-                    textView17.setText("從不這樣");
+                    textView17.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q18").equals("1")){
-                    textView18.setText("總是這樣");
+                    textView18.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q18").equals("2")){
-                    textView18.setText("經常這樣");
+                    textView18.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q18").equals("3")){
                     textView18.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q18").equals("4")){
-                    textView18.setText("很少這樣");
+                    textView18.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q18").equals("5")){
-                    textView18.setText("從不這樣");
+                    textView18.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q19").equals("1")){
-                    textView19.setText("總是這樣");
+                    textView19.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q19").equals("2")){
-                    textView19.setText("經常這樣");
+                    textView19.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q19").equals("3")){
                     textView19.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q19").equals("4")){
-                    textView19.setText("很少這樣");
+                    textView19.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q19").equals("5")){
-                    textView19.setText("從不這樣");
+                    textView19.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q20").equals("1")){
-                    textView20.setText("總是這樣");
+                    textView20.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q20").equals("2")){
-                    textView20.setText("經常這樣");
+                    textView20.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q20").equals("3")){
                     textView20.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q20").equals("4")){
-                    textView20.setText("很少這樣");
+                    textView20.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q20").equals("5")){
-                    textView20.setText("從不這樣");
+                    textView20.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q21").equals("1")){
-                    textView21.setText("總是這樣");
+                    textView21.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q21").equals("2")){
-                    textView21.setText("經常這樣");
+                    textView21.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q21").equals("3")){
                     textView21.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q21").equals("4")){
-                    textView21.setText("很少這樣");
+                    textView21.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q21").equals("5")){
-                    textView21.setText("從不這樣");
+                    textView21.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q22").equals("1")){
-                    textView22.setText("總是這樣");
+                    textView22.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q22").equals("2")){
-                    textView22.setText("經常這樣");
+                    textView22.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q22").equals("3")){
                     textView22.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q22").equals("4")){
-                    textView22.setText("很少這樣");
+                    textView22.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q22").equals("5")){
-                    textView22.setText("從不這樣");
+                    textView22.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q23").equals("1")){
-                    textView23.setText("總是這樣");
+                    textView23.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q23").equals("2")){
-                    textView23.setText("經常這樣");
+                    textView23.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q23").equals("3")){
                     textView23.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q23").equals("4")){
-                    textView23.setText("很少這樣");
+                    textView23.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q23").equals("5")){
-                    textView23.setText("從不這樣");
+                    textView23.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q24").equals("1")){
-                    textView24.setText("總是這樣");
+                    textView24.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q24").equals("2")){
-                    textView24.setText("經常這樣");
+                    textView24.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q24").equals("3")){
                     textView24.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q24").equals("4")){
-                    textView24.setText("很少這樣");
+                    textView24.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q24").equals("5")){
-                    textView24.setText("從不這樣");
+                    textView24.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q25").equals("1")){
-                    textView25.setText("總是這樣");
+                    textView25.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q25").equals("2")){
-                    textView25.setText("經常這樣");
+                    textView25.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q25").equals("3")){
                     textView25.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q25").equals("4")){
-                    textView25.setText("很少這樣");
+                    textView25.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q25").equals("5")){
-                    textView25.setText("從不這樣");
+                    textView25.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q26").equals("1")){
-                    textView26.setText("總是這樣");
+                    textView26.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q26").equals("2")){
-                    textView26.setText("經常這樣");
+                    textView26.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q26").equals("3")){
                     textView26.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q26").equals("4")){
-                    textView26.setText("很少這樣");
+                    textView26.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q26").equals("5")){
-                    textView26.setText("從不這樣");
+                    textView26.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q27").equals("1")){
-                    textView27.setText("總是這樣");
+                    textView27.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q27").equals("2")){
-                    textView27.setText("經常這樣");
+                    textView27.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q27").equals("3")){
                     textView27.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q27").equals("4")){
-                    textView27.setText("很少這樣");
+                    textView27.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q27").equals("5")){
-                    textView27.setText("從不這樣");
+                    textView27.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q28").equals("1")){
-                    textView28.setText("總是這樣");
+                    textView28.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q28").equals("2")){
-                    textView28.setText("經常這樣");
+                    textView28.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q28").equals("3")){
                     textView28.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q28").equals("4")){
-                    textView28.setText("很少這樣");
+                    textView28.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q28").equals("5")){
-                    textView28.setText("從不這樣");
+                    textView28.setText("總是這樣");
                 }
 
             }
@@ -1181,99 +1181,99 @@ public class record extends AppCompatActivity {
                 }else{
 
                 if(arrayList.get(0).get("q1").equals("1")){
-                    textView1.setText("總是這樣");
+                    textView1.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("2")){
-                    textView1.setText("經常這樣");
+                    textView1.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("3")){
                     textView1.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("4")){
-                    textView1.setText("很少這樣");
+                    textView1.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q1").equals("5")){
-                    textView1.setText("從不這樣");
+                    textView1.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q2").equals("1")){
-                    textView2.setText("總是這樣");
+                    textView2.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("2")){
-                    textView2.setText("經常這樣");
+                    textView2.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("3")){
                     textView2.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("4")){
-                    textView2.setText("很少這樣");
+                    textView2.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q2").equals("5")){
-                    textView2.setText("從不這樣");
+                    textView2.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q3").equals("1")){
-                    textView3.setText("總是這樣");
+                    textView3.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("2")){
-                    textView3.setText("經常這樣");
+                    textView3.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("3")){
                     textView3.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("4")){
-                    textView3.setText("很少這樣");
+                    textView3.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q3").equals("5")){
-                    textView3.setText("從不這樣");
+                    textView3.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q4").equals("1")){
-                    textView4.setText("總是這樣");
+                    textView4.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("2")){
-                    textView4.setText("經常這樣");
+                    textView4.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("3")){
                     textView4.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("4")){
-                    textView4.setText("很少這樣");
+                    textView4.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q4").equals("5")){
-                    textView4.setText("從不這樣");
+                    textView4.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q5").equals("1")){
-                    textView5.setText("總是這樣");
+                    textView5.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("2")){
-                    textView5.setText("經常這樣");
+                    textView5.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("3")){
                     textView5.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("4")){
-                    textView5.setText("很少這樣");
+                    textView5.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q5").equals("5")){
-                    textView5.setText("從不這樣");
+                    textView5.setText("總是這樣");
                 }
 
                 if(arrayList.get(0).get("q6").equals("1")){
-                    textView6.setText("總是這樣");
+                    textView6.setText("從不這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("2")){
-                    textView6.setText("經常這樣");
+                    textView6.setText("很少這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("3")){
                     textView6.setText("有時這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("4")){
-                    textView6.setText("很少這樣");
+                    textView6.setText("經常這樣");
                 }
                 if(arrayList.get(0).get("q6").equals("5")){
-                    textView6.setText("從不這樣");
+                    textView6.setText("總是這樣");
                 } }
 
             }

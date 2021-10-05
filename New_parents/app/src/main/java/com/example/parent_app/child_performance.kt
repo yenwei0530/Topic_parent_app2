@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_child_performance.*
 
@@ -342,8 +343,33 @@ class child_performance : AppCompatActivity() {
 
 
 
-                var intent = Intent(this, main::class.java)
-                startActivity(intent)
+                /*var intent = Intent(this, main::class.java)
+                startActivity(intent)*/
+
+                //實體化layout
+                val inflater = layoutInflater
+                val textEntryView: View = inflater.inflate(R.layout.custom_dialog3, null)
+
+                //用setView把layout放進去
+
+                //用setView把layout放進去
+                val builder = AlertDialog.Builder(this@child_performance)
+                builder.setView(textEntryView)
+
+                //創建一個Dialog
+
+                //創建一個Dialog
+                val alert = builder.create()
+
+                //layout中Button結束事件
+
+                //layout中Button結束事件
+                val finsh = textEntryView.findViewById<View>(R.id.finsh) as Button
+                finsh.setOnClickListener {
+                    val intent = Intent(this@child_performance, main::class.java)
+                    startActivity(intent)
+                }
+                alert.show()
 
 
 

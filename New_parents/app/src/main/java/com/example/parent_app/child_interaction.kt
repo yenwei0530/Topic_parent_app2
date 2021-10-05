@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_child_interaction.*
@@ -226,8 +227,32 @@ class child_interaction : AppCompatActivity() {
                     )
                 }.start()
 
-                var intent = Intent(this, main::class.java)
-                startActivity(intent)
+                /*var intent = Intent(this, main::class.java)
+                startActivity(intent)*/
+                //實體化layout
+                val inflater = layoutInflater
+                val textEntryView: View = inflater.inflate(R.layout.custom_dialog2, null)
+
+                //用setView把layout放進去
+
+                //用setView把layout放進去
+                val builder = AlertDialog.Builder(this@child_interaction)
+                builder.setView(textEntryView)
+
+                //創建一個Dialog
+
+                //創建一個Dialog
+                val alert = builder.create()
+
+                //layout中Button結束事件
+
+                //layout中Button結束事件
+                val finsh = textEntryView.findViewById<View>(R.id.finsh) as Button
+                finsh.setOnClickListener {
+                    val intent = Intent(this@child_interaction, main::class.java)
+                    startActivity(intent)
+                }
+                alert.show()
             }
 
         }
