@@ -204,7 +204,7 @@ public class user2 extends AppCompatActivity {
                 android.R.layout.simple_spinner_dropdown_item,
                 lunch6);spinner5.setAdapter(lunchList6);
 
-        if(arrayList.get(0).get("drug").equals("否")){
+        if(arrayList.get(0).get("drug").equals("null")){
             spinner5.setSelection(2, false);
         }else {
             spinner5.setSelection(1, false);
@@ -429,34 +429,33 @@ public class user2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-                progressDialog.show();
+               /* progressDialog.show();
                 progressDialog.setContentView(R.layout.progress_dialog);
                 progressDialog.getWindow().setBackgroundDrawableResource(
                         android.R.color.transparent
                 );
 
-                progressDialog.setCanceledOnTouchOutside(false);//點擊ProgressDialog外的區域不消失
+                progressDialog.setCanceledOnTouchOutside(false);//點擊ProgressDialog外的區域不消失*/
 
-                if(relationship1.equals("其他")){
+                if(relationship1 != null && relationship1.equals("其他")){
                     relationship1 =editTextTextPersonName.getText().toString();
                 }
-                if(relationship2.equals("曾經有但現在沒有(同住多久?___年)")){
+                if(relationship2 != null && relationship2.equals("曾經有但現在沒有(同住多久?___年)")){
                     relationship2 =editTextTextPersonName2.getText().toString();
                 }
-                if(relationship3.equals("其他")){
+                if(relationship3 != null && relationship3.equals("其他")){
                     relationship3 =editTextTextPersonName3.getText().toString();
                 }
-                if(relationship4.equals("其他")){
+                if(relationship4 != null && relationship4.equals("其他")){
                     relationship4 =editTextTextPersonName4.getText().toString();
                 }
-                if(relationship5.equals("其他")){
+                if(relationship5 != null && relationship5.equals("其他")){
                     relationship5 =editTextTextPersonName5.getText().toString();
                 }
-                if(relationship6.equals("是,藥名")){
+                if(relationship6 != null && relationship6.equals("是,藥名")){
                     relationship6 =editTextTextPersonName6.getText().toString();
                 }
-                if(relationship7.equals("其他")){
+                if(relationship7 != null &&relationship7.equals("其他")){
                     relationship7 =editTextTextPersonName7.getText().toString();
                 }
 
